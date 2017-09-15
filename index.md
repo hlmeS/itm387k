@@ -1,3 +1,5 @@
+#URL: hlmes.github.io/itm387k
+
 # Introduction
 
 On this page you will find instructions and references for some of our lab projects. Please remember to check our [Google Classroom](https://goo.gl/pcP2JU) as usual for announcements, deadlines, submissions, feedback, etc..
@@ -231,7 +233,7 @@ In other words, to have a successful dashboard please ask yourself **whom** you 
 
 Remember, people 'love' beauty and beauty lies in simplicity, and as da Vinci noted **_"simplicity is the ultimate sophistication"_**.
 
-Try to have fun with this open-ended assignment and DO NOT hesitate to ask your instructor and peers for help. It is **strongly encourage** to work in small teams. 
+Try to have fun with this open-ended assignment and DO NOT hesitate to ask your instructor and peers for help. It is **strongly encourage** to work in small teams.
 
 [Sample dashboard](https://goo.gl/1AeCL7) --- lots to improve here, what do you think should be better?
 
