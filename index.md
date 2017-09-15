@@ -26,19 +26,37 @@ These instructions are to be taken as **guidelines** and **not as a solution man
 
 ## Lab 3a: Power BI - Part 1
 
-### Objective
-
-Building executive dashboards with Power BI Desktop and publishing them to Power BI Online.
-
 ### Status
 
 In-Works, due after class 9/15
 
+### Intro
+
+Now that we have learned the fundamental aspects of building dashboards, it's time to use our acquired knowledge from Tableau to learn visual data exploration with Power BI Desktop. You will notice that many procedures and tools are very similar, the only differences lie in the execution of commands.
+
+### Objective
+
+Building executive dashboards with Power BI Desktop and publishing them to Power BI Online.
+
+### BI Concept of the Week
+
+**Agile BI**
+
+As said very well in the first reference below from George Washington University, "agile BI involves applying an agile mindset to business intelligence".
+
+Part of the agile methodology is typically to develop small story points (e.g. business reports) in so-called sprints (~2 weeks). The agile methodology not only applies to BI and software development, but also to workshops, college courses (such as this one), design/research projects, etc..
+
+As future project managers, BI analysts, and scrum masters, this a great methodology to be aware of.
+
+This concept
+* [Agile BI Development Methodology - overview ](https://goo.gl/eSkWzh)
+* [Agile BI - Whitepaper](https://goo.gl/ZVwQTf)
+
+
+
 ### Task
 
 [Google Classrom Lab Activities](https://goo.gl/RC1oGZ).
-
-Now that we have learned the fundamental aspects of building dashboards, it's time to use our acquired knowledge from Tableau to learn visual data exploration with Power BI Desktop. You will notice that many procedures and tools are very similar, the only differences lie in the execution of commands.
 
 Please load the Coffee-Chain dataset attached in Power BI Desktop and select three tables of location, product, and sales. We will learn about Power BI Desktop using this dataset. For your assignment, you only need to clean up the dataset, create a data model, develop a business dashboard with at least four KPIs, upload the dashboard to Power BI Online and submit the URL on Google Classroom.  
 
@@ -49,6 +67,18 @@ Note: By sharing your dashboard with me (hsmidt@hawaii.edu) on Power BI Online, 
 We will use the [Coffee-Chain dataset](https://goo.gl/HQbUXr).
 
 ### Guidelines
+
+To complete this lab, you will essentially have to work through the following steps.
+
+#### Loading the data
+
+
+#### Transforming (cleaning) the data
+
+#### Modeling the data
+
+#### Exploring / Visualizing the data
+
 
 
 ## Lab 2: Tableua - Part II
