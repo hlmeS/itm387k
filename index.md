@@ -68,14 +68,36 @@ We will use the [Coffee-Chain dataset](https://goo.gl/HQbUXr).
 
 ### Guidelines
 
-To complete this lab, you will essentially have to work through the following steps.
+To complete this lab, you will essentially have to work through the following steps. You do not need to follow these steps point-by-point, they merely provide some guidelines.
+
+#### What's your Goal ?
+Before starting your visual explorations process, you should ask yourself:
+* What kind of dataset am I going to work with? What is is about, how large is the dataset, how detailed is it, is it properly formatted? 
+* Who am I exploring the data for and what is important to that person?
+  - think of this question in terms of "KPI's of interest"
+  - an answer would probably include types of measures, dimensions, geographic regions, and time scales
+
+#### Power BI Interface
+
+* Power BI Desktop is structure like most Microsoft Office applications and should thus look familiar. You have your tools on the top and your pages on the bottom.
+* Power BI Desktop has three distinct views that can be selected on the left-most view pane:
+  - Report (symbolize by a column chart)
+  - Data (symbolized by a table)
+  - Relationships (symbolized by a relations graph)
+* Functionalities of these three views are intuitive:
+  - The report view lets you create dashboards
+  - The data pane lets you see the data and modify them
+  - The relationship pane allows you to build a model
+* You will typically use all three views and their tools for your visual data exploration process
+
 
 #### Getting the data
 
 * **Select** the `Get Data` tab and connect to your `Excel` file.
 * Once selected, you can select each `sheet` from your `Excel` file individually, and then either `load` or `edit` the data.
     * `load`: this will load your data without any modifications to it
-    * `edit`: this allows you to modify your query and do an initial "cleanup", e.g. removing unnecessary columns, changing column names, creating new columns, etc. 
+    * `edit`: this allows you to modify your query and do an initial "cleanup", e.g. removing unnecessary columns, changing column names, creating new columns, etc.
+    * *note*: your queries (data) can be modified even after loading them. You can simply click on `Edit `
 
 
 #### Transforming (cleaning) the data
