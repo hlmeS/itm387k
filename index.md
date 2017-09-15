@@ -93,14 +93,20 @@ Before starting your visual explorations process, you should ask yourself:
 #### Getting the data
 
 * **Select** the `Get Data` tab and connect to your `Excel` file.
+  ![Getting data from Excel files](https://raw.github.com/hlmeS/itm387k/master/images/BI_data_1.png)
 * Once selected, you can select each `sheet` from your `Excel` file individually, and then either `load` or `edit` the data.
   - `load`: this will load your data without any modifications to it
   - `edit`: this allows you to modify your query and do an initial "cleanup", e.g. removing/hiding unnecessary columns, changing column names, creating new columns, etc.
   - *note*: you can modify your queries (data) at every step of your analysis by simply clicking on `Edit Queries` in your toolbar
+
+  ![Selecting tables and editing data. ](https://raw.github.com/hlmeS/itm387k/master/images/BI_data_2.png)
+
 * **Clean** your data by doing at least the following:
   - making sure that data types are assigned correctly
   - naming columns with the same information the same across multiple sheets
   - deleting/hiding (currently) obsolete data columns
+
+  ![Changing metadata of columns.](https://raw.github.com/hlmeS/itm387k/master/images/BI_data_3.png)
 * After having cleaned the data, make sure to click `close & apply` (top left corner) when you want to load the data into the reports pane.
 
 
@@ -138,8 +144,9 @@ The following describes a few steps for creating a calendar table that tabulates
 
 - From your `Get Data` dropdown menu, select the `Blank Query` option.
 - Click on `View` and select `Advanced Editor`
+  ![Selecting the advanced M-Query Editor](https://raw.github.com/hlmeS/itm387k/master/images/BI_date_2.png)
 - Paste the following code from this [blog post](https://www.agilebi.com.au/blog/power-bi-date-dimension) in your editor:
-  ``` sql
+  ``` js
   //Create Date Dimension
   (StartDate as date, EndDate as date)=>
   let
@@ -181,10 +188,13 @@ The following describes a few steps for creating a calendar table that tabulates
   ```
 
 - Once executed, you can rename your table as `Calendar` and enter your start and end date --> `1/1/2014 - 12/31/2015`
+  ![Inserting start and end date](https://raw.github.com/hlmeS/itm387k/master/images/BI_date_3.png)
 - Make sure that your first column (`Date`) is of type **Date**
 - Now that you have your calendar relation, it's time `model its relationship`
   - you have a `Date` field in your **Sales** relation and your **Calendar** relation, so create a relationship between them
   - what kind of cardinality should this be ? (Hint: _Each day only occurs once in a calendar_)
+
+  ![Creating the relationship between calendar and sales relations.](https://raw.github.com/hlmeS/itm387k/master/images/BI_date_4.png)
 
 Now that you have your calendar relation set up, you can use it in your visualizations (e.g. as filter, table columns, etc. ).
 
@@ -200,13 +210,12 @@ Imagine you want to calculate the Year-to-Date sales revenue and then compare it
   - from the toolbar **OR**
   - right-click the sales tables and select `New measure`
 - Enter this calculation
-``` c
+``` js
 YTD Sales = TOTALYTD( SUM('Sales'[Sales]), 'Calendar'[Date])
 ```
-- Now you can use the measure just like any other measure, such as in the graph shown below
+- Now you can use the measure just like any other measure, such as in the graph shown below:
 
-![YTD Sales by Quarter and Year with drill down options for month.](/images/BI_data_1.png)
-
+![YTD Sales by Quarter and Year](https://raw.github.com/hlmeS/itm387k/master/images/BI_ytd_1.png)
 
 #### Creating your dashboard
 
