@@ -196,8 +196,16 @@ Here is one of the many powerful functions available to you:
 
 Imagine you want to calculate the Year-to-Date sales revenue and then compare it between two years. To do this, we need to create a new measure which requires some DAX syntax. The following can be done in the various views, but try it from the report view for now.
 
-*
+- select the `New Measure` tool
+  - from the toolbar **OR**
+  - right-click the sales tables and select `New measure`
+- Enter this calculation
+``` c
+YTD Sales = TOTALYTD( SUM('Sales'[Sales]), 'Calendar'[Date])
+```
+- Now you can use the measure just like any other measure, such as in the graph shown below
 
+![YTD Sales by Quarter and Year with drill down options for month.](https://github.com/hlmeS/itm387k/blob/master/images/BI_ytd_1.png)
 
 #### Creating your dashboard
 
