@@ -118,10 +118,17 @@ Constructing your data model will allow you to leverage the relationships betwee
 * You have two options to `create relationships`:
   - `drag and drop`: simply select a field and drop it onto another field in another relation. Then double click the relation and edit the details.
   - click `manage relationship` from the toolbar and then select the various relations/fields that you want to connect
+  ![Relationship View in BI](https://raw.github.com/hlmeS/itm387k/master/images/BI_model_1.png)
+
 * When `creating relationships`, add the (maximum) cardinality constraints as well. BI can infer it for you, but make sure to double-check as it there may be multiple options based on the current data.
 * As a reminder, `cardinality constraints` show how many instances of one relation can occur with respect to the other and vice versa.
 * For example, `many students can register for a course and a course can have many students registered in it`, would be an example of a **M:M** relationship. The example, `Each person can hold many email addresses, but each email address can only be held by on person` would be a **1:M** relationship.
+  ![Editing relationships.](https://raw.github.com/hlmeS/itm387k/master/images/BI_model_2.png)
 * Another useful tool in the modeling process is the ability to hide fields from relations so that they don't show in the report, and thus helps to build more user-friendly reports. Simply `right-click on fields`, and select the `Hide in Report View` option.
+
+  ![Changing columns names.](https://raw.github.com/hlmeS/itm387k/master/images/BI_model_3.png)
+
+  ![Hiding columns from the report view.](https://raw.github.com/hlmeS/itm387k/master/images/BI_model_4.png)
 
 #### Exploring / visualizing the data
 
@@ -226,6 +233,15 @@ In other words, to have a successful dashboard please ask yourself **whom** you 
 Remember, people 'love' beauty and beauty lies in simplicity, and as da Vinci noted **_"simplicity is the ultimate sophistication"_**.
 
 Enjoy and DO NOT hesitate to ask your instructor and peers for help. You may work together as well.
+
+[Sample dashboard](https://goo.gl/ogW5Ly) --- lots to improve here, what do you think should be better?
+
+<iframe width="800" height="600" src="https://goo.gl/ogW5Ly" frameborder="0" allowFullScreen="true"></iframe> 
+
+Make sure to publish it online and then share it also with me.
+![Publishing to online. ](https://raw.github.com/hlmeS/itm387k/master/images/BI_ytd_1.png)
+
+
 
 ### Resources
 
