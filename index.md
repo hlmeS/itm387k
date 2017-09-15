@@ -70,7 +70,12 @@ We will use the [Coffee-Chain dataset](https://goo.gl/HQbUXr).
 
 To complete this lab, you will essentially have to work through the following steps.
 
-#### Loading the data
+#### Getting the data
+
+* **Select** the `Get Data` tab and connect to your `Excel` file.
+* Once selected, you can select each `sheet` from your `Excel` file individually, and then either `load` or `edit` the data.
+    * `load`: this will load your data without any modifications to it
+    * `edit`: this allows you to modify your query and do an initial "cleanup", e.g. removing unnecessary columns, changing column names, creating new columns, etc. 
 
 
 #### Transforming (cleaning) the data
