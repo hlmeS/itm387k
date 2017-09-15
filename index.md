@@ -101,22 +101,44 @@ Before starting your visual explorations process, you should ask yourself:
 * **Clean** your data by doing at least the following:
   - making sure that data types are assigned correctly
   - naming columns with the same information the same across multiple sheets
-  - deleting obsolete data columns
+  - deleting/hiding (currently) obsolete data columns
   - create a profit ratio measure by:
     - Adding new column
     - Giving it a title (e.g. Profit ratio by sale)
     - Dividing profit by sales (this will give you profit ratio for each sales transaction)
+* After having cleaned the data, make sure to click `close & apply` (top left corner) when you want to load the data into the reports pane.
 
 
 #### Modeling Your Data
 
-#### Modeling the data
+Constructing your data model will allow you to leverage the relationships between a multitude of data resources, i.e. cross-database links. Although we only have three tables, we can use to model our data from the `Relationship View`. The concept of data modeling will probably remind you of the *relational DB modeling* from your DB course.
 
-#### Exploring / Visualizing the data
+* The goal is to create relationships between fields (= attributes = columns ) of multiple relations (= tables). To do so, relations need to have a common field.
+* You have two options to `create relationships`:
+  - `drag and drop`: simply select a field and drop it onto another field in another relation. Then double click the relation and edit the details.
+  - click `manage relationship` from the toolbar and then select the various relations/fields that you want to connect
+* When `creating relationships`, add the (maximum) cardinality constraints as well. BI can infer it for you, but make sure to double-check as it there may be multiple options based on the current data.
+* As a reminder, `cardinality constraints` show how many instances of one relation can occur with respect to the other and vice versa.
+* For example, `many students can register for a course and a course can have many students registered in it`, would be an example of a **M:M** relationship. The example, `Each person can hold many email addresses, but each email address can only be held by on person` would be a **1:M** relationship.
+* Another useful tool in the modeling process is the ability to hide fields from relations so that they don't show in the report, and thus helps to build more user-friendly reports. Simply `right-click on fields`, and select the `Hide in Report View` option.
 
+#### Exploring / visualizing the data
 
+The visualization process should look familiar to you from your experience with Tableau. You have a variety of visualization options and can select multiple dimensions and measures to build your views. The paint brush gives you options on formatting the various aspects of your visualizations.
 
-## Lab 2: Tableua - Part II
+Please  
+
+#### Creating your dashboard
+
+Creating the dashboard is its own separate step in the visual exploration process. An executive dashboard **is not** the first four visualizations that come to your mind. It's the product of your findings with the respect to the initial goal, i.e. **who** is going to look at this dashboard, and with **what intention**?
+
+In other words, to have a successful dashboard please ask yourself **whom** you are trying **to 'impress' and 'help'**, make the data **relevant** to them. Your KPI dashboard should be easy to **read in 10-30 sec.**, easy to **understand in 30 -60 sec.**, and then provide **interactive components for exploration**.
+
+Remember, people 'love' beauty and beauty lies in simplicity, and as da Vinci noted **_"simplicity is the ultimate sophistication"_**.
+
+Enjoy and DO NOT hesitate to ask your instructor and peers for help. You may work together as well.
+
+## Lab 2: Tableau - Part II
 
 ### Objective
 
