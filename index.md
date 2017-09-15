@@ -205,7 +205,8 @@ YTD Sales = TOTALYTD( SUM('Sales'[Sales]), 'Calendar'[Date])
 ```
 - Now you can use the measure just like any other measure, such as in the graph shown below
 
-![YTD Sales by Quarter and Year with drill down options for month.](https://github.com/hlmeS/itm387k/blob/master/images/BI_ytd_1.png)
+![YTD Sales by Quarter and Year with drill down options for month.](/images/BI_data_1.png)
+
 
 #### Creating your dashboard
 
