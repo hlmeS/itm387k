@@ -126,7 +126,16 @@ Constructing your data model will allow you to leverage the relationships betwee
 
 The visualization process should look familiar to you from your experience with Tableau. You have a variety of visualization options and can select multiple dimensions and measures to build your views. The paint brush gives you options on formatting the various aspects of your visualizations.
 
-Please  
+Please explore with respect to:
+* the dataset
+  - why are you analyzing the data and what's your goal
+  - w.r.t to the **why**, **what** does the data show
+  - how can you present your finding **most effectively**
+* Power BI's toolset
+  - what kind of visualizations does it allow
+  - how to drill in/out (e.g. the date field has a neat hierarchy feature)
+  - how to make it interactive (e.g. use filters, action filter should work by default)
+  - what kind of analyis tools can be used from the report view, which ones need to be done in the data view (e.g. creating new measures, calculating %-differences, etc.)
 
 #### Creating your dashboard
 
