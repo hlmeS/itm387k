@@ -22,6 +22,20 @@ Through our labs, we will learn
 
 These instructions are to be taken as **guidelines** and **not as solution manuals**. Feel free to always contact me directly if you have any questions and/or problems.
 
+## BI Concept of the Week
+
+**Agile BI**
+
+"Agile BI involves applying an agile mindset to business intelligence" -- [George Washington University](https://goo.gl/eSkWzh)
+
+One component of the agile methodology is to typically develop small story points (e.g. business reports) in so-called sprints (~2 weeks). The agile methodology not only applies to BI and software development, but also skill development, college courses (such as this one), design/research projects, etc..
+
+As future project managers, BI analysts, and scrum masters, this a great methodology for you to be aware of.
+
+This concept
+* [Agile BI Development Methodology](https://goo.gl/eSkWzh)
+* [Agile BI - Whitepaper](https://goo.gl/ZVwQTf)
+
 
 ## Lab 3a: Power BI - Part 1
 
@@ -31,27 +45,11 @@ In-Works, due after class 9/15
 
 ### Intro
 
-Now that we have learned the fundamental aspects of building dashboards, it's time to use our acquired knowledge from Tableau and learn about other visualization tools, in this case Power BI Desktop. You will notice that many aspects and workflow operations are very similar, the only differences lie in the execution of commands.
+Now that we have learned the fundamental aspects of building dashboards, it's time to use our acquired knowledge from Tableau and learn about other visualization tools, in this case, Power BI Desktop. You will notice that many aspects and workflow operations are very similar, the only differences lie in the execution of these workflow operators.
 
 ### Objective
 
 Building executive dashboards with Power BI Desktop and publishing them to Power BI Online.
-
-### BI Concept of the Week
-
-**Agile BI**
-
-"Agile BI involves applying an agile mindset to business intelligence" -- [George Washington University](https://goo.gl/eSkWzh)
-
-Part of the agile methodology is typically to develop small story points (e.g. business reports) in so-called sprints (~2 weeks). The agile methodology not only applies to BI and software development, but also to workshops, college courses (such as this one), design/research projects, etc..
-
-As future project managers, BI analysts, and scrum masters, this a great methodology for you to be aware of.
-
-This concept
-* [Agile BI Development Methodology](https://goo.gl/eSkWzh)
-* [Agile BI - Whitepaper](https://goo.gl/ZVwQTf)
-
-
 
 ### Task
 
@@ -67,11 +65,11 @@ We will use the [Coffee-Chain dataset](https://goo.gl/HQbUXr).
 
 ### Guidelines
 
-To complete this lab, you will essentially have to work through the following steps. You do not need to follow these steps point-by-point, they merely provide some guidance.
+To complete this lab, you will essentially have to work through the following steps. You do not need to follow these steps point-by-point; these instructions merely provide some guidance and seed of ideation.
 
-#### What's your ultimate goal ?
+#### What's occurs ultimate goal ?
 Before starting your visual explorations process, you should ask yourself:
-* What kind of dataset am I going to work with? What is is about, how large is the dataset, how detailed is it, is it properly formatted?
+* What kind of dataset am I going to work with? What is is about? How large is the dataset, how detailed is it, is it properly formatted?
 * Who am I exploring the data for and what is important to that person?
   - why am doing this analysis
   - what are my KPI's of interest (types of measures, dimensions, geographic regions, and time scales)
@@ -88,7 +86,7 @@ Before starting your visual explorations process, you should ask yourself:
   - The data pane lets you see the data and modify them
   - The relationship pane allows you to build a model
 * You will typically use all three views and their tools for your visual data exploration process
-
+* The right-most view pane in your report view show your data fields, and visualization tools.
 
 #### Getting the data
 
@@ -104,10 +102,11 @@ Before starting your visual explorations process, you should ask yourself:
 * **Clean** your data by doing at least the following:
   - making sure that data types are assigned correctly
   - naming columns with the same information the same across multiple sheets
+  - renaming columns to make them more user friendly
   - deleting/hiding (currently) obsolete data columns
 
   ![Changing metadata of columns.](https://raw.github.com/hlmeS/itm387k/master/images/BI_data_3.png)
-* After having cleaned the data, make sure to click `close & apply` (top left corner) when you want to load the data into the reports pane.
+* After having cleaned the data, make sure to click `close & apply` (top left corner) when you want to load the data into the reports view.
 
 
 #### Modeling Your Data
@@ -120,7 +119,7 @@ Constructing your data model will allow you to leverage the relationships betwee
   - click `manage relationship` from the toolbar and then select the various relations/fields that you want to connect
   ![Relationship View in BI](https://raw.github.com/hlmeS/itm387k/master/images/BI_model_1.png)
 
-* When `creating relationships`, add the (maximum) cardinality constraints as well. BI can infer it for you, but make sure to double-check as it there may be multiple options based on the current data.
+* When `creating relationships`, add the (maximum) cardinality constraints as well. BI can infer it for you, but make sure to double-check as there may be multiple possible options based on the current data.
 * As a reminder, `cardinality constraints` show how many instances of one relation can occur with respect to the other and vice versa.
 * For example, `many students can register for a course and a course can have many students registered in it`, would be an example of a **M:M** relationship. The example, `Each person can hold many email addresses, but each email address can only be held by on person` would be a **1:M** relationship.
   ![Editing relationships.](https://raw.github.com/hlmeS/itm387k/master/images/BI_model_2.png)
@@ -132,27 +131,27 @@ Constructing your data model will allow you to leverage the relationships betwee
 
 #### Exploring / visualizing the data
 
-The visualization process should look familiar to you from your experience with Tableau. You have a variety of visualization options and can select multiple dimensions and measures to build your views. The paint brush gives you options on formatting the various aspects of your visualizations.
+The visualization process should look familiar to you from your experience with Tableau. You have a variety of visualization options and can select multiple dimensions and measures to build your views. Depending on the type of view, you have different options for adding multiple dimensions and attributes to the viz. The paint brush gives you options for formatting the various aspects of your visualizations.
 
-Please explore with respect to:
+Please start exploring with respect to:
 * the dataset
   - why are you analyzing the data and what's your goal
   - w.r.t to the **why**, **what** does the data show
   - how can you present your finding **most effectively**
 * Power BI's toolset
-  - what kind of visualizations does it allow
+  - what kind of visualizations does it allow for
   - how to drill in/out (e.g. the date field has a neat hierarchy feature)
   - how to make it interactive (e.g. use filters, action filter should work by default)
-  - what kind of analyis tools can be used from the report view, which ones need to be done in the data view (e.g. creating new measures, calculating %-differences, etc.)
+  - what kind of analysis tools can be used from the report view, which ones need to be done in the data view (e.g. creating new measures, calculating %-differences, etc.)
 
-#### Using M-Queries to create catalog tables
+#### Using M-Queries to create a Calendar table
 
 The following describes a few steps for creating a calendar table that tabulates *day, month, dayoftheweek, monthoftheweek, quarter, year* for every day in some date range. You don't always need this, but it's a good exercise to learn about queries.
 
 - From your `Get Data` dropdown menu, select the `Blank Query` option.
 - Click on `View` and select `Advanced Editor`
   ![Selecting the advanced M-Query Editor](https://raw.github.com/hlmeS/itm387k/master/images/BI_date_2.png)
-- Paste the following code from this [blog post](https://www.agilebi.com.au/blog/power-bi-date-dimension) in your editor:
+- Copy/Paste (or type!) the following code from this [blog post](https://www.agilebi.com.au/blog/power-bi-date-dimension) in your editor:
   ``` js
   //Create Date Dimension
   (StartDate as date, EndDate as date)=>
@@ -207,9 +206,9 @@ Now that you have your calendar relation set up, you can use it in your visualiz
 
 #### DAX calculations
 
-A very specific aspect of Power BI is its DAX calculations, which you may know from Excel. There are so many powerful functions that come with it that it's impossible to remember them. You can refer to this [30 minute reference](https://goo.gl/N1a5Me), this [very long manual](https://goo.gl/SoGyDH), or simply refer to [Google](https://google.com).
+A very specific aspect of Power BI is its DAX calculations, which you may know from Excel. There are so many powerful functions that come with it that it's impossible to remember them. You can refer to this [30 minute reference](https://goo.gl/N1a5Me), this [very long manual](https://goo.gl/SoGyDH), or simply to [Google Search](https://google.com).
 
-Here is one of the many powerful functions available to you:
+Here is one of the many powerful functions available to you.
 
 Imagine you want to calculate the Year-to-Date sales revenue and then compare it between two years. To do this, we need to create a new measure which requires some DAX syntax. The following can be done in the various views, but try it from the report view for now.
 
@@ -226,17 +225,17 @@ YTD Sales = TOTALYTD( SUM('Sales'[Sales]), 'Calendar'[Date])
 
 #### Creating your dashboard
 
-Creating the dashboard is its own separate step in the visual exploration process. An executive dashboard **is not** the first four visualizations that come to your mind. It's the product of your findings with the respect to the initial goal, i.e. **who** is going to look at this dashboard, and with **what intention**?
+Creating the dashboard is its own separate step in the visual exploration process. An executive dashboard **is not** the first four visualizations that come to your mind. It's the product of your findings with respect to the initial goal, i.e. **who** is going to look at this dashboard, and with **what intention**?
 
 In other words, to have a successful dashboard please ask yourself **whom** you are trying **to 'impress' and 'help'**, make the data **relevant** to them. Your KPI dashboard should be easy to **read in 10-30 sec.**, easy to **understand in 30 -60 sec.**, and then provide **interactive components for exploration**.
 
 Remember, people 'love' beauty and beauty lies in simplicity, and as da Vinci noted **_"simplicity is the ultimate sophistication"_**.
 
-Enjoy and DO NOT hesitate to ask your instructor and peers for help. You may work together as well.
+Try to have fun with this open-ended assignment and DO NOT hesitate to ask your instructor and peers for help. It is **strongly encourage** to work in small teams. 
 
-[Sample dashboard](https://goo.gl/ogW5Ly) --- lots to improve here, what do you think should be better?
+[Sample dashboard](https://goo.gl/1AeCL7) --- lots to improve here, what do you think should be better?
 
-<iframe width="800" height="600" src="https://goo.gl/ogW5Ly" frameborder="0" allowFullScreen="true"></iframe> 
+<iframe width="800" height="600" src="https://goo.gl/1AeCL7" frameborder="0" allowFullScreen="true"></iframe>
 
 Make sure to publish it online and then share it also with me.
 ![Publishing to online. ](https://raw.github.com/hlmeS/itm387k/master/images/BI_ytd_1.png)
