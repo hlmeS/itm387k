@@ -70,9 +70,9 @@ We will use the [Coffee-Chain dataset](https://goo.gl/HQbUXr).
 
 To complete this lab, you will essentially have to work through the following steps. You do not need to follow these steps point-by-point, they merely provide some guidelines.
 
-#### What's your Goal ?
+#### What's your ultimate goal ?
 Before starting your visual explorations process, you should ask yourself:
-* What kind of dataset am I going to work with? What is is about, how large is the dataset, how detailed is it, is it properly formatted? 
+* What kind of dataset am I going to work with? What is is about, how large is the dataset, how detailed is it, is it properly formatted?
 * Who am I exploring the data for and what is important to that person?
   - think of this question in terms of "KPI's of interest"
   - an answer would probably include types of measures, dimensions, geographic regions, and time scales
@@ -95,12 +95,20 @@ Before starting your visual explorations process, you should ask yourself:
 
 * **Select** the `Get Data` tab and connect to your `Excel` file.
 * Once selected, you can select each `sheet` from your `Excel` file individually, and then either `load` or `edit` the data.
-    * `load`: this will load your data without any modifications to it
-    * `edit`: this allows you to modify your query and do an initial "cleanup", e.g. removing unnecessary columns, changing column names, creating new columns, etc.
-    * *note*: your queries (data) can be modified even after loading them. You can simply click on `Edit `
+  - `load`: this will load your data without any modifications to it
+  - `edit`: this allows you to modify your query and do an initial "cleanup", e.g. removing unnecessary columns, changing column names, creating new columns, etc.
+  - *note*: your queries (data) can be modified even after loading them. You can simply click on `Edit Queries`
+* **Clean** your data by doing at least the following:
+  - making sure that data types are assigned correctly
+  - naming columns with the same information the same across multiple sheets
+  - deleting obsolete data columns
+  - create a profit ratio measure by:
+    - Adding new column
+    - Giving it a title (e.g. Profit ratio by sale)
+    - Dividing profit by sales (this will give you profit ratio for each sales transaction)
 
 
-#### Transforming (cleaning) the data
+#### Modeling Your Data
 
 #### Modeling the data
 
