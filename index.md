@@ -5,21 +5,21 @@
 - General announcements
   - [Introduction](#introduction)
 - Lab Assignments
-  - [Lab3b: Power BI - Part II](#lab-3b-power-bi---part-2)
-  - [Lab3a: Power BI - Part I](#lab-3a-power-bi---part-1) --- Updates available
+  - [Lab3b: Power BI - Part II](#lab-3b-power-bi---part-2) --- new
+  - [Lab3a: Power BI - Part I](#lab-3a-power-bi---part-1) --- Updated 9/19
   - [Lab 2: Tableau - Part II](#lab-2-tableau---part-2)
-  - [Lab 1: Tableau - Part I](#lab-1-tableau---part-1)
+  - [Lab 1: Tableau - Part I](#lab-1-tableau---part-1) --- Updated 9/20
 - BI Concepts
-  - [BI Concept (9/20)](#bi-concept-of-the-week-920)
+  - [BI Concept (9/20)](#bi-concept-of-the-week-920) --- new
   - [BI Concept (9/13)](#bi-concept-of-the-week-913)
 
 
 
-# BI Concept of the week (9/20)
+# BI Concept of the week (9/22)
 
 ## Exploration and Exploitation
 
-- [Exploration vs. Exploitation: What’s the Right Balance for a Business?](https://www.linkedin.com/pulse/exploration-vs-exploitation-whats-right-balance-business-don-peppers/)
+_More info will be added on 9/22. This article is a good introduction to the idea of exploration and exploitation:  [Exploration vs. Exploitation: What’s the Right Balance for a Business?](https://www.linkedin.com/pulse/exploration-vs-exploitation-whats-right-balance-business-don-peppers/)_
 
 
 
@@ -52,17 +52,71 @@ Same as in Lab3a: [Coffee-Chain dataset](https://goo.gl/HQbUXr).
 
 ## Guidelines
 
-Similar strategies as those in Lab3a should be applied here. However, to advance your analysis process, here are more details on data modeling, relationships and DAX. If any of it is unclear, don't hesitate to ask about it.
+Similar strategies as those in [Lab3a](#lab-3a-power-bi---part-1) should be applied here. However, here are some intro questions and and info to advance your analysis process including details on data modeling, relationships and DAX. If any of it is unclear, don't hesitate to ask about it.
 
 I'm using [The Definitive Guide to DAX](https://books.google.com/books/about/The_Definitive_Guide_to_DAX.html?id=sJm9CgAAQBAJ&hl=en) as a reference here.
+
+### Initial questions?
+
+In order for us to take sides with either the Sales or the Marketing department, we first need to consider the tasks and responsibilities of each department, so that we can explore the data of indicative signs that either department is doing their job well.
+
+
+1. What is the [sales/marketing] department of the Coffee Chain responsible for? What are they trying to do? What are their objectives ?
+2. Who comprises the [sales/marketing] department and what is their geographic reach (i.e. one centralized [sales/marketing] planning department in Seattle or many smaller departments spread throughout the country)? (_You need to make this decision based on your knowledge of other coffee chains, or simply make an assumption and go with it._ )
+3. Based on 1. and 2., what are your measures and dimensions of interest? What is your location of interest? What time interval are you interested in? (The time interval in this data set is unfortunately very short.)
+
 
 ### Data Models and relationships
 
 #### Data models
 
-#### Cardinality constraints
-#### Direction of a relations
+Power BI implements a relational data model, which means that it is structuring the data–just like Tableau–using **relations** (tables, entities) that are linked by **relationships**.
 
+Each relation consists of multiple **attributes** (columns, fields). Each of these **attributes** has a data type (e.g. number, date, string, boolean, etc.) and contains a single piece of information. A **record** (instance) refers to a row in your table (e.g. a sales transaction). Given all these aspects to a **relation**, one can consider a relation by itself as a **data model**.
+
+**Relationships** help to link multiple **relations** in your **data model**. Relationships are typically represented as lines drawn between two tables.
+
+#### Relationships
+
+**Relationships** are not only described by the two relations that a relationship can link together, but also by their **cardinality constraints** and **directionalities**.
+
+**Cardinality constraints** show how many **records** of one relation can occur with respect to the other and vice versa. For example, a product in the product relation belongs to a single subcategory from the subcategory relation, but a subcategory can have many products in them.
+
+The **directionality** of a relation typically points from the attribute on the 1-side to the attribute on the many-side. Understanding directionalities in Power BI is important, because _BI will always only filter from the 1-side to the many-side_, **unless** you make your relationship **bidirectional**, i.e. in your relationship editor, make sure that the **cross filter direction** says **both**.
+
+Unless you want to get into more depth on this, I recommend to **always use bidirectional** relationships. Do keep in mind however that there are situations where you would want unidirectional relationships.
+
+### DAX calculations
+
+Just like in Tableau, creating `new measures` in Power BI is a necessity for an in-depth analysis with possible simulations. Some resources on DAX have already been uploaded to the Classroom environment, here are some more specific measures that may (or may not) be useful for this assignment:
+
+- Calculating Profit Ratio:
+
+  ```c
+  Profit Ratio = CALCULATE(SUM('Sales'[Profit])/SUM('Sales'[Sales]))
+  ```
+- Calculating Year-to-Date Sales (or profits, marketing expenses, etc.)
+
+  ``` c
+  YTD Sales = TOTALYTD( SUM('Sales'[Sales]), 'Calendar'[Date])
+  ```
+
+- Calculating Sales (profits, marketing, etc. ) for the same period of the previous Year
+
+  ```c
+  SamePeriodPreviousYearSales = CALCULATE(SUM('Sales'[Sales]), SAMEPERIODLASTYEAR('Sales'[Date]))
+  ```
+
+- Calculating Sales for all products that were not `Green Tea`s. The `<>` operator means `NOT EQUAL` (first time seeing this notation). [Click to learn about more operators.](https://msdn.microsoft.com/en-us/library/ee634237.aspx)
+
+  ```c
+  SalesWithoutGreenTea = CALCULATE(SUM('Sales'[Sales]), 'Sales'[Product] <> "Green Tea" )
+
+  ```
+
+  Now we can the SalesWithoutGreenTea measure and compare sales with and without green tea across the markets.
+
+  ![Figure of sales without green tea vs with green tea][images/BI_SaleaWithoutGreenTea.png]
 
 # BI Concept of the Week (9/13)
 
@@ -311,6 +365,10 @@ PAU
 See [Google Classroom, Lab 2](https://goo.gl/uJkycL)
 
 # Lab 1: Tableau - Part I
+
+## Updates - 9/20
+
+Here is a quick of the `Action Filter` function in Tableau (I put step-by-step graphics). It's a very neat and intuitive way of interacting with visualizations, so I'd recommend everyone to try it out. [View Tutorial](https://github.com/hlmeS/itm387k/blob/master/tutorial/Tableau_ActionFilter.md)
 
 ## Objective
 
