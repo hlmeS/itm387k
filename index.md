@@ -1,8 +1,19 @@
 ### URL: hlmes.github.io/itm387k
 
 ### Table of Contents
+
+- General announcements
+  - [Introduction](#introduction)
+- Lab Assignments
+  - [Lab3b: Power BI - Part II](#lab-3b-power-bi---part-2)
+  - [Lab3b: Power BI - Part I](#lab-3a-power-bi---part-1)
+  - [Lab 2: Tableau - Part II](#lab-2-tableau---part-2)
+  - [Lab 1: Tableau - Part I](#lab-1-tableau---part-1)
+- BI Concepts
   - [BI Concept (9/20)](#bi-concept-of-the-week-920)
-  - [Lab3b: Power BI - Part 2](#lab-3b-power-bi---part-2)
+  - [BI Concept (9/13)](#bi-concept-of-the-week-913)
+
+
 
 
 # BI Concept of the week (9/20)
@@ -270,8 +281,6 @@ Make sure to publish it online and then share it also with me.
 ![Publishing to online. ](https://raw.github.com/hlmeS/itm387k/master/images/BI_ytd_1.png)
 
 
-## Resources
-
 
 
 # Lab 2: Tableau - Part II
@@ -288,7 +297,7 @@ PAU
 
 See [Google Classroom, Lab 2](https://goo.gl/uJkycL)
 
-# Lab 1: Executive dashboards with Tableau
+# Lab 1: Tableau - Part I
 
 ## Objective
 
