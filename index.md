@@ -1,4 +1,8 @@
-# URL: hlmes.github.io/itm387k
+### URL: hlmes.github.io/itm387k
+
+### Table of Contents
+  - [BI Concept (9/20)](#BI-Concept-of-the-week-920)
+  - [Lab3b: Power BI - Part 2](##lab-3b-power-bi---part-2)
 
 
 # BI Concept of the week (9/20)
@@ -42,7 +46,7 @@ Similar strategies as those in Lab3a should be applied here. However, to advance
 
 I'm using [The Definitive Guide to DAX](https://books.google.com/books/about/The_Definitive_Guide_to_DAX.html?id=sJm9CgAAQBAJ&hl=en) as a reference here.
 
-### 
+###
 
 
 
