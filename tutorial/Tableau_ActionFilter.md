@@ -1,7 +1,7 @@
-### Quick Demo of Action Filters in Tableau
+## Quick Demo of Action Filters in Tableau
 
 
-#### Why ?
+### Why ?
 
 Although dashboards show be easy to read in 15-30 sec and easy to understand in 30-60 sec, it still needs to be interactive once you have the readers intention.
 
@@ -9,7 +9,7 @@ While you could apply a number of various filters to your sidebar, the idea of d
 
 Luckily, we can implement this in Tableau using Actions.
 
-#### What ?
+### What ?
 
 Actions are a tool for the dashboard designer make the dashboard more intuitive to use and more effective for drilling into the data. Actions can be used for filtering, highlighting, or linking to URLs, the following considers the filtering option.
 
@@ -17,7 +17,7 @@ Imagine you have a map and want to use that map so that the viewer may click a c
 
 The following steps you through the process of doing it.
 
-#### How ?
+### How ?
 
 Simply follow this image sequence.
 
@@ -33,7 +33,7 @@ Simply follow this image sequence.
 
 ![Step 3](images/Tableau_Action_Filter_3.png)
 
-**Step 4:** Check that your action was added. 
+**Step 4:** Check that your action was added.
 
 ![Step 4](images/Tableau_Action_Filter_4.png)
 
