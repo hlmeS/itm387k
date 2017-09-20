@@ -6,13 +6,12 @@
   - [Introduction](#introduction)
 - Lab Assignments
   - [Lab3b: Power BI - Part II](#lab-3b-power-bi---part-2)
-  - [Lab3b: Power BI - Part I](#lab-3a-power-bi---part-1)
+  - [Lab3a: Power BI - Part I](#lab-3a-power-bi---part-1)
   - [Lab 2: Tableau - Part II](#lab-2-tableau---part-2)
   - [Lab 1: Tableau - Part I](#lab-1-tableau---part-1)
 - BI Concepts
   - [BI Concept (9/20)](#bi-concept-of-the-week-920)
   - [BI Concept (9/13)](#bi-concept-of-the-week-913)
-
 
 
 
@@ -60,8 +59,6 @@ I'm using [The Definitive Guide to DAX](https://books.google.com/books/about/The
 ###
 
 
-
-
 # BI Concept of the Week (9/13)
 
 ## Agile BI
@@ -78,6 +75,16 @@ This concept
 
 
 # Lab 3a: Power BI - Part 1
+
+## <span style="color:magenta">Updates</span>
+
+<span style="color:magenta">If you've been having problems last class with date filtering/hierarchies, measure calculations, failed measure aggregation, and similar, please check the following modeling aspects: </span>
+
+  * Are you relating the appropriate columns?
+  * Are you using the correct cardinality constraint?
+  * Are you using the right cross filter direction? General advice is to always use **BOTH**!
+  * Are you using the *date* datatype for the *date* column of your calendar table? 
+
 
 ## Status
 
