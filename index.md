@@ -116,7 +116,7 @@ Just like in Tableau, creating `new measures` in Power BI is a necessity for an 
 
   Now we can the SalesWithoutGreenTea measure and compare sales with and without green tea across the markets.
 
-  ![Figure of sales without green tea vs with green tea][images/BI_SaleaWithoutGreenTea.png]
+  ![Figure of sales without green tea vs with green tea](images/BI_SaleaWithoutGreenTea.png)
 
 # BI Concept of the Week (9/13)
 
