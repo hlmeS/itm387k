@@ -1,32 +1,55 @@
 # URL: hlmes.github.io/itm387k
 
-# Introduction
 
-On this page you will find instructions and references for some of our lab projects. Please remember to check our [Google Classroom](https://goo.gl/pcP2JU) as usual for announcements, deadlines, submissions, feedback, etc..
+# BI Concept of the week (9/20)
 
-The different aspects of BI/BA covered in our labs are:
-* **What? Why?**
-Visual Analytics (mainly applied in terms of Descriptive & Diagnostic Analytics)
-* **What will happen?**
-Predictive Analytics
-* **What, why, and what will?**
-Web & Social Analytics
-* **How can we make it happen** Prescriptive Analytics
+## Exploration and Exploitation
 
-Through our labs, we will learn
-* How to ask right **BI/BA questions**
-* How to learn BI/BA related **tools and techniques**
-* Create and use **business dashboards**
-* Analyze & model different business cases for **problem-solving**
-* Formulate and implement **BI/BA strategies**
-* Document, Interpret and Report **BI/BA Results**
+- [Exploration vs. Exploitation: What’s the Right Balance for a Business?](https://www.linkedin.com/pulse/exploration-vs-exploitation-whats-right-balance-business-don-peppers/)
 
 
-These instructions are to be taken as **guidelines** and **not as solution manuals**. Feel free to always contact me directly if you have any questions and/or problems.
 
-## BI Concept of the Week
+# Lab 3b: Power BI - Part 2
 
-**Agile BI**
+## Status
+
+In-Works, due 9/25
+
+## Intro
+
+One of the motivations for developing easy-to-comprehend executive dashboards is to enable data-driven decision making. But what does **_data-driven_** really mean?
+
+Let's imagine the following scenario for the Coffee-Chain dataset: The sales department claims marketing efforts have not been successful; the marketing department claims otherwise.
+
+Can we definitively determine who is right in this scenario using a visual analysis report (e.g. one or many dashboards)?
+
+## Objective
+
+Design a visual analytics report that supports the claims of the marketing department **or** the claims of the sales department.
+
+## Task
+
+Pick your side, sales or marketing, and defend your department's claim by developing some visuals.
+
+For your assignment, you only need to develop a Power BI visual report supporting your claim, publish it online and submit the URL. Please remember to share the report with hsmidt@hawaii.edu
+
+## Dataset
+Same as in Lab3a: [Coffee-Chain dataset](https://goo.gl/HQbUXr).
+
+## Guidelines
+
+Similar strategies as those in Lab3a should be applied here. However, to advance your analysis process, here are more details on data modeling, relationships and DAX. If any of it is unclear, don't hesitate to ask about it.
+
+I'm using [The Definitive Guide to DAX](https://books.google.com/books/about/The_Definitive_Guide_to_DAX.html?id=sJm9CgAAQBAJ&hl=en) as a reference here.
+
+### 
+
+
+
+
+# BI Concept of the Week (9/13)
+
+## Agile BI
 
 "Agile BI involves applying an agile mindset to business intelligence" -- [George Washington University](https://goo.gl/eSkWzh)
 
@@ -39,44 +62,44 @@ This concept
 * [Agile BI - Whitepaper](https://goo.gl/ZVwQTf)
 
 
-## Lab 3a: Power BI - Part 1
+# Lab 3a: Power BI - Part 1
 
-### Status
+## Status
 
-In-Works, due after class 9/15
+In-Works, due 9/20
 
-### Intro
+## Intro
 
 Now that we have learned the fundamental aspects of building dashboards, it's time to use our acquired knowledge from Tableau and learn about other visualization tools, in this case, Power BI Desktop. You will notice that many aspects and workflow operations are very similar, the only differences lie in the execution of these workflow operators.
 
-### Objective
+## Objective
 
 Building executive dashboards with Power BI Desktop and publishing them to Power BI Online.
 
-### Task
+## Task
 
 [Google Classrom Lab Activities](https://goo.gl/RC1oGZ).
 
-Please load the Coffee-Chain dataset attached in Power BI Desktok. For your assignment, you only need to clean up the dataset, create a data model, develop a business dashboard with at least four KPIs, upload the dashboard to Power BI Online and submit the URL on Google Classroom.  
+Please load the Coffee-Chain dataset attached in Power BI Desktop. For your assignment, you only need to clean up the dataset, create a data model, develop a business dashboard with at least four KPIs, upload the dashboard to Power BI Online and submit the URL on Google Classroom.  
 
 Note: By sharing your dashboard with me (hsmidt@hawaii.edu) on Power BI Online, you can create a required link and give me permission to view.
 
-### Dataset
+## Dataset
 
 We will use the [Coffee-Chain dataset](https://goo.gl/HQbUXr).
 
-### Guidelines
+## Guidelines
 
 To complete this lab, you will essentially have to work through the following steps. You do not need to follow these steps point-by-point; these instructions merely provide some guidance and seed of ideation.
 
-#### What's occurs ultimate goal ?
+### What's occurs ultimate goal ?
 Before starting your visual explorations process, you should ask yourself:
 * What kind of dataset am I going to work with? What is is about? How large is the dataset, how detailed is it, is it properly formatted?
 * Who am I exploring the data for and what is important to that person?
   - why am doing this analysis
   - what are my KPI's of interest (types of measures, dimensions, geographic regions, and time scales)
 
-#### Power BI Interface
+### Power BI Interface
 
 * Power BI Desktop is structured like most Microsoft Office applications and should thus look familiar. You have your tools in your toolbar on the top and then your pages (sheets) on the bottom.
 * Power BI Desktop has three distinct views that can be selected on the left-most view pane:
@@ -90,7 +113,7 @@ Before starting your visual explorations process, you should ask yourself:
 * You will typically use all three views and their tools for your visual data exploration process
 * The right-most view pane in your report view show your data fields, and visualization tools.
 
-#### Getting the data
+### Getting the data
 
 * **Select** the `Get Data` tab and connect to your `Excel` file.
   ![Getting data from Excel files](https://raw.github.com/hlmeS/itm387k/master/images/BI_data_1.png)
@@ -111,7 +134,7 @@ Before starting your visual explorations process, you should ask yourself:
 * After having cleaned the data, make sure to click `close & apply` (top left corner) when you want to load the data into the reports view.
 
 
-#### Modeling Your Data
+### Modeling Your Data
 
 Constructing your data model will allow you to leverage the relationships between a multitude of data resources, i.e. cross-database links. Although we only have three tables, we can still use them to model our data from the `Relationship View`. The concept of data modeling will probably remind you of the *relational DB modeling* from your DB course.
 
@@ -131,7 +154,7 @@ Constructing your data model will allow you to leverage the relationships betwee
 
   ![Hiding columns from the report view.](https://raw.github.com/hlmeS/itm387k/master/images/BI_model_4.png)
 
-#### Exploring / visualizing the data
+### Exploring / visualizing the data
 
 The visualization process should look familiar to you from your experience with Tableau. You have a variety of visualization options and can select multiple dimensions and measures to build your views. Depending on the type of view, you have different options for adding multiple dimensions and attributes to the viz. The paint brush gives you options for formatting the various aspects of your visualizations.
 
@@ -146,7 +169,7 @@ Please start exploring with respect to:
   - how to make it interactive (e.g. use filters, action filter should work by default)
   - what kind of analysis tools can be used from the report view, which ones need to be done in the data view (e.g. creating new measures, calculating %-differences, etc.)
 
-#### Using M-Queries to create a Calendar table
+### Using M-Queries to create a Calendar table
 
 The following describes a few steps for creating a calendar table that tabulates *day, month, dayoftheweek, monthoftheweek, quarter, year* for every day in some date range. You don't always need this, but it's a good exercise to learn about queries.
 
@@ -206,7 +229,7 @@ The following describes a few steps for creating a calendar table that tabulates
 
 Now that you have your calendar relation set up, you can use it in your visualizations (e.g. as filter, table columns, etc. ).
 
-#### DAX calculations
+### DAX calculations
 
 A very specific aspect of Power BI is its DAX calculations, which you may know from Excel. There are so many powerful functions that come with it that it's impossible to remember them. You can refer to this [30 minute reference](https://goo.gl/N1a5Me), this [very long manual](https://goo.gl/SoGyDH), or simply to [Google Search](https://google.com).
 
@@ -225,7 +248,7 @@ YTD Sales = TOTALYTD( SUM('Sales'[Sales]), 'Calendar'[Date])
 
 ![YTD Sales by Quarter and Year](https://raw.github.com/hlmeS/itm387k/master/images/BI_ytd_1.png)
 
-#### Creating your dashboard
+### Creating your dashboard
 
 Creating the dashboard is its own separate step in the visual exploration process. An executive dashboard **is not** the first four visualizations that come to your mind. It's the product of your findings with respect to the initial goal, i.e. **who** is going to look at this dashboard, and with **what intention**?
 
@@ -243,35 +266,59 @@ Make sure to publish it online and then share it also with me.
 ![Publishing to online. ](https://raw.github.com/hlmeS/itm387k/master/images/BI_ytd_1.png)
 
 
-
-### Resources
-
+## Resources
 
 
-## Lab 2: Tableau - Part II
 
-### Objective
+# Lab 2: Tableau - Part II
+
+## Objective
 
 Building stories with Tableau
 
-### Status
+## Status
 
 PAU
 
-### Task
+## Task
 
 See [Google Classroom, Lab 2](https://goo.gl/uJkycL)
 
-## Lab 1: Executive dashboards with Tableau
+# Lab 1: Executive dashboards with Tableau
 
-### Objective
+## Objective
 
 Building dashboards with Tableau and publishing them to Tableau Public.
 
-### Status
+## Status
 
 PAU
 
-### Task
+## Task
 
 See [Google Classroom, Lab 1](https://goo.gl/CinVWz)
+
+
+# Introduction
+
+On this page you will find instructions and references for some of our lab projects. Please remember to check our [Google Classroom](https://goo.gl/pcP2JU) as usual for announcements, deadlines, submissions, feedback, etc..
+
+The different aspects of BI/BA covered in our labs are:
+* **What? Why?**
+Visual Analytics (mainly applied in terms of Descriptive & Diagnostic Analytics)
+* **What will happen?**
+Predictive Analytics
+* **What, why, and what will?**
+Web & Social Analytics
+* **How can we make it happen** Prescriptive Analytics
+
+Through our labs, we will learn
+* How to ask right **BI/BA questions**
+* How to learn BI/BA related **tools and techniques**
+* Create and use **business dashboards**
+* Analyze & model different business cases for **problem-solving**
+* Formulate and implement **BI/BA strategies**
+* Document, Interpret and Report **BI/BA Results**
+
+
+These instructions are to be taken as **guidelines** and **not as solution manuals**. Feel free to always contact me directly if you have any questions and/or problems.
