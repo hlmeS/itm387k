@@ -1,8 +1,8 @@
 ### URL: hlmes.github.io/itm387k
 
 ### Table of Contents
-  - [BI Concept (9/20)](#BI-Concept-of-the-week-920)
-  - [Lab3b: Power BI - Part 2](##lab-3b-power-bi---part-2)
+  - [BI Concept (9/20)](#bi-concept-of-the-week-920)
+  - [Lab3b: Power BI - Part 2](#lab-3b-power-bi---part-2)
 
 
 # BI Concept of the week (9/20)
