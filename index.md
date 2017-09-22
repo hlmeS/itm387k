@@ -5,21 +5,37 @@
 - General announcements
   - [Introduction](#introduction)
 - Lab Assignments
-  - [Lab3b: Power BI - Part II](#lab-3b-power-bi---part-2) --- new
+  - [Lab3b: Power BI - Part II](#lab-3b-power-bi---part-2) --- Updated 9/21
   - [Lab3a: Power BI - Part I](#lab-3a-power-bi---part-1) --- Updated 9/19
   - [Lab 2: Tableau - Part II](#lab-2-tableau---part-2)
   - [Lab 1: Tableau - Part I](#lab-1-tableau---part-1) --- Updated 9/20
 - BI Concepts
-  - [BI Concept (9/20)](#bi-concept-of-the-week-920) --- new
+  - [BI Concept (9/20)](#bi-concept-of-the-week-922) --- new
   - [BI Concept (9/13)](#bi-concept-of-the-week-913)
 
 
 
 # BI Concept of the week (9/22)
 
-## Exploration and Exploitation
+## Exploration vs. Exploitation
 
-_More info will be added on 9/22. This article is a good introduction to the idea of exploration and exploitation:  [Exploration vs. Exploitation: What’s the Right Balance for a Business?](https://www.linkedin.com/pulse/exploration-vs-exploitation-whats-right-balance-business-don-peppers/)_
+The concept of **Exploration vs. Exploitation** is commonly found in reinforcement learning (machine learning discipline) and evolutionary computation. As stated in [this paper by Melani Coggan](http://ftp.bstu.by/ai/To-dom/My_research/Papers-2.1-done/RL/0/FinalReport.pdf), "finding a **balance** between exploration (attempting to discover new features about the world by a selecting sub-optimal action) and exploitation (using what we already know about the world to get the best results we know of)", is a common problem. 
+
+The problem of exploring and exploiting unknown landscapes is not only applicable to learning agents machine learning and evolutionary systems, but really **anytime that you're trying out something new**. Put nicely by [Tom Staffor in his Blog](http://www.tomstafford.staff.shef.ac.uk/?p=48), "the exploration-exploitation trade-off is a **fundamental dilemma** whenever you learn about the world by trying things out. The dilemma is between choosing what you know and getting something close to what you expect (‘exploitation’) and choosing something you aren’t sure about and possibly learning more (‘exploration’)".
+
+_So how does it relate to BI/BA and what we're doing in class?_
+As an analyst, you are exploring new datasets in hopes of discovering what is going on in the organization (i.e. descriptive analytics), why something is going on (i.e. diagnostic analytics), and how it can be changed (i.e. prescriptive analytics). Given the limited time and resources that you have for each analytics task, you need to allocate your resources effectively, which means that you will have to find the right balance between **exploration vs. exploitation**.
+
+This [article by Don Pepper](https://www.linkedin.com/pulse/exploration-vs-exploitation-whats-right-balance-business-don-peppers/) gives a biologically inspired approach to finding the balance between exploration and exploration for important business decisions in organizations.
+
+Some references from different perspectives:
+
+* [Tom Staffor in his Blog](http://www.tomstafford.staff.shef.ac.uk/?p=48) --- blog post
+* [Exploration vs. Exploitation: What’s the Right Balance for a Business? ](https://www.linkedin.com/pulse/exploration-vs-exploitation-whats-right-balance-business-don-peppers/) --- article/blog post
+* [Michel Tushman on Harvard Business Review](https://hbr.org/2012/07/exploring-and-exploiting-growt) --- article/blog post
+* [Still S., Precup - An information-theoretic approach to curiosity-driven reinforcement learning --- technical information theory paper D.](http://www2.hawaii.edu/~sstill/StillPrecup2011.pdf) --- information theory literature
+* [Coggen M. - Exploration and Exploitation in Reinforcement Learning ](http://ftp.bstu.by/ai/To-dom/My_research/Papers-2.1-done/RL/0/FinalReport.pdf) --- information theory literature
+
 
 
 
@@ -162,7 +178,7 @@ Building executive dashboards with Power BI Desktop and publishing them to Power
 
 [Google Classrom Lab Activities](https://goo.gl/RC1oGZ).
 
-Please load the Coffee-Chain dataset attached in Power BI Desktop. For your assignment, you only need to clean up the dataset, create a data model, develop a business dashboard with at least four KPIs, upload the dashboard to Power BI Online and submit the URL on Google Classroom.  
+Please load the Coffee-Chain dataset attached in Power BI Desktop. For your assignment, you only need to clean up the dataset, create a data model, develop a business dashboard with at least four KPIs, upload the dashboard to Power BI Online and submit the URL on Google Classroom.
 
 Note: By sharing your dashboard with me (hsmidt@hawaii.edu) on Power BI Online, you can create a required link and give me permission to view.
 
