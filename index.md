@@ -14,6 +14,79 @@
   - [BI Concept (9/13)](#bi-concept-of-the-week-913)
 
 
+# BI Concept of the week (9/29)
+
+## Cross-Disciplinary Collaboration
+
+Looking at the [2017 Business Trends](https://bi-survey.com/top-business-intelligence-trends-2017), we notice an increased importance in BI collaboration, for a good reason. As you have noticed during your Lab 3b, topic specific analyses can become difficult if one isn't yet familiar with operation procedures, objectives, goals, etc. of the topic of your analysis. At other times, you may be very familiar with the topic and know excactly which KPI's to compute, but aren't quite sure how to compute them. Although I'm sure each of you can learn all of the above, often you simply don't have the time.
+
+Both cases illustrate the beauty of cross-disciplinary collaboration in visual analytics. People with various skills and backgrounds (e.g. marketing, sales, management, engineering, IT, statistics, etc.) will observe different aspects in identical vizzes. Combining your resources and performing the Visual BI analysis collaboratively can thus be a powerful approach to creating powerful BI analytics results.
+
+Don't be shy and **seek collaboration** with peers from different fields and backgrounds!
+
+<iframe width="800" height="600" src="https://bi-survey.com/d3/test/trendtimeresp.html" frameborder="0" allowFullScreen="true"></iframe>
+
+
+
+
+# Lab 4: Power BI in Excel
+
+## Status
+
+In-Works, due 10/4
+
+## Intro
+
+Power BI for Office 365 provides a self-service BI platform within the Excel environment that you're already familiar with.
+
+For this lab, we will load the Coffee-Chain dataset attached and an online population table in ExcelI using Power Query. We will also use Power Query to create new tables. Then, we use Power Pivot to create a data model, summarize data, and define new measures and KPIs. With help of Power Map and Power View, we will finally visualize the KPIs.
+
+
+
+## Objective
+
+Design a KPI dashboard and 3D Map Video using Power BI in Excel.
+
+## Task
+
+For this lab, we will load the Coffee-Chain dataset attached and an online population table in ExcelI using Power Query. We will also use Power Query to create new tables. Then, we use Power Pivot to create a data model, summarize data, and define new measures and KPIs. With help of Power Map and Power View, we will finally visualize the KPIs.
+
+For this assignment, first, you need to upload a 3D Map video (5%). Your video should visualize at least one Coffee Chain's KPI (e.g. Sales, Profit...) by location and product category over time. Also, you need to upload your PowerView KPI dashboard monitoring SalesKPIs (5%)
+
+Note: You need to upload two files (video and Excel file). Please rename them as ITM387K_F17_Lab4a_[Name]_V1.0 and ITM387K_F17_Lab4b_[Name]_V1.0
+
+## Dataset
+Same as in Lab3a: [Coffee-Chain dataset](https://goo.gl/HQbUXr).
+
+
+## Guidelines
+
+### Analysis procedures
+
+The same procedures as for Tableau and Power BI Desktop apply here. We need to query data (PowerQuery), build a model with calculated measures and KPIs (PowerPivot), and then visualize them in a dashboard (PowerView) and video (PowerMap).
+
+### Creating measures for sales relation
+
+- Profit Ratio
+  ```c
+  Profit Ratio := SUM([Profit])/SUM([Sales])
+  ```
+- Marketing Ratio
+  ```c
+  Marketing Ratio := SUM([Marketing Expesnes])/SUM([Sales])
+  ```
+- Sales Mark Up
+  ```c
+  Sales Mark Up := SUM([Cost of Goods Sold (COGS)])/SUM([Sales])
+  ```
+- Previous Month Sales
+  ```c
+  
+  ```
+- Month-to-Month Sales Growth
+  ```c
+
+  ```
 
 # BI Concept of the week (9/22)
 
