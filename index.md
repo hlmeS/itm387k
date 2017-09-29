@@ -81,13 +81,20 @@ The same procedures as for Tableau and Power BI Desktop apply here. We need to q
   ```
 - Previous Month Sales
   ```c
-  
+  PMSales := CALCULATE(SUM([Sales]), PREVIOUSMONTH('Caldendar'[Date]))
   ```
-- Month-to-Month Sales Growth
+- Month-to-Month Sales Growth. (We need an if-statement to check that [PMSales] exists, otherwise we'll end up with `0` in the denominator. )
   ```c
+  Sales Growth := IF([PMSales]=0, 0, (SUM([Sales])-[PMSales]) / [PMSales])
 
   ```
 
+
+## Sample Outcome
+
+This is a sample dashbaord with KPIs on the top.
+
+![Figure of sales without green tea vs with green tea](images/PowerView_Dashboard.png)
 # BI Concept of the week (9/22)
 
 ## Exploration vs. Exploitation
