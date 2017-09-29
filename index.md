@@ -5,12 +5,14 @@
 - General announcements
   - [Introduction](#introduction)
 - Lab Assignments
+  - [Lab4: Power BI in Excel](#lab-4-power-bi-in-excel) ---new
   - [Lab3b: Power BI - Part II](#lab-3b-power-bi---part-2) --- Updated 9/21
   - [Lab3a: Power BI - Part I](#lab-3a-power-bi---part-1) --- Updated 9/19
   - [Lab 2: Tableau - Part II](#lab-2-tableau---part-2)
   - [Lab 1: Tableau - Part I](#lab-1-tableau---part-1) --- Updated 9/20
 - BI Concepts
-  - [BI Concept (9/20)](#bi-concept-of-the-week-922) --- new
+  - [BI Concept (9/29)](#bi-concept-of-the-week-929) ---new
+  - [BI Concept (9/22)](#bi-concept-of-the-week-922) 
   - [BI Concept (9/13)](#bi-concept-of-the-week-913)
 
 
