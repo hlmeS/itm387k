@@ -94,7 +94,7 @@ The same procedures as for Tableau and Power BI Desktop apply here. We need to q
 
 This is a sample dashbaord with KPIs on the top.
 
-![Figure of sales without green tea vs with green tea](images/PowerView_Dashboard.png)
+![Dashboard with KPI and vizzes. ](images/PowerView_Dashboard.png)
 # BI Concept of the week (9/22)
 
 ## Exploration vs. Exploitation
