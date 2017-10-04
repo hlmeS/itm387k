@@ -116,11 +116,14 @@ Below is a sample outcome with KPIs added to the top section.
 
 3D Maps is an interesting tool to create geo-location based visualization. The objective is tocreate a video that visualizes the development of your measures over time and by region.
 The 3D Map tool can be access from the `Insert` tab.
+To create you video, you will need to create multiple sections, each with one or more Layers. You have controls over Layer titles, duration of each slide for the video, etc. See the image below for getting started and the video for seeing a simplified version of your output. 
 
-  ![Building 3D Map  ](images/3DMap_Layer_1.png)
+![Building 3D Map  ](images/3DMap_Layer_1.png)
 
 
-<video src="images/3DMap_Video_v3.mp4" width="320" height="200" controls preload></video>
+<video src="images/3DMap_Video_v3.mp4" width="640" height="400" controls preload></video>
+
+
 ### Creating measures for sales relation
 
 - Profit Ratio
