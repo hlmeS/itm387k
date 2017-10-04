@@ -69,12 +69,12 @@ The same procedures as for Tableau and Power BI Desktop apply here. We need to q
 
 #### 1. Power Query
 
-Querying data with PowerQuery is very similar to previous methods that we've seen so far, we need to select data to import, edit attributes (name, data types, etc.), marge attributes, or remove attributes, and then execute the query. The following pictures indicate some of the necessary steps.
+Querying data with PowerQuery is very similar to previous methods that we've seen so far, we need to select data to import, edit attributes (name, data types, etc.), merge attributes, or remove attributes, and then execute the query. The following pictures indicate some of the necessary steps.
 
 - Selecting the `From Table` option allows us to query exisiting tables in our Excel sheet. (Queries to external databases would be possible here too.)
 ![Query from table](/images/PowerQuery_FromTable_1.png)
 
-- If not selected by default, we need to select the correct data range for the query. Make sure to not get any extra empty columns or empty rows.
+- If not selected by default, we need to select the correct data range for the query. Make sure to not get any extra empty columns or empty rows. (Could lead to error messages when building relationships later due to _nil_ record duplicates. )
 ![Select range for query](/images/PowerQuery_FromTable_2.png)
 
 - Apply some modifications or your attribute names, merge attributes, or even remove attributes if they seem faulty or unnecessary.
@@ -105,9 +105,22 @@ Once we have queried our data, we are ready to build our data model. Remember th
 
 PowerView allows us to create our executive dashboards wihtin Excel. If you cannot find PowerView in your Excel Toolbar Ribbon, you will need to customize your Ribbon using [these instructions](https://goo.gl/YXCH52).
 
+Building the view is mostly like PowerBI Desktop. You can select the fields of interest on the right, add filters, and then style your graphs using the `DESIGN` and `LAYOUT` tabs.
 
-#### 4. PowerMap
+Below is a sample outcome with KPIs added to the top section.
 
+  ![Dashboard with KPI and vizzes. ](images/PowerView_Dashboard.png)
+
+
+#### 4. 3D Maps
+
+3D Maps is an interesting tool to create geo-location based visualization. The objective is tocreate a video that visualizes the development of your measures over time and by region.
+The 3D Map tool can be access from the `Insert` tab.
+
+  ![Building 3D Map  ](images/3DMap_Layer_1.png)
+
+
+<video src="images/3DMap_Video_v3.mp4" width="320" height="200" controls preload></video
 ### Creating measures for sales relation
 
 - Profit Ratio
@@ -133,11 +146,6 @@ PowerView allows us to create our executive dashboards wihtin Excel. If you cann
   ```
 
 
-## Sample Outcome
-
-This is a sample dashbaord with KPIs on the top.
-
-![Dashboard with KPI and vizzes. ](images/PowerView_Dashboard.png)
 # BI Concept of the week (9/22)
 
 ## Exploration vs. Exploitation
@@ -174,7 +182,7 @@ Just remember that a report that is **not user-friendly is of little use** to an
 
 If you feel stuck and don't know what to look at next in this analysis, maybe try some of the following:
 - Look at the sales, profits, marketing expenditures, etc. for specific products over time. If you find that marketing expenditures were increased significanly over a certain time interval, you can analyze the expenditures' effectiveness.
-- Look at profitabilities and sales across various regions / product types / market types. If a product is selling fantastically, but yields little profits, then what is going on? Why are the same products more profitable in some regions than other? Are the right pricing strategies applied? Or are some of the costs of generated sales simply exorbitantly high?
+- Look at profitabilities and sales across various regions / product types / market types. If a product is selling fantastically, but yields little profits, then what is going on? Why are the same products more profitable in some regions than other? Are the right pricing strategies applied? Or are some of the costs of goods sold simply exorbitantly high?
 
 - Again, don't be shy to use custom measures for the analyis of these questions (profit ratio, time-based comparison, profits for sets of products/regions, etc.). I recommend to rather ask for help on using them, then to complete the assignment without using them at all.
 - **Work in groups!** You can compare results with others that chose the same stance as you or with someone that chose the opposite side.
@@ -500,8 +508,9 @@ Try to have fun with this open-ended assignment and DO NOT hesitate to ask your 
 
 <iframe width="800" height="600" src="https://goo.gl/1AeCL7" frameborder="0" allowFullScreen="true"></iframe>
 
+
 Make sure to publish it online and then share it also with me.
-![Publishing to online. ](https://raw.github.com/hlmeS/itm387k/master/images/BI_ytd_1.png)
+![Publishing to online. ](https://raw.github.com/hlmeS/itm387k/master/images/BI_dashboard_2.png)
 
 
 
