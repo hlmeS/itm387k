@@ -120,7 +120,7 @@ The 3D Map tool can be access from the `Insert` tab.
   ![Building 3D Map  ](images/3DMap_Layer_1.png)
 
 
-<video src="images/3DMap_Video_v3.mp4" width="320" height="200" controls preload></video
+<video src="images/3DMap_Video_v3.mp4" width="320" height="200" controls preload></video>
 ### Creating measures for sales relation
 
 - Profit Ratio
