@@ -5,14 +5,14 @@
 - General announcements
   - [Introduction](#introduction)
 - Lab Assignments
-  - [Lab4: Power BI in Excel](#lab-4-power-bi-in-excel) ---new
+  - [Lab4: Power BI in Excel](#lab-4-power-bi-in-excel) --- Updated 10/3
   - [Lab3b: Power BI - Part II](#lab-3b-power-bi---part-2) --- Updated 9/21
   - [Lab3a: Power BI - Part I](#lab-3a-power-bi---part-1) --- Updated 9/19
   - [Lab 2: Tableau - Part II](#lab-2-tableau---part-2)
   - [Lab 1: Tableau - Part I](#lab-1-tableau---part-1) --- Updated 9/20
 - BI Concepts
   - [BI Concept (9/29)](#bi-concept-of-the-week-929) ---new
-  - [BI Concept (9/22)](#bi-concept-of-the-week-922) 
+  - [BI Concept (9/22)](#bi-concept-of-the-week-922)
   - [BI Concept (9/13)](#bi-concept-of-the-week-913)
 
 
@@ -67,6 +67,47 @@ Same as in Lab3a: [Coffee-Chain dataset](https://goo.gl/HQbUXr).
 
 The same procedures as for Tableau and Power BI Desktop apply here. We need to query data (PowerQuery), build a model with calculated measures and KPIs (PowerPivot), and then visualize them in a dashboard (PowerView) and video (PowerMap).
 
+#### 1. Power Query
+
+Querying data with PowerQuery is very similar to previous methods that we've seen so far, we need to select data to import, edit attributes (name, data types, etc.), marge attributes, or remove attributes, and then execute the query. The following pictures indicate some of the necessary steps.
+
+- Selecting the `From Table` option allows us to query exisiting tables in our Excel sheet. (Queries to external databases would be possible here too.)
+![Query from table](/images/PowerQuery_FromTable_1.png)
+
+- If not selected by default, we need to select the correct data range for the query. Make sure to not get any extra empty columns or empty rows.
+![Select range for query](/images/PowerQuery_FromTable_2.png)
+
+- Apply some modifications or your attribute names, merge attributes, or even remove attributes if they seem faulty or unnecessary.
+![Edit Query](/images/PowerQuery_EditQuery_1.png)
+
+- As with PowerBI Desktop, select `Close & Apply` to execute your query.
+![Close and apply](/images/PowerQuery_CloseApply.png)
+
+- Repeat the previous steps for each of the relations that you'd like to include in your analysis (e.g. your Sales, Location, and Product relations).
+
+#### 2. PowerPivot
+Once we have queried our data, we are ready to build our data model. Remember that a data model can be as simple as a single relation (table) with multiple attributes (columns) and records (rows), or much more complex with multiple relations and relationships between them.
+
+- As a first step, find the PowerPivot tab, and add your imported tables to your model. Note that you will have to add each of the relations that you've queried separately.
+![Add to Model ](/images/PowerPivot_AddToModel.png)
+
+- Once you have the relations added to PowerPivot, we can start adding relationships. Remember that relationships connect common attributes that are shared between multiple relations. Unlike other tools that we've seen so far, PowerPivot can only form 1:M relationship.
+![Relationships](/images/PowerPivot_Relationships.png)
+
+- Defining custom measures is an important part of any visual analytics report as it will allow you to track important KPIs quickly. In PowerPivot, we can use the fields below the records to create calculated measures using the DAX language that we've already seen in PowerBI Desktop. A (very) brief selection of commands is provided in the [following section](#creating-measures-for-sales-relation).
+![Profit Ratio](/images/PowerPivot_ProfitRatio.png)
+
+- Defining KPI's based on the calculated fields can be an effective method of tracking current performance, desired performance, and the thus resulting performance status. Defining KPI's in PowerPivot can be achived by selecting the measure that you want to track, defining the target value, and then selecting the number ranges for the various stautses. (See image below.) The target values typically depend on your organization.
+![Defining KPI's](/images/PowerPivot_KPI_ProfitRatio.png)
+
+
+#### 3. PowerView
+
+PowerView allows us to create our executive dashboards wihtin Excel. If you cannot find PowerView in your Excel Toolbar Ribbon, you will need to customize your Ribbon using [these instructions](https://goo.gl/YXCH52).
+
+
+#### 4. PowerMap
+
 ### Creating measures for sales relation
 
 - Profit Ratio
@@ -79,7 +120,7 @@ The same procedures as for Tableau and Power BI Desktop apply here. We need to q
   ```
 - Sales Mark Up
   ```c
-  Sales Mark Up := SUM([Cost of Goods Sold (COGS)])/SUM([Sales])
+  Sales Mark Up := SUM([Sales])/SUM([Cost of Goods Sold (COGS)])
   ```
 - Previous Month Sales
   ```c
