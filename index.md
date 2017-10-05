@@ -116,7 +116,7 @@ Below is a sample outcome with KPIs added to the top section.
 
 3D Maps is an interesting tool to create geo-location based visualization. The objective is tocreate a video that visualizes the development of your measures over time and by region.
 The 3D Map tool can be access from the `Insert` tab.
-To create you video, you will need to create multiple sections, each with one or more Layers. You have controls over Layer titles, duration of each slide for the video, etc. See the image below for getting started and the video for seeing a simplified version of your output. Make sure to ultimately export your video as a mp4 data file and to post it on google classroom as part of your submission. 
+To create you video, you will need to create multiple sections, each with one or more Layers. You have controls over Layer titles, duration of each slide for the video, etc. See the image below for getting started and the video for seeing a simplified version of your output. Make sure to ultimately export your video as a mp4 data file and to post it on google classroom as part of your submission.
 
 ![Building 3D Map  ](images/3DMap_Layer_1.png)
 
@@ -136,7 +136,7 @@ To create you video, you will need to create multiple sections, each with one or
   ```
 - Sales Mark Up
   ```c
-  Sales Mark Up := SUM([Sales])/SUM([Cost of Goods Sold (COGS)])
+  Sales Mark Up := SUM([Sales])/SUM([Cost of Goods Sold (COGS)]) - 1
   ```
 - Previous Month Sales
   ```c
