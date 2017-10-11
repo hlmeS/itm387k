@@ -5,6 +5,7 @@
 - General announcements
   - [Introduction](#introduction)
 - Lab Assignments
+  - [Lab 5: Decision Tree for predicting MBA graduates' promotion ](#lab-5-decision-tree-with-rapidminer) --- new
   - [Lab4: Power BI in Excel](#lab-4-power-bi-in-excel) --- Updated 10/3
   - [Lab3b: Power BI - Part II](#lab-3b-power-bi---part-2) --- Updated 9/21
   - [Lab3a: Power BI - Part I](#lab-3a-power-bi---part-1) --- Updated 9/19
@@ -29,13 +30,64 @@ Don't be shy and **seek collaboration** with peers from different fields and bac
 <iframe width="800" height="600" src="https://bi-survey.com/d3/test/trendtimeresp.html" frameborder="0" allowFullScreen="true"></iframe>
 
 
+# Lab 5: Decision Tree with RapidMiner
 
+## Status
+
+In-Works, due 10/11
+
+## Intro
+
+Our next analytics series is on predictive analytics. In predictive analytics, the goal is to build a predictive model that can forecast a behavioral outcome given certain inputs to a system.
+
+Analogously to developing scientific models, such as Hooke's Law for springs where a spring's restoring force can be calculated in advance (predicted) based on the spring model (its stiffness) and the model input (its displacement), predictive models need to be learned from test data, and its performance evaluated by testing the model's predictive capabilities on new data (test data).
+
+In this first lab of our predictive analytics series, we will look at building a decision tree predictive model in Rapidminer and learn and test it using an MBA graduates' promotion data set.
+
+
+## Objective
+
+The objective is develop/train a decision tree model that can predict if an MBA student will receive a promotion after graduation, and to evaluate the efficacy of the model using a confusion matrix evaluated on an unlearned test set.
+
+## Task
+
+In this lab, we will learn how to process data, develop a simple predictive model (decision tree), and test and validate our model in RapidMiner Studio using the dataset attached.
+
+For this lab assignment, please create and submit: one decision tree with a training/test data validation results (confusion matrix) for the likelihood of getting a promotion as a MBA graduates in six months after the program completion. Append a short description of what the decision tree and confusion matrix tell you.
+
+Note: You need to upload three files. Please rename them as ITM387K_F17_Lab5_Name_DecisionTree_V1.0 and ITM387K_F17_Lab5_Name_ConfusionMatrix_V1.0 and
+ITM387K_F17_Lab5_Name_Results_V1.0
+
+
+## Dataset
+[MBA Promotion Dataset](https://goo.gl/MJ2eHs).
+
+
+## Guidelines
+
+### Process Modeling
+
+1. Data retrieval and filtering.
+  - ![Insert Data](images/RM_InsertData.png)
+  - ![Filter Data](images/RM_AddFilters.png)
+  - ![Set Role ](images/RM_SetRole.png)
+  - ![Summary step 1](images/RM_DataFilterRole.png)
+2. Summarize the first step into a subprocess
+  - ![Subprocess 1](images/RM_SubProcess_1.png)
+  - ![Subprocess 2](images/RM_SubProcess_2.png)
+3. Split data for training and testing.
+  - ![Split Data](images/RM_SplitData.png)
+4. Train model and evaluate performance by applying the model to test data
+  - ![Training and Performance](images/RM_DecisionTree_ApplyModel.png)
+5. Run the process
+  - ![Summary step 1](images/RM_CompProcess.png)
+### Results Evaluation
 
 # Lab 4: Power BI in Excel
 
 ## Status
 
-In-Works, due 10/4
+PAU
 
 ## Intro
 
@@ -63,12 +115,11 @@ Same as in Lab3a: [Coffee-Chain dataset](https://goo.gl/HQbUXr).
 
 ## Guidelines
 
-### Analysis procedures
+### Process design
 
-The same procedures as for Tableau and Power BI Desktop apply here. We need to query data (PowerQuery), build a model with calculated measures and KPIs (PowerPivot), and then visualize them in a dashboard (PowerView) and video (PowerMap).
+#### 1. Data Query and Transformation
 
-#### 1. Power Query
-
+Very similar to our previous visual analytics processes, we first need to access our data set and then model is's
 Querying data with PowerQuery is very similar to previous methods that we've seen so far, we need to select data to import, edit attributes (name, data types, etc.), merge attributes, or remove attributes, and then execute the query. The following pictures indicate some of the necessary steps.
 
 - Selecting the `From Table` option allows us to query exisiting tables in our Excel sheet. (Queries to external databases would be possible here too.)
@@ -194,7 +245,7 @@ If you feel stuck and don't know what to look at next in this analysis, maybe tr
 
 ## Status
 
-In-Works, due 9/25
+PAU
 
 ## Intro
 
@@ -315,7 +366,7 @@ If you've been having problems last class with date filtering/hierarchies, measu
 
 ## Status
 
-In-Works, due 9/20
+PAU
 
 ## Intro
 
