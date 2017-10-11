@@ -23,9 +23,9 @@
 
 Sometimes it can be easy mistake one for the other, but it's important to understand the meaning of each and differences between the two when evaluation predictive models. The illustration from  [this website](https://goo.gl/XMAZMv), shown below, illustrates the idea very well.
 
-![Accuracy vs. Precision]()
+![Accuracy vs. Precision](accuracy-vs-precision.jpg)
 
-The following definitions come also from [here](https://goo.gl/XMAZMv). Sometimes it's easy to forget the definitions, so it's good to review them now and then. 
+The following definitions come also from [here](https://goo.gl/XMAZMv). Sometimes it's easy to forget the definitions, so it's good to review them now and then.
 
 - **Precision:**
 	The quality of being reproducible in amount or performance
