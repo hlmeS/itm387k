@@ -12,23 +12,35 @@
   - [Lab 2: Tableau - Part II](#lab-2-tableau---part-2)
   - [Lab 1: Tableau - Part I](#lab-1-tableau---part-1) --- Updated 9/20
 - BI Concepts
-  - [BI Concept (9/29)](#bi-concept-of-the-week-929) ---new
+  - [BI Concept (10/6)](#bi-concept-of-the-week-106) --- new
+  - [BI Concept (9/29)](#bi-concept-of-the-week-929)
   - [BI Concept (9/22)](#bi-concept-of-the-week-922)
   - [BI Concept (9/13)](#bi-concept-of-the-week-913)
 
+# BI Concept of the week (10/6)
 
-# BI Concept of the week (9/29)
+## Accuracy vs. Precision
 
-## Cross-Disciplinary Collaboration
+Sometimes it can be easy mistake one for the other, but it's important to understand the meaning of each and differences between the two when evaluation predictive models. The illustration from  [this website](https://goo.gl/XMAZMv), shown below, illustrates the idea very well.
 
-Looking at the [2017 Business Trends](https://bi-survey.com/top-business-intelligence-trends-2017), we notice an increased importance in BI collaboration, for a good reason. As you have noticed during your Lab 3b, topic specific analyses can become difficult if one isn't yet familiar with operation procedures, objectives, goals, etc. of the topic of your analysis. At other times, you may be very familiar with the topic and know excactly which KPI's to compute, but aren't quite sure how to compute them. Although I'm sure each of you can learn all of the above, often you simply don't have the time.
+![Accuracy vs. Precision]()
 
-Both cases illustrate the beauty of cross-disciplinary collaboration in visual analytics. People with various skills and backgrounds (e.g. marketing, sales, management, engineering, IT, statistics, etc.) will observe different aspects in identical vizzes. Combining your resources and performing the Visual BI analysis collaboratively can thus be a powerful approach to creating powerful BI analytics results.
+The following definitions come also from [here](https://goo.gl/XMAZMv). Sometimes it's easy to forget the definitions, so it's good to review them now and then. 
 
-Don't be shy and **seek collaboration** with peers from different fields and backgrounds!
-
-<iframe width="800" height="600" src="https://bi-survey.com/d3/test/trendtimeresp.html" frameborder="0" allowFullScreen="true"></iframe>
-
+- **Precision:**
+	The quality of being reproducible in amount or performance
+- **Accuracy:**
+  The quality of being near to the true or desired value
+- **Mean:**
+  The average . Equation: Add the values and divide by the number of values. Of the set of values 2, 6, and 7, the sum is 15. There are 3 values, therefore 15 ÷ 3 = 5; the mean is 5.
+- **Median:**
+  The middle value in an ordered set of values
+  Of the set of values 2, 6, and 7, the median is 6.
+- **Mode:**
+  The most frequent value in a set of values
+Of the set of values 2, 6, and 7, there is no mode. Of the set of values 2, 6, 7, and 6, the mode is 6.
+- **Range:**
+  The change or difference between extremes in a set of values
 
 # Lab 5: Decision Tree with RapidMiner
 
@@ -92,6 +104,24 @@ ITM387K_F17_Lab5_Name_Results_V1.0
 
 
 ### Results Evaluation
+
+The following show some of the result of a sample run. It is your job as an anylists to interpret the meaning of the outcome and determine the model's usefulness.
+![Result 1](images/RM_Results_1.png)
+![Result 2](images/RM_Results_2.png)
+![Result 3](images/RM_Results_3.png)
+
+# BI Concept of the week (9/29)
+
+## Cross-Disciplinary Collaboration
+
+Looking at the [2017 Business Trends](https://bi-survey.com/top-business-intelligence-trends-2017), we notice an increased importance in BI collaboration, for a good reason. As you have noticed during your Lab 3b, topic specific analyses can become difficult if one isn't yet familiar with operation procedures, objectives, goals, etc. of the topic of your analysis. At other times, you may be very familiar with the topic and know excactly which KPI's to compute, but aren't quite sure how to compute them. Although I'm sure each of you can learn all of the above, often you simply don't have the time.
+
+Both cases illustrate the beauty of cross-disciplinary collaboration in visual analytics. People with various skills and backgrounds (e.g. marketing, sales, management, engineering, IT, statistics, etc.) will observe different aspects in identical vizzes. Combining your resources and performing the Visual BI analysis collaboratively can thus be a powerful approach to creating powerful BI analytics results.
+
+Don't be shy and **seek collaboration** with peers from different fields and backgrounds!
+
+<iframe width="800" height="600" src="https://bi-survey.com/d3/test/trendtimeresp.html" frameborder="0" allowFullScreen="true"></iframe>
+
 
 # Lab 4: Power BI in Excel
 
