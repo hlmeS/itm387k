@@ -67,20 +67,30 @@ ITM387K_F17_Lab5_Name_Results_V1.0
 
 ### Process Modeling
 
-1. Data retrieval and filtering.
-  - ![Insert Data](images/RM_InsertData.png)
-  - ![Filter Data](images/RM_AddFilters.png)
-  - ![Set Role ](images/RM_SetRole.png)
-  - ![Summary step 1](images/RM_DataFilterRole.png)
+1. Data retrieval and cleaning.
+  - We first insert data from our local filesystem.
+    ![Insert Data](images/RM_InsertData.png)
+  - Then we can apply a filter that removes all records where the promotion column (attribute) is missing.
+    ![Filter Data](images/RM_AddFilters.png)
+  - In order to train a predictive model using supervised learning, we need to define a label that determines what it is that we're trying to predict. In this case, it is the promotion status that we want to predict.
+    ![Set Role ](images/RM_SetRole.png)
+  - The following shows a summary of the data retrieval and cleaning process.
+    ![Summary step 1](images/RM_DataFilterRole.png)
 2. Summarize the first step into a subprocess
-  - ![Subprocess 1](images/RM_SubProcess_1.png)
-  - ![Subprocess 2](images/RM_SubProcess_2.png)
+  - Sometimes, it can be nice to summarize multiple blocks into subprocesses. We can do this here by selecting what we have so far for data retrieval and modeling and creating a subprocess.
+    ![Subprocess 1](images/RM_SubProcess_1.png)
+  - It's important to make sure that our examples are piped to the output of the subprocess. Otherwise nothing will be returned by the subprocess. (I like to think of this as functions in coding. You can write functions for a set of operations and then just define what to return.)
+    ![Subprocess 2](images/RM_SubProcess_2.png)
 3. Split data for training and testing.
-  - ![Split Data](images/RM_SplitData.png)
+  - A good split for training/testing data is about 70-30. The automatic splitting mode will randomize/shuffle the data before splitting. Rarely would you want to use a linear split. (This is important to know if you wanted to do this R or Python.)
+    ![Split Data](images/RM_SplitData.png)
 4. Train model and evaluate performance by applying the model to test data
-  - ![Training and Performance](images/RM_DecisionTree_ApplyModel.png)
+    - We can use the decision tree model in this example and train it with the training data. Then we apply the learned model to the yet unseen testing data, and evaluate the model's predictive performance. ![Training and Performance](images/RM_DecistionTree_ApplyModel.png)
 5. Run the process
-  - ![Summary step 1](images/RM_CompProcess.png)
+  - Once you have all your blocks together and connected all your results outputs, you can run the process.
+    ![Summary step 1](images/RM_CompProcess.png)
+
+
 ### Results Evaluation
 
 # Lab 4: Power BI in Excel
