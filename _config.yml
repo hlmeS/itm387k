@@ -1,1 +1,3 @@
 theme: jekyll-theme-cayman
+mathjax: TeX-AMS_HTML-full
+highlight: atom-one-dark
