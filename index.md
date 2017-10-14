@@ -23,7 +23,27 @@
 ## Confusion matrix: precision vs. recall
 
 Confusion matrices are commonly used to evaluate the performance of binomial (yes/no) classification models. The confusion matrix is typically a 3x3 matrix with column and row labels, which turns it into a 4x4 table. The first four values show the number of true positives, false positives, false negatives, and true negatives after applying your model on a test data set. (Adding up these four fields tells you how many predictions were made, or in other words, how many data points there are in a test set.) <br>
-The right-most column informs on the precision of the predictive model (one value for yes-predictions, one for no-predictions). The bottom-most row informs on the class recall of the predictive model (one value for the yes-recall rate, and one for no-recall rate). The calculations for the precision are $ Yes-Precision = \frac{TP}{TP+FP} $
+The right-most column informs on the precision of the predictive model (one value for yes-predictions, one for no-predictions). The bottom-most row informs on the class recall of the predictive model (one value for the yes-recall rate, and one for no-recall rate). The calculations for the precision are `Yes-Precision = TP/(TP+FP)` and `No-Precision =  TN / (FN + TN)`. Similarly, the recall rates can be calculated as `Yes-Recall = TP / (TP + FN)` and `No-Recall = TN / (FP + TN)`. Putting all this together, we obtain a matrix such as shown below.
+
+![Sample matrix from Lab 5 results.](images/confusion_matrix.png)
+**Figure:** Sample confusion matrix
+
+We can think of precision and recall also using the following questions:
+* _If the prediction is yes, how like is the prediction to be true? (If precision is high, we can trust the prediction.)_
+* _Of all the "yes" events that occurred in the test data, how many did we predict to occur? What's our chance of "catching" an occurring "yes" event. (If recall is high, it means that we caught most of them if not all.)_
+
+Consider the following examples for clarification.
+
+Difference of class recall and precision in the case of predicting a terror attack. <br> Assume that "yes" means that a terror attack happened or will happen. It follows that "no" means that an attack did not happen or will not happen.
+In this case the "yes"- recall describes how good your predictive model performed in predicting attacks that actually did happen. In other words, of all the attacks that happened, how many could we predict correctly? A 100% recall rate means that your prediction was correct for every attack that did occur.
+"Yes"- precision describes how much we can trust the model's prediction when it says that an attack is going to happen. In other words, out of all the predictions where we predicted yes, how many did actually happen?
+
+Difference of class recall and precision in the case of prediction cafe recommendations. <br> Imagine that you give each customer in a cafe a questionnaire during their visit that asks them to rate the cafe's look, ambience, service, quality of drinks/food, and whether they would recommend the cafe to their friend. (yes = "I would recommend this cafe", no = "No, I wouldn't recommend this cafe.") Now you've come up with a predictive model than can predict whether or not someone would recommend this cafe based on their opinion on look, ambience, service, and drink/food quality.
+A high "yes" - recall means that the model performed well in catching (correctly predicting) when a customer actually did recommend the cafe. Whereas a high precision means that if you predict that a customer recommends the cafe, chances are high that they actually will recommend the cafe.
+
+## F~1 - Score
+
+The F~1-score is a metric that we can use evaluate performance based on precision and recall together. It is the harmonic mean of precision and recall and thus defined as `F1-score = 2 * recall * precision / (precision + recall)`.
 
 # BI Concept of the week (10/6)
 
