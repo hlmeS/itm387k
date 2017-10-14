@@ -34,7 +34,6 @@ We can think of precision and recall also using the following questions:
 * _Of all the "yes" events that occurred in the test data, how many did we predict to occur? What's our chance of "catching" an occurring "yes" event. (If recall is high, it means that we caught most of them if not all.)_
 
 
-<br>
 
 **Consider the following examples for clarification.**
 
