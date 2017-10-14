@@ -1,8 +1,3 @@
----
-title: titles
-layout: post
----
-
 ### URL: hlmes.github.io/itm387k
 
 ### Table of Contents
