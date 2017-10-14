@@ -35,16 +35,16 @@ We can think of precision and recall also using the following questions:
 
 Consider the following examples for clarification.
 
-Difference of class recall and precision in the case of predicting a terror attack. <br> Assume that "yes" means that a terror attack happened or will happen. It follows that "no" means that an attack did not happen or will not happen.
-In this case the "yes"- recall describes how good your predictive model performed in predicting attacks that actually did happen. In other words, of all the attacks that happened, how many could we predict correctly? A 100% recall rate means that your prediction was correct for every attack that did occur.
+Difference of class recall and precision in the case of predicting a terror attack. <br> Assume that "yes" means that a terror attack happened or will happen. It follows that "no" means that an attack did not happen or will not happen. <br>
+In this case the "yes"- recall describes how good your predictive model performed in predicting attacks that actually did happen. In other words, of all the attacks that happened, how many could we predict correctly? A 100% recall rate means that your prediction was correct for every attack that did occur. You could call this the _"Better safe than sorry"_ classifier. <br>
 "Yes"- precision describes how much we can trust the model's prediction when it says that an attack is going to happen. In other words, out of all the predictions where we predicted yes, how many did actually happen?
 
-Difference of class recall and precision in the case of prediction cafe recommendations. <br> Imagine that you give each customer in a cafe a questionnaire during their visit that asks them to rate the cafe's look, ambience, service, quality of drinks/food, and whether they would recommend the cafe to their friend. (yes = "I would recommend this cafe", no = "No, I wouldn't recommend this cafe.") Now you've come up with a predictive model than can predict whether or not someone would recommend this cafe based on their opinion on look, ambience, service, and drink/food quality.
+Difference of class recall and precision in the case of prediction cafe recommendations. <br> Imagine that you give each customer in a cafe a questionnaire during their visit that asks them to rate the cafe's look, ambience, service, quality of drinks/food, and whether they would recommend the cafe to their friend. (yes = "I would recommend this cafe", no = "No, I wouldn't recommend this cafe.") <br> Now you've come up with a predictive model than can predict whether or not someone would recommend this cafe based on their opinion on look, ambience, service, and drink/food quality. <br>
 A high "yes" - recall means that the model performed well in catching (correctly predicting) when a customer actually did recommend the cafe. Whereas a high precision means that if you predict that a customer recommends the cafe, chances are high that they actually will recommend the cafe.
 
-## F~1 - Score
+## F<sub>1</sub> - Score
 
-The F~1-score is a metric that we can use evaluate performance based on precision and recall together. It is the harmonic mean of precision and recall and thus defined as `F1-score = 2 * recall * precision / (precision + recall)`.
+The F<sub>1</sub>-score is a metric that we can use evaluate performance based on precision and recall together. It is the harmonic mean of precision and recall and thus defined as `F1-score = 2 * recall * precision / (precision + recall)`.
 
 # BI Concept of the week (10/6)
 
