@@ -17,6 +17,14 @@
   - [BI Concept (9/22)](#bi-concept-of-the-week-922)
   - [BI Concept (9/13)](#bi-concept-of-the-week-913)
 
+
+# BI Concept of the week (10/13)
+
+## Confusion matrix: precision vs. recall
+
+Confusion matrices are commonly used to evaluate the performance of binomial (yes/no) classification models. The confusion matrix is typically a 3x3 matrix with column and row labels, which turns it into a 4x4 table. The first four values show the number of true positives, false positives, false negatives, and true negatives after applying your model on a test data set. (Adding up these four fields tells you how many predictions were made, or in other words, how many data points there are in a test set.) <br>
+The right-most column informs on the precision of the predictive model (one value for yes-predictions, one for no-predictions). The bottom-most row informs on the class recall of the predictive model (one value for the yes-recall rate, and one for no-recall rate). The calculations for the precision are \\( a+b \\)
+
 # BI Concept of the week (10/6)
 
 ## Accuracy vs. Precision
