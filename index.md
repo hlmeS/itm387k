@@ -36,35 +36,39 @@ In-Works, due 10/24
 
 ## Intro
 
-After having looked a binomial (binary) classification in predicitve analytics, we will now look at regression models that allow us to predict continuous outcomes (e.g. sales, profits, housing prices, etc.). Specifically, we will work apply the linear regression model, a rather simple, yet oftentimes powerful tool. To goal of lineary regression is to describe the relationship between one or more variables. For example, how do the number of bedrooms and house size relate do the market value of the house?
+After having looked a binomial (binary) classification in predicitve analytics, we will now look at regression models that allow us to predict continuous outcomes (e.g. sales, profits, housing prices, etc.). Specifically, we will work one applying the linear regression model, a rather simple, yet oftentimes powerful tool. To goal of linear regression is to describe the relationship between one or more variables. For example, how do the number of bedrooms and house size relate do the market value of the house?
 
 ## Objective
 
-The objective is develop/train a linear regression model that can describe the relationship between potential food truck profits and its location (the number of people living in the area) as well as the relationship between the number of bedrooms and house size relate do the market value of the house. We will then see how we can use the model for predictions.
+The objective is develop/train a linear regression model that can describe the relationship between potential food truck profits and its location (the number of people living in the area) as well as the relationship between the number of bedrooms, house size, and the market value of the house. We will then see how we can use the model for predictions.
 
 ## Task
 
-In this lab, we will investigate two scenarios, one for univariate lineary regression and one for multivariate linear regression. We will learn how to process data, develop a predictive linear regression , and test and validate our model in RapidMiner Studio.
+In this lab, we will investigate two scenarios, one for univariate linear regression and one for multivariate linear regression. We will learn how to process data, develop a predictive linear regression model, and test and validate our model in RapidMiner Studio.
 
 **Scenario A: Let's Start a Food Truck**<br>
 You want to open a new food truck but are undetermined where to do so. You've found a data set correlating profits of existing food trucks with the number of people living in the town/city where the food truck is located. Now you want to apply your knowledge of linear regression to create a predicate model that can tell you potential profits given any town with some population.
-The file FoodTruck_Data.txt contains the dataset predictive analytics problem.
+The file FoodTruck_Data.txt contains the dataset predictive analytics problem
+
+Use your model to predict the market value for a city with 70,000 people in it.
+
 
 **Scenario B: Let's Sell our House**<br>
 Imagine you want to sell your house and want to figure out what a good market price would be. You want to apply what you've learned about predictive modeling to solve this problem. You have collected recent information on recent houses sold (house size, number of bedrooms, and housing price), and now need to apply linear regression with multiple variables to predict a suitable sales price for your house. The file HonoluluHousingPrices.txt contains the dataset for this problem.
 
 Use your model to predict the market value of a 3 bedroom apartment with a size of 3000 sq. ft.
 
-
 **Notes**
 - Remember that using multiple variables (features) requires normalizing (Z-transformation) of each variable before training the model.
-- For each scenario, evaluate the performance of your linear regression (root mean square and absolute error) on an unseen test data set (80-20 split is recommended here). How "predictive" are your models?
+- For each scenario, evaluate the performance of your linear regression (root mean square and absolute error) on an unseen test data set. How "predictive" are your models?
 - For this assignment, submit a screenshot of your process, the results (model and errors), and a plot of the test data and model (using RapidMiner, Excel or Python).
-- You need to upload three files. Please rename them as
-  - ITM387K_F17_Lab5_LnameFinitial_DecisionTree_V1.0 and
-  - ITM387K_F17_Lab5_LnameFinitial_ConfusionMatrix_V1.0 and
-  - ITM387K_F17_Lab5_LnameFinital_Results_V1.0
-
+- You need to upload 2x three files. Please rename them as
+  - ITM387K_F17_Lab5A_LnameFinitial_LinRegModel_V1.0 and
+  - ITM387K_F17_Lab5A_LnameFinitial_Performance_V1.0 and
+  - ITM387K_F17_Lab5A_LnameFinital_Graph_V1.0
+  - ITM387K_F17_Lab5B_LnameFinitial_LinRegModel_V1.0 and
+  - ITM387K_F17_Lab5B_LnameFinitial_Performance_V1.0 and
+  - ITM387K_F17_Lab5B_LnameFinital_Graph_V1.0
 
 
 ## Dataset
@@ -78,14 +82,14 @@ Use your model to predict the market value of a 3 bedroom apartment with a size 
 
 1. The process modeling procedures are very similar to lab 5. You should end up with the following process for Scenario B (and similar for Scenario A).
   ![Process Overiew](images/lab6/LinReg_Process.png)
-2. The model parameters and node confugration are shown in the following images.
+2. The model parameters and node configuration are shown in the following images.
   - After retrieving the data, we set the role of the sales price as our label. (In supervised learning, the label is what we are trying to predict. )
   ![Set Role](images/lab6/LinReg_SetRole.png)
-  - When training multivariate linear regression model (model with more than one feature), we need to normalize our features to remove any bias from features. If we didn't do this, the model would naturally consider apartment size (about 2000-4000 sq.ft.) to be more significant than the number of bedrooms (around 0-5 bedrooms). The image belows shows how to apply the Z-score normalization for a subset of features. (I prefer to not normalize my label here.)
+  - When training multivariate linear regression models (models with more than one feature), we need to normalize our features to remove any bias from features. If we didn't do this, the model would naturally consider apartment size (about 2000-4000 sq.ft.) to be more significant than the number of bedrooms (around 0-5 bedrooms). The image below shows how to apply the Z-score normalization for a subset of features. (I prefer to not normalize my label.)
   ![Normalize](images/lab6/LinReg_Norm.png)
   - Once normalized, we can split the data into training and test data (between 60/40 and 80/20).
   ![Split Data](images/lab6/LinReg_Split.png)
-  - Having the training data, we will train out linear regression model. Make sure so set the polynomial degree to `1` and adjusting your coeggicient limits (`-/+ 1.0E8` seems like a good option here due to normalized features and large housing prices).
+  - Having the training data, we will train our linear regression model. Make sure to set the polynomial degree to `1` and adjust your coefficient limits (`-/+ 1.0E8` seems like a good option here due to normalized features and large housing prices).
   ![Polynomial Parameters](images/lab6/LinReg_PolyReg.png)
   - We will apply the learned regression line to the test data and evaluate the performance (use pregression performance here) using the root mean squared error and the absolute error.
   ![Performance Evaluation Parameters](images/lab6/LinReg_PerfParam.png)
@@ -97,8 +101,38 @@ Use your model to predict the market value of a 3 bedroom apartment with a size 
 ### Results Evaluation
 
 The following images show the results for our training and performance testing. The regression line's equation can be described as ![Result Polynomial](images/lab6/LinReg_ModelOut.png) <br><br>
-The root mean square error and absolute error on the test data are ![Result Performance](images/lab6/LinReg_Performance.png) <br><br> These errors were calculated based on these test data predictions: 
+The root mean square error and absolute error on the test data are ![Result Performance](images/lab6/LinReg_Performance.png) <br><br> These errors were calculated based on these test data predictions:
 ![Result Test Data](images/lab6/LinReg_ExampleOut.png)
+Plot the test data (labels and predictions) to visually display how good the model is.
+
+### Making Predictions
+
+Imagine you want to predict the housing price for a 3 bedroom / 3000 sq.ft. apartement using the results from B. In order to use the model, the regression line equation, we need to remember, that z-score features were used to train the model. This means that we need to convert our input to z-scores before we can plug them into our equations. The formulae for our z-scores were
+```
+Bedroom: z-score = (#bedrooms - average) / (stand. deviation)
+Size: z-score = (size - average) / (stand. deviation)
+```
+If we look at the data statistics in RapidMiner for the entire dataset (**make sure it's the entire data set, not just the training or test data set!**), we can simply retrieve the averages and standard deviations that we need here.
+```
+bedroom: average = 3.17 , stand. deviation = 0.761
+size: average = 2000, stand. deviation = 795
+```
+
+![Statistics View](images/lab6/LinReg_Stats.png)<br><br>
+Thus, our 3br/3000sq.ft input can be expressed as
+```
+Bedroom: z-score_bedroom = (3 - 3.17) / 0.761 = -0.223
+Size: z-score_size = (3000 - 2000) / 795 = 1.26
+```
+Now we can plug these numbers into our polynomal regression model from the results to make our prediction.
+```
+housing price
+= 111921 * z-score_size - 4056 * z-score_bedrooms + 338712
+= 111921 * 1.26 - 4056 * -0.223 + 338712
+= 480,600
+```
+**Thus, we can predict a housing price of about $0.5M for a 3 bedroom and 3000 sq.ft apartment.** 
+
 
 # BI Concept of the week (10/13)
 
