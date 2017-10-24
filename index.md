@@ -32,7 +32,7 @@ The following example (from [Dr. Susanne Still's](http://www2.hawaii.edu/~sstill
 
 ![Nature article](images/overfitting/overfitting_1.png)
 ![Nature graph](images/overfitting/overfitting_2.png)
-![Response to nature article](images/overfitting/overfitting_3.png)
+![Response to nature article](images/overfitting/overfitting_3.png | width=60)
 
 
 # Lab 6: Linear Regression with RapidMiner
