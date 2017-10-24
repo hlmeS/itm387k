@@ -87,13 +87,13 @@ Use your model to predict the market value of a 3 bedroom apartment with a size 
   ![Set Role](images/lab6/LinReg_SetRole.png)
   - When training multivariate linear regression models (models with more than one feature), we need to normalize our features to remove any bias from features. If we didn't do this, the model would naturally consider apartment size (about 2000-4000 sq.ft.) to be more significant than the number of bedrooms (around 0-5 bedrooms). The image below shows how to apply the Z-score normalization for a subset of features. (I prefer to not normalize my label.)
   ![Normalize](images/lab6/LinReg_Norm.png)
-  - Once normalized, we can split the data into training and test data (between 60/40 and 80/20).
+  - Once normalized, we can split the data into training and test data (between 60/40 and 80/20).<br>
   ![Split Data](images/lab6/LinReg_Split.png)
-  - Having the training data, we will train our linear regression model. Make sure to set the polynomial degree to `1` and adjust your coefficient limits (`-/+ 1.0E8` seems like a good option here due to normalized features and large housing prices).
+  - Having the training data, we will train our linear regression model. Make sure to set the polynomial degree to `1` and adjust your coefficient limits (`-/+ 1.0E8` seems like a good option here due to normalized features and large housing prices).<br>
   ![Polynomial Parameters](images/lab6/LinReg_PolyReg.png)
-  - We will apply the learned regression line to the test data and evaluate the performance (use pregression performance here) using the root mean squared error and the absolute error.
+  - We will apply the learned regression line to the test data and evaluate the performance (use pregression performance here) using the root mean squared error and the absolute error.<br>
   ![Performance Evaluation Parameters](images/lab6/LinReg_PerfParam.png)
-  - Connect the performance, model, test examples and training examples to out outputs and run the simulation. (If you want to visualize data outside of RapidMiner, e.g. Excel, Tableau, Python, etc., you can `Write to CSV` or `Write to Excel`.)
+  - Connect the performance, model, test examples and training examples to out outputs and run the simulation. (If you want to visualize data outside of RapidMiner, e.g. Excel, Tableau, Python, etc., you can `Write to CSV` or `Write to Excel`.)<br>
   ![Complete process](images/lab6/LinReg_Process.png)
 
 
@@ -131,7 +131,7 @@ housing price
 = 111921 * 1.26 - 4056 * -0.223 + 338712
 = 480,600
 ```
-**Thus, we can predict a housing price of about $0.5M for a 3 bedroom and 3000 sq.ft apartment.** 
+**Thus, we can predict a housing price of about $0.5M for a 3 bedroom and 3000 sq.ft apartment.**
 
 
 # BI Concept of the week (10/13)
