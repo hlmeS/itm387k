@@ -25,7 +25,14 @@
 
 ## Overfitting predictive models
 
-_Details coming soon_
+Training predictive models for the "best fit" for a limited set of historical training data gives rise to the problem of overfitting, which means that the model fits the training data very (or too) well but does not generalize well to yet unseen data. Overfitting can happen in various forms depending on the applied machine learning algorithms (e.g. linear regression, polynomial regression, K-Mean clustering, Decision Tree classification, etc.), one form to look out for with linear regression is the generalization of the model to range of values in the feature space that is far away from the training data's feature's value range.
+For example, if you train a model for a certain time range (e.g. past 10 years of the company's sales from  2007-2017), your model will not generalize well for predicting sales for 2117. <br><br>
+
+The following example (from [Dr. Susanne Still's](http://www2.hawaii.edu/~sstill/index.html) machine learning class) helps me remember this idea: <br>
+
+![Nature article](images/overfitting/overfitting_1.png)
+![Nature graph](images/overfitting/overfitting_2.png)
+![Response to nature article](images/overfitting/overfitting_3.png)
 
 
 # Lab 6: Linear Regression with RapidMiner
