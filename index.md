@@ -89,17 +89,16 @@ Use your model to predict the market value of a 3 bedroom apartment with a size 
   ![Polynomial Parameters](images/lab6/LinReg_PolyReg.png)
   - We will apply the learned regression line to the test data and evaluate the performance (use pregression performance here) using the root mean squared error and the absolute error.
   ![Performance Evaluation Parameters](images/lab6/LinReg_PerfParam.png)
-  - Connect the performance, model, test examples and training examples to out outputs and run the simulatino.
+  - Connect the performance, model, test examples and training examples to out outputs and run the simulation. (If you want to visualize data outside of RapidMiner, e.g. Excel, Tableau, Python, etc., you can `Write to CSV` or `Write to Excel`.)
   ![Complete process](images/lab6/LinReg_Process.png)
-3. 
+
 
 
 ### Results Evaluation
 
-The following show some of the result of a sample run. It is your job as an anylists to interpret the meaning of the outcome and determine the model's usefulness.
-![Result 1](images/RM_Results_1.png)
-![Result 2](images/RM_Results_2.png)
-![Result 3](images/RM_Results_3.png)
+The following images show the results for our training and performance testing. The regression line's equation can be described as ![Result Polynomial](images/lab6/LinReg_ModelOut.png) <br><br>
+The root mean square error and absolute error on the test data are ![Result Performance](images/lab6/LinReg_Performance.png) <br><br> These errors were calculated based on these test data predictions: 
+![Result Test Data](images/lab6/LinReg_ExampleOut.png)
 
 # BI Concept of the week (10/13)
 
