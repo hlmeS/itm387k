@@ -5,19 +5,101 @@
 - General announcements
   - [Introduction](#introduction)
 - Lab Assignments
-  - [Lab 5: Decision Tree for predicting MBA graduates' promotion ](#lab-5-decision-tree-with-rapidminer) --- new
+  - [Lab 6: Linear Regression with RapidMiner](#lab-6-linear-regression-with-rapidminer) --- new
+  - [Lab 5: Decision Tree for predicting MBA graduates' promotion ](#lab-5-decision-tree-with-rapidminer) --- Updated 10/13
   - [Lab4: Power BI in Excel](#lab-4-power-bi-in-excel) --- Updated 10/3
   - [Lab3b: Power BI - Part II](#lab-3b-power-bi---part-2) --- Updated 9/21
   - [Lab3a: Power BI - Part I](#lab-3a-power-bi---part-1) --- Updated 9/19
   - [Lab 2: Tableau - Part II](#lab-2-tableau---part-2)
   - [Lab 1: Tableau - Part I](#lab-1-tableau---part-1) --- Updated 9/20
 - BI Concepts
-  - [BI Concept (10/6)](#bi-concept-of-the-week-1013) --- new
+  - [BI Concept (10/20)](#bi-concept-of-the-week-1020) --- new
+  - [BI Concept (10/13)](#bi-concept-of-the-week-1013)
   - [BI Concept (10/6)](#bi-concept-of-the-week-106)
   - [BI Concept (9/29)](#bi-concept-of-the-week-929)
   - [BI Concept (9/22)](#bi-concept-of-the-week-922)
   - [BI Concept (9/13)](#bi-concept-of-the-week-913)
 
+
+# BI Concept of the week (10/20)
+
+## Overfitting predictive models
+
+_Details coming soon_
+
+
+# Lab 6: Linear Regression with RapidMiner
+
+## Status
+
+In-Works, due 10/24
+
+## Intro
+
+After having looked a binomial (binary) classification in predicitve analytics, we will now look at regression models that allow us to predict continuous outcomes (e.g. sales, profits, housing prices, etc.). Specifically, we will work apply the linear regression model, a rather simple, yet oftentimes powerful tool. To goal of lineary regression is to describe the relationship between one or more variables. For example, how do the number of bedrooms and house size relate do the market value of the house?
+
+## Objective
+
+The objective is develop/train a linear regression model that can describe the relationship between potential food truck profits and its location (the number of people living in the area) as well as the relationship between the number of bedrooms and house size relate do the market value of the house. We will then see how we can use the model for predictions.
+
+## Task
+
+In this lab, we will investigate two scenarios, one for univariate lineary regression and one for multivariate linear regression. We will learn how to process data, develop a predictive linear regression , and test and validate our model in RapidMiner Studio.
+
+**Scenario A: Let's Start a Food Truck**<br>
+You want to open a new food truck but are undetermined where to do so. You've found a data set correlating profits of existing food trucks with the number of people living in the town/city where the food truck is located. Now you want to apply your knowledge of linear regression to create a predicate model that can tell you potential profits given any town with some population.
+The file FoodTruck_Data.txt contains the dataset predictive analytics problem.
+
+**Scenario B: Let's Sell our House**<br>
+Imagine you want to sell your house and want to figure out what a good market price would be. You want to apply what you've learned about predictive modeling to solve this problem. You have collected recent information on recent houses sold (house size, number of bedrooms, and housing price), and now need to apply linear regression with multiple variables to predict a suitable sales price for your house. The file HonoluluHousingPrices.txt contains the dataset for this problem.
+
+Use your model to predict the market value of a 3 bedroom apartment with a size of 3000 sq. ft.
+
+
+**Notes**
+- Remember that using multiple variables (features) requires normalizing (Z-transformation) of each variable before training the model.
+- For each scenario, evaluate the performance of your linear regression (root mean square and absolute error) on an unseen test data set (80-20 split is recommended here). How "predictive" are your models?
+- For this assignment, submit a screenshot of your process, the results (model and errors), and a plot of the test data and model (using RapidMiner, Excel or Python).
+- You need to upload three files. Please rename them as
+  - ITM387K_F17_Lab5_LnameFinitial_DecisionTree_V1.0 and
+  - ITM387K_F17_Lab5_LnameFinitial_ConfusionMatrix_V1.0 and
+  - ITM387K_F17_Lab5_LnameFinital_Results_V1.0
+
+
+
+## Dataset
+[Food Truck](https://goo.gl/GjwLuu) <br>
+[Housing Prices](https://goo.gl/ghgvAX)
+
+
+## Guidelines
+
+### Process Modeling
+
+1. The process modeling procedures are very similar to lab 5. You should end up with the following process for Scenario B (and similar for Scenario A).
+  ![Process Overiew](images/lab6/LinReg_Process.png)
+2. The model parameters and node confugration are shown in the following images.
+  - After retrieving the data, we set the role of the sales price as our label. (In supervised learning, the label is what we are trying to predict. )
+  ![Set Role](images/lab6/LinReg_SetRole.png)
+  - When training multivariate linear regression model (model with more than one feature), we need to normalize our features to remove any bias from features. If we didn't do this, the model would naturally consider apartment size (about 2000-4000 sq.ft.) to be more significant than the number of bedrooms (around 0-5 bedrooms). The image belows shows how to apply the Z-score normalization for a subset of features. (I prefer to not normalize my label here.)
+  ![Normalize](images/lab6/LinReg_Norm.png)
+  - Once normalized, we can split the data into training and test data (between 60/40 and 80/20).
+  ![Split Data](images/lab6/LinReg_Split.png)
+  - Having the training data, we will train out linear regression model. Make sure so set the polynomial degree to `1` and adjusting your coeggicient limits (`-/+ 1.0E8` seems like a good option here due to normalized features and large housing prices).
+  ![Polynomial Parameters](images/lab6/LinReg_PolyReg.png)
+  - We will apply the learned regression line to the test data and evaluate the performance (use pregression performance here) using the root mean squared error and the absolute error.
+  ![Performance Evaluation Parameters](images/lab6/LinReg_PerfParam.png)
+  - Connect the performance, model, test examples and training examples to out outputs and run the simulatino.
+  ![Complete process](images/lab6/LinReg_Process.png)
+3. 
+
+
+### Results Evaluation
+
+The following show some of the result of a sample run. It is your job as an anylists to interpret the meaning of the outcome and determine the model's usefulness.
+![Result 1](images/RM_Results_1.png)
+![Result 2](images/RM_Results_2.png)
+![Result 3](images/RM_Results_3.png)
 
 # BI Concept of the week (10/13)
 
@@ -77,7 +159,7 @@ Of the set of values 2, 6, and 7, there is no mode. Of the set of values 2, 6, 7
 
 ## Status
 
-In-Works, due 10/11
+PAU
 
 ## Intro
 
