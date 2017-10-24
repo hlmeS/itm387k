@@ -80,18 +80,18 @@ Use your model to predict the market value of a 3 bedroom apartment with a size 
 
 ### Process Modeling
 
-1. The process modeling procedures are very similar to lab 5. You should end up with the following process for Scenario B (and similar for Scenario A).
+1. The process modeling procedures are very similar to lab 5. You should end up with the following process for Scenario B (and similar for Scenario A).<br>
   ![Process Overiew](images/lab6/LinReg_Process.png)
 2. The model parameters and node configuration are shown in the following images.
-  - After retrieving the data, we set the role of the sales price as our label. (In supervised learning, the label is what we are trying to predict. )
+  - After retrieving the data, we set the role of the sales price as our label. (In supervised learning, the label is what we are trying to predict. )<br>
   ![Set Role](images/lab6/LinReg_SetRole.png)
-  - When training multivariate linear regression models (models with more than one feature), we need to normalize our features to remove any bias from features. If we didn't do this, the model would naturally consider apartment size (about 2000-4000 sq.ft.) to be more significant than the number of bedrooms (around 0-5 bedrooms). The image below shows how to apply the Z-score normalization for a subset of features. (I prefer to not normalize my label.)
+  - When training multivariate linear regression models (models with more than one feature), we need to normalize our features to remove any bias from features. If we didn't do this, the model would naturally consider apartment size (about 2000-4000 sq.ft.) to be more significant than the number of bedrooms (around 0-5 bedrooms). The image below shows how to apply the Z-score normalization for a subset of features. (I prefer to not normalize my label.)<br>
   ![Normalize](images/lab6/LinReg_Norm.png)
   - Once normalized, we can split the data into training and test data (between 60/40 and 80/20).<br>
   ![Split Data](images/lab6/LinReg_Split.png)
   - Having the training data, we will train our linear regression model. Make sure to set the polynomial degree to `1` and adjust your coefficient limits (`-/+ 1.0E8` seems like a good option here due to normalized features and large housing prices).<br>
   ![Polynomial Parameters](images/lab6/LinReg_PolyReg.png)
-  - We will apply the learned regression line to the test data and evaluate the performance (use pregression performance here) using the root mean squared error and the absolute error.<br>
+  - We will apply the learned regression line to the test data and evaluate the performance (use pregression performance here) using the root mean squared error and the absolute error.<br><br>
   ![Performance Evaluation Parameters](images/lab6/LinReg_PerfParam.png)
   - Connect the performance, model, test examples and training examples to out outputs and run the simulation. (If you want to visualize data outside of RapidMiner, e.g. Excel, Tableau, Python, etc., you can `Write to CSV` or `Write to Excel`.)<br>
   ![Complete process](images/lab6/LinReg_Process.png)
@@ -100,8 +100,8 @@ Use your model to predict the market value of a 3 bedroom apartment with a size 
 
 ### Results Evaluation
 
-The following images show the results for our training and performance testing. The regression line's equation can be described as ![Result Polynomial](images/lab6/LinReg_ModelOut.png) <br><br>
-The root mean square error and absolute error on the test data are ![Result Performance](images/lab6/LinReg_Performance.png) <br><br> These errors were calculated based on these test data predictions:
+The following images show the results for our training and performance testing. The regression line's equation can be described as <br>![Result Polynomial](images/lab6/LinReg_ModelOut.png) <br><br>
+The root mean square error and absolute error on the test data are <br>![Result Performance](images/lab6/LinReg_Performance.png) <br><br> These errors were calculated based on these test data predictions:<br>
 ![Result Test Data](images/lab6/LinReg_ExampleOut.png)
 Plot the test data (labels and predictions) to visually display how good the model is.
 
