@@ -5,7 +5,9 @@
 - General announcements
   - [Introduction](#introduction)
 - Lab Assignments
-  - [Lab 6: Linear Regression with RapidMiner](#lab-6-linear-regression-with-rapidminer) --- new
+  - [Lab 8: Twitter Sentiment Analysis with RapidMiner](#lab-8-twitter-sentiment-analysis-with-rapidminer)  --- new
+  - [Lab 7: K-Mean Clustering with RapidMiner](#lab-7-k-mean-clustering-with-RapidMiner)
+  - [Lab 6: Linear Regression with RapidMiner](#lab-6-linear-regression-with-rapidminer) --- Updated 10/20
   - [Lab 5: Decision Tree for predicting MBA graduates' promotion ](#lab-5-decision-tree-with-rapidminer) --- Updated 10/13
   - [Lab4: Power BI in Excel](#lab-4-power-bi-in-excel) --- Updated 10/3
   - [Lab3b: Power BI - Part II](#lab-3b-power-bi---part-2) --- Updated 9/21
@@ -20,6 +22,68 @@
   - [BI Concept (9/22)](#bi-concept-of-the-week-922)
   - [BI Concept (9/13)](#bi-concept-of-the-week-913)
 
+
+
+
+# Lab 7: K-Mean Clustering with Rapidminer
+
+## Status
+
+PAU
+
+## Intro
+
+Oftentimes, we want to find patterns in customer and business data to identify customer and market segments that we can target in our sales and marketing efforts. The difficulty with this is that the underlying characteristics of each segment are unknown; that is, one may wonder which variables can help in differentatiation customer groups. Unsupervised learning clustering algorithms can help us with this. More specifically, we will look at using K-Means clustering for identifying market segments using customer survey data. Similar methods also apply to many applications outside of the realm of business applications.
+
+## Objective
+
+The objective is to use the K-Mean clustering method to identify k distinct customer segments for our organization. We will use customers perception data of either the Honolulu Coffee Company or Hawaiian Airlines dataset to do so. Customer segments should then be visually displayed for the marketing department using Tableau.
+
+## Task
+
+In this group lab, you have the choice between the two aforementioned data sets. Both data sets contain customer perception data that you need to use and select on in you clustering analysis. Your task is thus to **build a predictive model in RapidMiner** using the selected dataset and the K-Mean cluster method and select the attributes and cluster numbers for your segmentation analysis. Your understanding of the modeled domain and performance metrics will help you identify appropriate clusters, which you can then rename with descriptive titles (e.g. novelty seeker, experimenter, comfortable flyers, flight searchers, explorer, oldies, richies, etc.).
+Once identified, please **visualize your clusters in Tableau** with the new descriptive titles as aliases. Make sure that you're getting your point across in Tableau of what characterizes each clusters. You are free to choose any type of visualization and presentation format (single viz, dashboard, or story) of your liking.
+Please share your findings in a group report following the same format from the first report. Write your report as if it was to be read by the marketing department of your organization, so please ensure that your data-driven, actionable insights are presented clearly and convincingly!
+
+**Notes**
+Please ask yourself the following questions when working on this assignment, especially when writing the report.
+- Who is your audience?
+- What do they care about?
+- How does your analysis help them? Does your analysis provide actionable insights?
+- What is the bias to your model? What are the models limitations?
+- For this assignment, each student should submit the group report with RapidMiner screenshots and Tableau links in the Appendix.
+- If looking at the Tableau graphics online provides no added value–i.e. there are no interactive features, no story, etc.–then please integrate the visualizations in the report directly.
+
+
+## Dataset
+[Honolulu Coffee Company](https://goo.gl/Xxp3ty) <br>
+[Hawaiian Airlines](https://goo.gl/yBSaK3)
+
+
+## Guidelines
+
+### Process Modeling
+
+1. The process modeling procedures are very similar to previous labs.<br>
+  ![Process Overiew](images/lab7/kmean_process.png)
+2. Prior to configuring your clustering block, you want to select the attributes that you'd like to use for the clustering algorithm. This step demands basic  understanding of the domain (e.g. coffee shop sales, airlines) as well as iterative testing. The selection of attributes will be the bias of your clustering algorithm, so make sure to put some thought into it. (The selection shown in the image below was just for demonstrative purposes.)<br>
+  ![Attribute Selection](images/lab7/kmean_selection.png)
+3. The kmean, and data do similarity parameters are shown in the following images.
+  - We set the number of clusters, k, to the number of segments that we suspect to best represent our domain. We select the squared euclidean distance as our similarity measure. <br>
+  ![Configuring clustering node](images/lab7/kmean_clusteringProp.png)
+  - The data to similarity block can just be set to the same distance measure as selected for the clustering algorithm above. <br>
+  ![Data to Similarity node](images/lab7/kmean_dataToSimilarity.png)
+3. In order to visualize our results in Tableau, we need to write them to an Excel, or similar, file. Before doing so, it'd be nice to have our data back in it's non-normalized form. To do so, we simply concatenate the original attributes with the normalized attributes used for clustering. This works well with the `join` operator because we did not change the order of our input data. We just need to make sure that the we do not remove duplicate attributes, as shown below: <br>
+  ![Joining normalized and nonnormalized data. ](images/lab7/kmean_join.png)
+
+### Results Evaluation
+During the process modeling and tweaking of our governing parameters, i.e. number of clusters and attribute selection, we can use RapidMiners Results views to evaluate the model adequacy.
+1. We can look the the model overview to get a general idea of the clustering. <br>
+  ![Results view of the model](images/lab7/kmean_model.png)
+2. A further look at the cluster plot or centroid table shows the differences between the clusters. A nicer version of this in Tableau may be a good start for visualizations as well. <br>
+  ![Cluster plot](images/lab7/kmean_k-plot.png)
+3. The cluster density performance analysis can help decide which attributes provide "denser" segments. Comparing cluster densities with varying number of clusters, e.g. k = 1, 2, 3, 4, 5, etc., can be misleading as a higher number of clusters will naturally give higher densities in smaller clusters. It is thus important to understand the domain and select a reasonable number of clusters that can also help the marketing department in their efforts. <br>
+  ![Cluster density performance](images/lab7/k-mean_performance.png)
 
 # BI Concept of the week (10/20)
 
@@ -39,7 +103,7 @@ The following example (from [Dr. Susanne Still's](http://www2.hawaii.edu/~sstill
 
 ## Status
 
-In-Works, due 10/24
+PAU
 
 ## Intro
 
