@@ -23,6 +23,86 @@
   - [BI Concept (9/13)](#bi-concept-of-the-week-913)
 
 
+# Lab 8: Twitter Sentiment Analysis with RapidMiner
+
+## Status
+
+In Works, due 11/14
+
+## Intro
+
+As consumers ourselves, we understand the power of opinions: opionions about products, opinions about companies, opinions about politicians, etc. As business analysts, we can use opinions to our advantage to either analyse the status quo (e.g. how did people respond to the latest product releasem or media releaste?) or to make predictions (e.g. who will win the election?). In BI terms, this is referred to as **Sentiment Analysis**. In this lab, we will look explore sentiment analysis for crowdsourced data (Twitter data).
+
+## Objective
+
+The objective of this lab is to use a sentiment analysis tool in RapidMiner to analyze (or predict) a topic of your own personal interest. We will use Twitter data as our data source and the AYLIEN text analysis tool for sentiment analysis. Whether it's the latest tech item, your favorite sports team, the company you work for, or latest topics in politics, you are free to define your BI objectives and seek answers with tools shown in class.
+
+
+## Task
+
+This assignment requires that you to use RapidMiner extensions for Data Mining (Twitter) and Sentiment Analysis (Text Analysis by AYLIEN). You need to have a twitter account as well as an AYLIEN API key (sign up [here](https://developer.aylien.com/) - up to 1,000 calls per day free). We learned in class (a) how to download twitter data for a specific query. (b) clean the data, (c) run sentiment analysis, (d) aggregate the results, and finally (e) summarize data using Chart tab.
+
+To complete this assignment, you need to submit your final charts containing the count for polarity and subjectivity of the downloaded tweets and a short explanation of the subject of your analysis and your results. Make sure to clearly state your BI objectives and outcomes.
+
+**Notes**
+- You may choose a topic of your own interests.
+- Make sure that your final twitter query should have at least 500 tweets.
+- Since you are limited by 1000 calls per day, make sure to test with less tweets in building your process.
+- I'd recommend testing with as little as 10 tweets and then scale it to 500+ when you have all parameters finalized.
+- Using breakpoints after you Twitter query and data processing is also recommended.
+
+## Guidelines
+
+Your minimal overall process should look as follows containing your Twitter query, attribute selection, and text analysis block. <br>
+
+![Process Overiew](images/lab8/sentiment_process.png)
+
+### Twitter API and data mining
+In order for us to use the Twitter node, we need to configure a connection first. Under the node parameter, either select an exisiting connection or create a new connection by clicking on the button with the Twitter icon. You will need an exisiting twitter account and should simply follow the guided steps in the authentication steps. Once completed, you should have your RapidMiner-Twitter connection ready to go: </br>
+![Twitter API](images/lab8/sentiment_twitterAPI.png)
+
+Depending on your BI objective, you can either use the `Search Twitter` node or the `Get Twitter User Statuses` node. If you go with the `Seach Twitter` block for example, you would want to configure your query for your topic of interest and restrict the language to English tweets only as shown below:
+
+![Twitter Parameters](images/lab8/sentiment_twitter_params.png)
+
+You can use the `-http -https -RT` notation in your query to filter tweets that contain links (`http` or `https`) or are labeled as re-tweets (`RT`).
+
+The output of your twitter search is similar to what's shown below. You can choose to only filter the attribute of interests for you analysis view in the end to make your results view cleaner.
+
+![Twitter Parameters](images/lab8/sentiment_twitterOut.png)
+
+### AYLIEN API and sentiment analysis
+As aforementioned, you need to create an API key for the AYLIEN text analysis block [here](https://developer.aylien.com/). Then you also need to install the AYLIEN text analysis plugin in RapidMiner: <br>
+
+![AYLIEN installation](images/lab8/sentiment_AYLIEN_install.png)
+
+Once installed and added to the process, you can add your key to RapidMiner by creating a new connectino from the text analysis parameter settings.
+
+![AYLIEN key](images/lab8/sentiment_aylien_api.png)
+
+In your node parameter configuration, set the analysis attribute to `Text` (this is the column name of your tweet texts), and set the sentiment mode to `tweet` as there are different algorithms depending on the length of the text that you're analyzing.
+
+![AYLIEN parameters](images/lab8/sentiment_aylien_param.png)
+
+_ *Note:* RapidMiner will send each tweet to the AYLIEN server, where their algorithms determine the polarity and susbjectiviy for each tweet and return the subjectivity, polarity, and respective confidences. Each tweet is counted as 1 call and you are limited to 60 calls per minute and 1000 per day. _
+
+### Process
+
+Adding breakpoints to your nodes, e.g. your `Search Twitter` node, can help to review search results before sending them over to AYLIEN for analysis. You can do so by right-clicking on your node, and selecting the `Add Breakpoint After` option. When  you run your process with breakpoints, it will stop at each breakpoint and show you the output of that node as a result. You can either select to resume your process to finish the analysis or stop the process if you want to make modifications.
+
+### Results
+
+In your results tab, you want to look at the data, statistics, and charts during your analysis. The data tab can show you the classifications and confidences for each tweet, which help you understand the efficacy of the sentiment analysis on an individual level and what problems the algorithms may or may not have.
+
+![Data View](images/lab8/sentiment_classifications.png)
+
+The statistics view is interesting because it shows use the histograms for classifications and confidences. As shown below, for this example, the subjectivity could be determined with high confidence, wherase the polarity was often predicted with very low confidence. This information is important for the evaluation of the validity of the results. In other words, can we trust our results? Are parts of the analysis stronger than others?
+
+![Statistics View](images/lab8/sentiment_confidences.png)
+
+Lastly, we can visualize our results using pie or stack column charts. Make sure to select the right attributes for your chart parameters; that is, group your columns by subjectivity or polarity and stack your columns by polarity or subjectivity. The aggregation should be set to `count`.
+
+![Data View](images/lab8/sentiment_viz.png)
 
 
 # Lab 7: K-Mean Clustering with Rapidminer
@@ -83,7 +163,7 @@ During the process modeling and tweaking of our governing parameters, i.e. numbe
 2. A further look at the cluster plot or centroid table shows the differences between the clusters. A nicer version of this in Tableau may be a good start for visualizations as well. <br>
   ![Cluster plot](images/lab7/kmean_k-plot.png)
 3. The cluster density performance analysis can help decide which attributes provide "denser" segments. Comparing cluster densities with varying number of clusters, e.g. k = 1, 2, 3, 4, 5, etc., can be misleading as a higher number of clusters will naturally give higher densities in smaller clusters. It is thus important to understand the domain and select a reasonable number of clusters that can also help the marketing department in their efforts. <br>
-  ![Cluster density performance](images/lab7/k-mean_performance.png)
+  ![Cluster density performance](images/lab7/kmean_performance.png)
 
 # BI Concept of the week (10/20)
 
