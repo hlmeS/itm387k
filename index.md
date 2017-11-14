@@ -31,7 +31,7 @@ In Works, due 11/14
 
 ## Intro
 
-As consumers, we understand the power of opinions: opionions about products, opinions about companies, opinions about politicians, etc. As business analysts, we can use opinions to our advantage to either analyze the status quo (e.g. how did people respond to the latest product or media releae?) or to make predictions (e.g. who will win the election?). In BI terms, this is referred to as **Sentiment Analysis**. In this lab, we will explore sentiment analysis for crowdsourced data (Twitter data).
+As consumers, we understand the power of opinions: opionions about products, opinions about companies, opinions about politicians, etc. As business analysts, we can use opinions to our advantage to either analyze the status quo (e.g. how did people respond to the latest product or media release?) or to make predictions (e.g. who will win the election?). In BI terms, this is referred to as **Sentiment Analysis**. In this lab, we will explore sentiment analysis for crowdsourced data (Twitter data).
 
 ## Objective
 
