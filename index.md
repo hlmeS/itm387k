@@ -35,7 +35,7 @@ As consumers, we understand the power of opinions: opionions about products, opi
 
 ## Objective
 
-The objective of this lab is to use a sentiment analysis tool in RapidMiner to analyze (or predict) a topic of your own personal interest. We will use Twitter data as our data source and the AYLIEN text analysis tool for sentiment analysis. Whether it's the latest tech item you want, or sports team, company, celebrity, politician, news story or ongoing topic in  politics that interests you, you are free to define your BI objectives (defined by a set of BI questions) and seek answers with tools shown in class.
+The objective of this lab is to use a sentiment analysis tool in RapidMiner to analyze (or predict) a topic of your own personal interest. We will use Twitter data as our data source and the AYLIEN text analysis tool for sentiment analysis. Whether it's the latest tech item you want, or sports team, company, celebrity, politician, news story or ongoing topic that interests you, you are free to define your BI objectives (defined by a set of BI questions) and seek answers with tools shown in class.
 
 
 ## Task
@@ -67,7 +67,7 @@ Depending on your BI objective, you can either use the `Search Twitter` node or 
 
 You can use the `-http -https -RT` notation in your query to filter tweets that contain links (`http` or `https`) or are labeled as re-tweets (`RT`).
 
-The output of your twitter search is similar to what's shown below. You can choose to only filter the attribute of interests for you analysis view in the end to make your results view cleaner.
+The output of your twitter search is similar to what's shown below. You can choose to only filter the attribute of interests for your analysis view in the end.
 
 ![Twitter Parameters](images/lab8/sentiment_twitterOut.png)
 
@@ -80,11 +80,11 @@ Once installed and added to the process, you can add your key to RapidMiner by c
 
 ![AYLIEN key](images/lab8/sentiment_aylien_api.png)
 
-In your node parameter configuration, set the analysis attribute to `Text` (this is the column name of your tweet texts), and set the sentiment mode to `tweet` as there are different algorithms depending on the length of the text that you're analyzing.
+In your node parameter configuration, set the analysis attribute to `Text` (this is the default column name of your tweet contents), and set the sentiment mode to `tweet` as there are different algorithms depending on the length of the text that you're analyzing.
 
 ![AYLIEN parameters](images/lab8/sentiment_aylien_param.png)
 
-_ ***Note:*** RapidMiner will send each tweet to the AYLIEN server, where their algorithms determine the polarity and susbjectiviy for each tweet and return the subjectivity, polarity, and respective confidences. Each tweet is counted as 1 call and you are limited to 60 calls per minute and 1000 per day. _
+_**Note:** RapidMiner will send each tweet to the AYLIEN server, where their algorithms determine the polarity and susbjectiviy for each tweet and return the subjectivity, polarity, and respective confidences. Each tweet is counted as 1 call and you are limited to 60 calls per minute and 1000 per day._
 
 ### Process
 
