@@ -5,7 +5,7 @@
 - General announcements
   - [Introduction](#introduction)
 - Lab Assignments
-  - [Lab 8: Twitter Sentiment Analysis with RapidMiner](#lab-9-web-analytics-with-google-analytics)
+  - [Lab 9: Web Analytics with Google Analytics](#lab-9-web-analytics-with-google-analytics)
   - [Lab 8: Twitter Sentiment Analysis with RapidMiner](#lab-8-twitter-sentiment-analysis-with-rapidminer)
   - [Lab 7: K-Mean Clustering with RapidMiner](#lab-7-k-mean-clustering-with-RapidMiner)
   - [Lab 6: Linear Regression with RapidMiner](#lab-6-linear-regression-with-rapidminer) --- Updated 10/20
@@ -45,7 +45,7 @@ To conclude our series on Social/Web Analytics, we will look Google Analytics fo
 
 ## Objective
 
-In this lab, we will try to answer the aforementioned questions for the case of the current [HICSS conference website](http://hicss.hawaii.edu) using [Google Analytics (GA)](https://analytics.google.com). We will see how GA can be added to any website to start tracking user interactions, create dashboards and reports within GA, and how to analyze GA data using visual analytics platform such as Tableau or [Google Data Studio](https://datastudio.google.com). Applications of Google Analytics for website anlytics range from technical support (e.g. how to restructure/redesign/improvie the website?) to providing marketing insights (e.g. what to advertise to whom to get them to the conference?). 
+In this lab, we will try to answer the aforementioned questions for the case of the current [HICSS conference website](http://hicss.hawaii.edu) using [Google Analytics (GA)](https://analytics.google.com). We will see how GA can be added to any website to start tracking user interactions, create dashboards and reports within GA, and how to analyze GA data using visual analytics platform such as Tableau or [Google Data Studio](https://datastudio.google.com). Applications of Google Analytics for website anlytics range from technical support (e.g. how to restructure/redesign/improvie the website?) to providing marketing insights (e.g. what to advertise to whom to get them to the conference?).
 
 ## Tast
 
