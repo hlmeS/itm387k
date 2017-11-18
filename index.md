@@ -5,6 +5,7 @@
 - General announcements
   - [Introduction](#introduction)
 - Lab Assignments
+  - [Lab 8: Twitter Sentiment Analysis with RapidMiner](#lab-9-web-analytics-with-google-analytics)
   - [Lab 8: Twitter Sentiment Analysis with RapidMiner](#lab-8-twitter-sentiment-analysis-with-rapidminer)
   - [Lab 7: K-Mean Clustering with RapidMiner](#lab-7-k-mean-clustering-with-RapidMiner)
   - [Lab 6: Linear Regression with RapidMiner](#lab-6-linear-regression-with-rapidminer) --- Updated 10/20
@@ -30,6 +31,54 @@
 ## Tableau Publishes BI Trends 2018
 
 Tableau recently published their [2018 Top 10 BI Trends](https://goo.gl/s79Guk). While all of them are very interesting, we should pay attention to the importance of Liberal Arts (2) and Academics Investment (10). As discussed in class, the more thoughts/work you put into your BI motivation and the presentation of your analytics work, the more impactful it will be. Class activities allow you to hone your skills in this respect.
+
+
+# Lab 9: Web Analytics with Google Analytics
+
+## Status
+
+In works, Due 11/28
+
+## Intro
+
+To conclude our series on Social/Web Analytics, we will look Google Analytics for analyzing websites. The shear increase in the number of published websites in recent years, certainly fueled increased demand for online marketing and renewed trends in web development, motivates the question what the purpose of a website really is. We then come to realize that we don't just develop websites because everyone else does so too, but because websites provide a platform that can help a business/organization be more successful. But how can measure the value of a website? How to evaluate its performance? How to use data-driven decisions in the design and maintenance? <br>
+
+## Objective
+
+In this lab, we will try to answer the aforementioned questions for the case of the current [HICSS conference website](http://hicss.hawaii.edu) using [Google Analytics (GA)](https://analytics.google.com). We will see how GA can be added to any website to start tracking user interactions, create dashboards and reports within GA, and how to analyze GA data using visual analytics platform such as Tableau or [Google Data Studio](https://datastudio.google.com). Applications of Google Analytics for website anlytics range from technical support (e.g. how to restructure/redesign/improvie the website?) to providing marketing insights (e.g. what to advertise to whom to get them to the conference?). 
+
+## Tast
+
+**Part 1:**
+For this lab assignment, please create a simple customer report or dashboard on Google analytics for the HICSS site (hicss.hawaii.edu) and export the file as pdf. Please attach a short narrative describing the objectives, i.e. BI Questions, that you're hoping to answer with this dashboard/report. (3 points)
+
+**Part 2:**
+For the second part, extract Google Analytics data through Tableau and use your visual analytics skills to provide at least 1 recommendation to the HICSS conference on how Tableau can be used in the future with Google Analytics to support one of the following:
+a) improved marketing efforts: e.g. # of visitors, cultural diversity, seasonal marketing, etc.
+b) better tracking of users: e.g. what's the interest like this year, how to improve visibility of low-performing tracks, mini tracks, work shops, etc.
+c) better user experience on the website: what to change to reduce bounce rates, longer sessions duration, higher conversion rates, what's causing pain for visitors (ease of use, loading times, etc.), and so on.
+
+Submit a story that helps the conference organizers and technical coordinators understand what your recommended use of Tableau and Google Analytics is for future conference, and how you got to this recommendation based on your observations from current data. (7+2 points, 2 pts extra credit for extra efforts)
+
+**Notes**
+- Part 2 requires your understanding of GA (Part 1)
+- The documentation for GA is excellent, make use of it.
+- You may use Google Data Studio instead of Tableau to make the data import easier.
+- [Tutorial 1](https://goo.gl/ECmML6) and [Tutorial 2](https://goo.gl/Yca28J) to avoid sampling limitations when importing data to Tableau.
+
+## Guidelines
+
+The following provides sample illustrations of a tracking tool that can be used during the paper submission period to monitor interest in the various tracks. Both GA and Tableau data are filtered for visitors that actually go to the track description pages.
+
+**GA Dashboard**
+![HICSS presentation numbers](images/lab9/ga_hicss_gadash.png)
+
+**[Tableau Dashboard](https://goo.gl/2CxcrL)**
+![HICSS presentation numbers](images/lab9/ga_hicss_papers.png)
+
+**Planned Paper Presentation (HICSS-51)**
+Looking at the upcoming presentation numbers, it is interesting to note that these correlate with the traffic analysis for this year's paper submission period. _(Note that this conclusion is biased because the tracks with more paper presentations also offer more minitracks, where each track is limited to about 2-6 papers. Further traffic analysis would be needed to see if audience is aware of this beforehand.)_
+![HICSS presentation numbers](images/lab9/ga_hicss_papers.png)
 
 # BI Concept of the week (11/10)
 
