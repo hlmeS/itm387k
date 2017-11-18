@@ -5,7 +5,7 @@
 - General announcements
   - [Introduction](#introduction)
 - Lab Assignments
-  - [Lab 9: Web Analytics with Google Analytics](#lab-9-web-analytics-with-google-analytics)
+  - [Lab 9: Web Analytics with Google Analytics](#lab-9-web-analytics-with-google-analytics) --- new
   - [Lab 8: Twitter Sentiment Analysis with RapidMiner](#lab-8-twitter-sentiment-analysis-with-rapidminer)
   - [Lab 7: K-Mean Clustering with RapidMiner](#lab-7-k-mean-clustering-with-RapidMiner)
   - [Lab 6: Linear Regression with RapidMiner](#lab-6-linear-regression-with-rapidminer) --- Updated 10/20
