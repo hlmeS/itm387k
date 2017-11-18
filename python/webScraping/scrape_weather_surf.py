@@ -57,12 +57,7 @@ print "Spot Conditions: ", spot_conditions
 
 
 weather_url ='https://weather.com/weather/today/l/21.31,-157.86'
-#hdr = {'User-Agent': 'Safari/11.0'}
-#req = urllib2.Request(weather,headers=hdr)
 page = urllib2.urlopen(weather_url)
-
-#page = urllib2.urlopen(google_search)
-
 soup = BeautifulSoup(page, 'html.parser')
 
 # find temperature
@@ -88,15 +83,6 @@ for row in rows:
     #cols = row.findAll('td')
     #cols = [ele.text.strip() for ele in cols]
     #data.append([str(ele) for ele in cols if ele]) # Get rid of empty values
-
-#data = [str(i) for i in data]
-dt = [('Wind', 'S20'), ('Humidity', 'S20'), ('DewPoint', 'S20'),
-        ('PressureRoom', 'S20'), ('Visibility', 'S20')]
-print data
-#data2 =
-right_now = np.array(data, dtype=dt)
-
-
 
 
 print "\n***********************"
