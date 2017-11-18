@@ -5,7 +5,7 @@
 - General announcements
   - [Introduction](#introduction)
 - Lab Assignments
-  - [Lab 8: Twitter Sentiment Analysis with RapidMiner](#lab-8-twitter-sentiment-analysis-with-rapidminer)  --- new
+  - [Lab 8: Twitter Sentiment Analysis with RapidMiner](#lab-8-twitter-sentiment-analysis-with-rapidminer)
   - [Lab 7: K-Mean Clustering with RapidMiner](#lab-7-k-mean-clustering-with-RapidMiner)
   - [Lab 6: Linear Regression with RapidMiner](#lab-6-linear-regression-with-rapidminer) --- Updated 10/20
   - [Lab 5: Decision Tree for predicting MBA graduates' promotion ](#lab-5-decision-tree-with-rapidminer) --- Updated 10/13
@@ -15,7 +15,10 @@
   - [Lab 2: Tableau - Part II](#lab-2-tableau---part-2)
   - [Lab 1: Tableau - Part I](#lab-1-tableau---part-1) --- Updated 9/20
 - BI Concepts
-  - [BI Concept (10/20)](#bi-concept-of-the-week-1020) --- new
+  - [BI Concept (11/17)](#bi-concept-of-the-week-1020) --- new
+  - [BI Concept (11/10)](#bi-concept-of-the-week-1020) --- new
+  - [BI Concept (10/27)](#bi-concept-of-the-week-1020) --- new
+  - [BI Concept (10/20)](#bi-concept-of-the-week-1020)
   - [BI Concept (10/13)](#bi-concept-of-the-week-1013)
   - [BI Concept (10/6)](#bi-concept-of-the-week-106)
   - [BI Concept (9/29)](#bi-concept-of-the-week-929)
@@ -34,8 +37,10 @@ Tableau recently published their [2018 Top 10 BI Trends](https://goo.gl/s79Guk).
 
 In Lab 8, we've already seen the application of web mining for BI purposes through the use of the Twitter API for data acquisiton. Social media networks are however not the only mediums available to you to scrape data from, in fact, it's only a small portion. This [web scraping with Python](https://goo.gl/pCF51R) gives a great introduction to _BeautifulSoup_, an easy-to-use Python library that helps you retrieve data from any website. (Almost any, I think it doesn't work well on javascript generated content.) <br>
 It only requires a little understanding of `html` documents to use this library, so I've provided you with a a few sample applications that you can play with and see how it can be modified to retrieve data that you are interested in.
-* [This file retrieves surf conditions from surfline.com and weather data from weather.com.](python/webScraping/scrape_weather_surf.py) Similar scripts can be useful in app developements or ETL scripting for data warehouses. For example, in addition to just recording sales transactions of a North Shore food truck, you could also store weather and surf data to  correlate this information in a later analysis.
-* [This file retrieves Yelp reviews from specified pages and stores them into an Excel file.](python/webScraping/yelpReviewScraping.py) Next steps would include the automation of searching for restaurants, grabbing the search results, and then retrieving 100+ reviews for later sentiment analysis. 
+* [This file retrieves surf conditions from surfline.com and weather data from weather.com.](python/webScraping/scrape_weather_surf.py) Similar scripts can be useful in app developement or ETL scripting for data warehouses. For example, in addition to just recording sales transactions of a North Shore food truck, you could also store weather and surf data to  correlate this information in a later analysis.
+* [This file retrieves Yelp reviews from specified pages and stores them into an Excel file.](python/webScraping/yelpReviewScraping.py) Next steps would include the automation of searching for restaurants, grabbing the search results, and then retrieving 100+ reviews for later sentiment analysis.
+
+
 
 # Lab 8: Twitter Sentiment Analysis with RapidMiner
 
@@ -120,6 +125,29 @@ Lastly, we can visualize our results using pie or stack column charts. Make sure
 
 In your analysis, focus on the **objectives (BI questions)** of your analysis and how your **analysis answered these questions**. It is not uncommon to not be able to come up with a conclusive answer based on a single sentiment analysis for one data source, but it should at least show you some **trends** and guide you in finding conclusive answers to your questions. If you discover situations (tweets) where the sentiment analysis fails, make sure to discuss them as well.
 
+# BI Concept of the week (10/27)
+
+## Creating a Horizontal Bar Chart with Dual Axis
+
+Here's a quick tutorial on Tableau. Give it a try and refresh your Tableau skills.
+
+Imagine you have two metrics and want to compare these in a single viz side-by-side. You've chosen to use a horzizontal bar chart and now want to compare the two metrics within each category. The following will walk you through a few simple steps to achieve this.
+
+Let's start with a horizontal bar chart with one metric (column) and one dimension (row). Then we drop our second metric pill into the column shelf. <br><br>
+
+![First Metric](images/tableau_hbar/dualAxisHbars_add1st.png)
+
+![First Metric](images/tableau_hbar/dualAxisHbars_add2nd.png)
+
+By default, these will be split into two separate axes. In order to compare these two metrics within each category, we can add `Measure` names as our second pill in the rows shelf and apply a dual axis. Then we go on over the formatting card for `All` and change the viz from `Circle` to `Bar`.
+
+![First Metric](images/tableau_hbar/dualAxisHbars_dualAxis.png)
+
+![First Metric](images/tableau_hbar/dualAxisHbars_change2Bar.png)
+
+![First Metric](images/tableau_hbar/dualAxisHbars_formatting.png)
+
+This looks a lot better, we can now easily compare the two metrics wihtin each category. Final formatting can be applied at this point, such as coloring and sorting. The `pivot` operator could be applied to obtain a vertical bar chart with direct metric comparison.
 
 # Lab 7: K-Mean Clustering with Rapidminer
 
