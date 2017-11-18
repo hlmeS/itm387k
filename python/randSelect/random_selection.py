@@ -23,7 +23,7 @@ def csv_string_import(filepath):
 
 def random_selection(listInput, n ):
     #np.random.seed(3)
-    listInput = [ "Sean", "Kaci", "Ashley"]
+    
     return np.random.choice(listInput, n, replace=False)
 
 def get_input():
