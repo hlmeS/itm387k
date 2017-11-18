@@ -41,11 +41,11 @@ In works, Due 11/28
 
 ## Intro
 
-To conclude our series on Social/Web Analytics, we will look at Google Analytics for analyzing websites. The shear increase in the number of published websites in recent years, certainly fueled increased demand for online marketing and renewed trends in web development, motivates the question of what the purpose of a website really is. We then come to realize that we don't just develop websites because everyone else does so too, but because websites provide a platform that can help a business/organization strive and be more successful. But how to measure the value of a website? How to evaluate its performance? How to use data-driven decisions in the design and maintenance? <br>
+To conclude our series on Social/Web Analytics, we will look at Google Analytics (GA) for analyzing websites. The shear increase in the number of published websites in recent years, certainly fueled increased demand for online marketing and renewed trends in web development, motivates the question of what the purpose of a website really is. We then come to realize that we don't just develop websites because everyone else does so too, but because websites provide a platform that can help a business/organization strive and be more successful. But how to measure the value of a website? How to evaluate its performance? How to use data-driven decisions in the design and maintenance? <br>
 
 ## Objective
 
-In this lab, we will try to answer the aforementioned questions for the case of the current [HICSS conference website](http://hicss.hawaii.edu) using [Google Analytics (GA)](https://analytics.google.com). We will see how GA can be added to any website to start tracking user interactions, create dashboards and reports within GA, and how to analyze GA data using visual analytics platform such as Tableau or [Google Data Studio](https://datastudio.google.com). Applications of Google Analytics for website anlytics range from technical support (e.g. how to restructure/redesign/improvie the website?) to providing marketing insights (e.g. what to advertise to whom to get them to the conference?), and can thus be very valuable. (Oftentimes people put Google Analytics on their site without every analyizing its data. This lab will hopefully show you the value of GA, especially when paired with other platforms.)
+In this lab, we will try to answer the aforementioned questions for the case of the current [HICSS conference website](http://hicss.hawaii.edu) using [Google Analytics](https://analytics.google.com). We will see how GA can be added to any website to start tracking user interactions, create dashboards and reports within GA, and how to analyze GA data using visual analytics platform such as Tableau or [Google Data Studio](https://datastudio.google.com). Applications of GA for website anlytics range from technical support (e.g. how to restructure/redesign/improvie the website?) to providing marketing insights (e.g. what to advertise to whom to get them to the conference?), and can thus be very valuable. _Oftentimes people put GA on their site without ever analyizing its data. (GA actually slows down your site due added javascript being loaded.) This lab will hopefully show you the value of GA, especially when paired with other platforms._
 
 ## Tast
 
@@ -70,14 +70,14 @@ Submit a story that helps the conference organizers and technical coordinators u
 
 The following provides sample illustrations of a tracking tool that can be used during the paper submission period to monitor interest in the various tracks. Both GA and Tableau data are filtered for visitors that actually go to the track description pages.
 
-**GA Dashboard**
+**GA Dashboard** <br>
 ![HICSS presentation numbers](images/lab9/ga_hicss_gadash.png)
 
-**[Tableau Dashboard](https://goo.gl/2CxcrL)**
-![HICSS presentation numbers](images/lab9/ga_hicss_papers.png)
+**[Tableau Dashboard](https://goo.gl/2CxcrL)** <br>
+![HICSS presentation numbers](images/lab9/ga_hicss_tableau.png)
 
-**Planned Paper Presentation (HICSS-51)**
-Looking at the upcoming presentation numbers, it is interesting to note that these correlate with the traffic analysis for this year's paper submission period. _(Note that this conclusion is biased because the tracks with more paper presentations also offer more minitracks, where each track is limited to about 2-6 papers. Further traffic analysis would be needed to see if audience is aware of this beforehand.)_
+**Planned Paper Presentation (HICSS-51)** <br>
+Looking at the upcoming presentation numbers, it is interesting to note that these correlate with the traffic analysis for this year's paper submission period. _(Note that this conclusion is biased because the tracks with more paper presentations also offer more minitracks, where each track is limited to about 2-6 papers. Further traffic analysis would be needed to see if audience is aware of this beforehand.)_ <br>
 ![HICSS presentation numbers](images/lab9/ga_hicss_papers.png)
 
 # BI Concept of the week (11/10)
