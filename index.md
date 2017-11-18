@@ -22,12 +22,26 @@
   - [BI Concept (9/22)](#bi-concept-of-the-week-922)
   - [BI Concept (9/13)](#bi-concept-of-the-week-913)
 
+# BI Concept of the week (11/17)
+
+## Tableau Publishes BI Trends 2018
+
+Tableau recently published their [2018 Top 10 BI Trends](https://goo.gl/s79Guk). While all of them are very interesting, we should pay attention to the importance of Liberal Arts (2) and Academics Investment (10). As discussed in class, the more thoughts/work you put into your BI motivation and the presentation of your analytics work, the more impactful it will be. Class activities allow you to hone your skills in this respect.
+
+# BI Concept of the week (11/10)
+
+## Web Mining with Python
+
+In Lab 8, we've already seen the application of web mining for BI purposes through the use of the Twitter API for data acquisiton. Social media networks are however not the only mediums available to you to scrape data from, in fact, it's only a small portion. This [web scraping with Python](https://goo.gl/pCF51R) gives a great introduction to _BeautifulSoup_, an easy-to-use Python library that helps you retrieve data from any website. (Almost any, I think it doesn't work well on javascript generated content.) <br>
+It only requires a little understanding of `html` documents to use this library, so I've provided you with a a few sample applications that you can play with and see how it can be modified to retrieve data that you are interested in.
+* [This file retrieves surf conditions from surfline.com and weather data from weather.com.](python/webScraping/scrape_weather_surf.py) Similar scripts can be useful in app developements or ETL scripting for data warehouses. For example, in addition to just recording sales transactions of a North Shore food truck, you could also store weather and surf data to  correlate this information in a later analysis.
+* [This file retrieves Yelp reviews from specified pages and stores them into an Excel file.](python/webScraping/yelpReviewScraping.py) Next steps would include the automation of searching for restaurants, grabbing the search results, and then retrieving 100+ reviews for later sentiment analysis. 
 
 # Lab 8: Twitter Sentiment Analysis with RapidMiner
 
 ## Status
 
-In Works, due 11/14
+In Works, Pau
 
 ## Intro
 
