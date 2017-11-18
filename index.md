@@ -70,14 +70,14 @@ Submit a story that helps the conference organizers and technical coordinators u
 
 The following provides sample illustrations of a tracking tool that can be used during the paper submission period to monitor interest in the various tracks. Both GA and Tableau data are filtered for visitors that actually go to the track description pages.
 
-**GA Dashboard** <br>
+**GA Dashboard** <br><br>
 ![HICSS presentation numbers](images/lab9/ga_hicss_gadash.png)
 
-**[Tableau Dashboard](https://goo.gl/2CxcrL)** <br>
+**[Tableau Dashboard](https://goo.gl/2CxcrL)** <br><br>
 ![HICSS presentation numbers](images/lab9/ga_hicss_tableau.png)
 
 **Planned Paper Presentations (HICSS-51)** <br>
-Looking at the upcoming presentation numbers, it is interesting to note that these correlate with the traffic analysis for this year's paper submission period. _(Note that this conclusion is biased because the tracks with more paper presentations also offer more minitracks, where each track is limited to about 2-6 papers. Further traffic analysis would be needed to see if audience is aware of this beforehand.)_ <br>
+Looking at the upcoming presentation numbers, it is interesting to note that these correlate with the traffic analysis for this year's paper submission period. _Note however that this conclusion based on this data alone is biased because the tracks with more paper presentations also offer more minitracks, where each track is limited to about 2-6 papers. Further traffic analysis would be needed to see if audience is aware of this beforehand._ <br><br>
 ![HICSS presentation numbers](images/lab9/ga_hicss_papers.png)
 
 # BI Concept of the week (11/10)
