@@ -76,7 +76,7 @@ The following provides sample illustrations of a tracking tool that can be used 
 **[Tableau Dashboard](https://goo.gl/2CxcrL)** <br>
 ![HICSS presentation numbers](images/lab9/ga_hicss_tableau.png)
 
-**Planned Paper Presentation (HICSS-51)** <br>
+**Planned Paper Presentations (HICSS-51)** <br>
 Looking at the upcoming presentation numbers, it is interesting to note that these correlate with the traffic analysis for this year's paper submission period. _(Note that this conclusion is biased because the tracks with more paper presentations also offer more minitracks, where each track is limited to about 2-6 papers. Further traffic analysis would be needed to see if audience is aware of this beforehand.)_ <br>
 ![HICSS presentation numbers](images/lab9/ga_hicss_papers.png)
 
