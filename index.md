@@ -127,7 +127,7 @@ In your analysis, focus on the **objectives (BI questions)** of your analysis an
 
 # BI Concept of the week (10/27)
 
-## Creating a Horizontal Bar Chart with Dual Axis
+## Creating a Dual Axis Horizontal Bar Chart with Tableau
 
 Here's a quick tutorial on Tableau. Give it a try and refresh your Tableau skills.
 
