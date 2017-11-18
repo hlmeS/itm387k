@@ -15,9 +15,9 @@
   - [Lab 2: Tableau - Part II](#lab-2-tableau---part-2)
   - [Lab 1: Tableau - Part I](#lab-1-tableau---part-1) --- Updated 9/20
 - BI Concepts
-  - [BI Concept (11/17)](#bi-concept-of-the-week-1020) --- new
-  - [BI Concept (11/10)](#bi-concept-of-the-week-1020) --- new
-  - [BI Concept (10/27)](#bi-concept-of-the-week-1020) --- new
+  - [BI Concept (11/17)](#bi-concept-of-the-week-1117) --- new
+  - [BI Concept (11/10)](#bi-concept-of-the-week-1110) --- new
+  - [BI Concept (10/27)](#bi-concept-of-the-week-1027) --- new
   - [BI Concept (10/20)](#bi-concept-of-the-week-1020)
   - [BI Concept (10/13)](#bi-concept-of-the-week-1013)
   - [BI Concept (10/6)](#bi-concept-of-the-week-106)
