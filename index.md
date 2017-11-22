@@ -378,14 +378,13 @@ housing price
 ```
 **Thus, we can predict a housing price of about $0.5M for a 3 bedroom and 3000 sq.ft apartment.**
 
-### Results, Part I
+### Scenario A: Results
 
-Although the first part of this lab, food truck profit predictions, was not discussed in this manual, the following shows reference results. Again, your model may be slightly different due to the randomized data split.
+Although the scenario A was not discussed in the guidelines, the following shows results for your reference. Again, your model may be slightly different due to the randomized data split.
 
 The following images show the results for our training and performance testing. The regression line's equation can be described as <br>![Result Polynomial](images/lab6/FoodTruck_ModelOut.png) <br><br>
-The root mean square error and absolute error on the test data are <br>![Result Performance](images/lab6/FoodTruck_Performance.png) <br><br> These errors were calculated based on these test data predictions:<br>
-![Result Test Data](images/lab6/FoodTruck_ExampleOut.png)
-Plot the test data (labels and predictions) to visually display how good the model is: <br>
+The root mean square error and absolute error on the test data are <br>![Result Performance](images/lab6/FoodTruck_Performance.png) <br><br>
+Plot of the test data (labels and predictions) to visually display how good the model is: <br>
 ![Result Test Data](images/lab6/FoodTruck_Plot.png)
 
 # BI Concept of the week (10/13)
