@@ -244,7 +244,7 @@ Please ask yourself the following questions when working on this assignment, esp
 3. The kmean, and data do similarity parameters are shown in the following images.
   - We set the number of clusters, k, to the number of segments that we suspect to best represent our domain. We select the squared euclidean distance as our similarity measure. <br>
   ![Configuring clustering node](images/lab7/kmean_clusteringProp.png)
-  - The data to similarity block can just be set to the same distance measure as selected for the clustering algorithm above. <br>
+  - The data to similarity block can just be set to the same distance measure as selected for the clustering algorithm above. (If not visible due overcompression, please select the BregmanDivergence and SquaredEuclideanDistance in the selection fields below.) <br>
   ![Data to Similarity node](images/lab7/kmean_dataToSimilarity.png)
 3. In order to visualize our results in Tableau, we need to write them to an Excel, or similar, file. Before doing so, it'd be nice to have our data back in it's non-normalized form. To do so, we simply concatenate the original attributes with the normalized attributes used for clustering. This works well with the `join` operator because we did not change the order of our input data. We just need to make sure that the we do not remove duplicate attributes, as shown below: <br>
   ![Joining normalized and nonnormalized data. ](images/lab7/kmean_join.png)
