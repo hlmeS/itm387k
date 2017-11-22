@@ -8,7 +8,7 @@
   - [Lab 9: Web Analytics with Google Analytics](#lab-9-web-analytics-with-google-analytics) --- new
   - [Lab 8: Twitter Sentiment Analysis with RapidMiner](#lab-8-twitter-sentiment-analysis-with-rapidminer)
   - [Lab 7: K-Mean Clustering with RapidMiner](#lab-7-k-mean-clustering-with-RapidMiner)
-  - [Lab 6: Linear Regression with RapidMiner](#lab-6-linear-regression-with-rapidminer) --- Updated 10/20
+  - [Lab 6: Linear Regression with RapidMiner](#lab-6-linear-regression-with-rapidminer) --- Updated 11/22
   - [Lab 5: Decision Tree for predicting MBA graduates' promotion ](#lab-5-decision-tree-with-rapidminer) --- Updated 10/13
   - [Lab4: Power BI in Excel](#lab-4-power-bi-in-excel) --- Updated 10/3
   - [Lab3b: Power BI - Part II](#lab-3b-power-bi---part-2) --- Updated 9/21
@@ -347,7 +347,8 @@ Use your model to predict the market value of a 3 bedroom apartment with a size 
 The following images show the results for our training and performance testing. The regression line's equation can be described as <br>![Result Polynomial](images/lab6/LinReg_ModelOut.png) <br><br>
 The root mean square error and absolute error on the test data are <br>![Result Performance](images/lab6/LinReg_Performance.png) <br><br> These errors were calculated based on these test data predictions:<br>
 ![Result Test Data](images/lab6/LinReg_ExampleOut.png)
-Plot the test data (labels and predictions) to visually display how good the model is.
+Plot the test data (labels and predictions) to visually display how good the model is: <br>
+![Result Test Data](images/lab6/LinReg_Plot.png)
 
 ### Making Predictions
 
@@ -377,6 +378,15 @@ housing price
 ```
 **Thus, we can predict a housing price of about $0.5M for a 3 bedroom and 3000 sq.ft apartment.**
 
+### Results, Part I
+
+Although the first part of this lab, food truck profit predictions, was not discussed in this manual, the following shows reference results. Again, your model may be slightly different due to the randomized data split.
+
+The following images show the results for our training and performance testing. The regression line's equation can be described as <br>![Result Polynomial](images/lab6/FoodTruck_ModelOut.png) <br><br>
+The root mean square error and absolute error on the test data are <br>![Result Performance](images/lab6/FoodTruck_Performance.png) <br><br> These errors were calculated based on these test data predictions:<br>
+![Result Test Data](images/lab6/FoodTruck_ExampleOut.png)
+Plot the test data (labels and predictions) to visually display how good the model is: <br>
+![Result Test Data](images/lab6/FoodTruck_Plot.png)
 
 # BI Concept of the week (10/13)
 
