@@ -306,13 +306,15 @@ Use your model to predict the market value of a 3 bedroom apartment with a size 
 - Remember that using multiple variables (features) requires normalizing (Z-transformation) of each variable before training the model.
 - For each scenario, evaluate the performance of your linear regression (root mean square and absolute error) on an unseen test data set. How "predictive" are your models?
 - For this assignment, submit a screenshot of your process, the results (model and errors), and a plot of the test data and model (using RapidMiner, Excel or Python).
-- You need to upload 2x three files. Please rename them as
-  - ITM387K_F17_Lab5A_LnameFinitial_LinRegModel_V1.0 and
-  - ITM387K_F17_Lab5A_LnameFinitial_Performance_V1.0 and
-  - ITM387K_F17_Lab5A_LnameFinital_Graph_V1.0
-  - ITM387K_F17_Lab5B_LnameFinitial_LinRegModel_V1.0 and
-  - ITM387K_F17_Lab5B_LnameFinitial_Performance_V1.0 and
-  - ITM387K_F17_Lab5B_LnameFinital_Graph_V1.0
+- You need to upload 2x4 files. Please rename them as
+  - ITM387K_F17_Lab6A_LnameFinitial_Process_V1.0 and
+  - ITM387K_F17_Lab6A_LnameFinitial_LinRegModel_V1.0 and
+  - ITM387K_F17_Lab6A_LnameFinitial_Performance_V1.0 and
+  - ITM387K_F17_Lab6A_LnameFinital_Graph_V1.0
+  - ITM387K_F17_Lab6B_LnameFinitial_Process_V1.0 and
+  - ITM387K_F17_Lab6B_LnameFinitial_LinRegModel_V1.0 and
+  - ITM387K_F17_Lab6B_LnameFinitial_Performance_V1.0 and
+  - ITM387K_F17_Lab6B_LnameFinital_Graph_V1.0
 
 
 ## Dataset
