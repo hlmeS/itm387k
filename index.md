@@ -382,7 +382,7 @@ housing price
 
 ### Scenario A: Results
 
-Although the scenario A was not discussed in the guidelines, the following shows results for your reference. Again, your model may be slightly different due to the randomized data split.
+Although scenario A was not discussed in the guidelines, the following shows results for your reference. Again, your model may be slightly different due to the randomized data split.
 
 The following images show the results for our training and performance testing. The regression line's equation can be described as <br>![Result Polynomial](images/lab6/FoodTruck_ModelOut.png) <br><br>
 The root mean square error and absolute error on the test data are <br>![Result Performance](images/lab6/FoodTruck_Performance.png) <br><br>
