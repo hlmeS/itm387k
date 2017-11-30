@@ -5,26 +5,124 @@
 - General announcements
   - [Introduction](#introduction)
 - Lab Assignments
-  - [Lab 9: Web Analytics with Google Analytics](#lab-9-web-analytics-with-google-analytics) --- new
+  - [Lab 10: Linear Programming Optimization](#lab-10-linear-programming-for-hic-surf) -- new
+  - [Lab 9: Web Analytics with Google Analytics](#lab-9-web-analytics-with-google-analytics)
   - [Lab 8: Twitter Sentiment Analysis with RapidMiner](#lab-8-twitter-sentiment-analysis-with-rapidminer)
   - [Lab 7: K-Mean Clustering with RapidMiner](#lab-7-k-mean-clustering-with-RapidMiner)
   - [Lab 6: Linear Regression with RapidMiner](#lab-6-linear-regression-with-rapidminer) --- Updated 11/22
-  - [Lab 5: Decision Tree for predicting MBA graduates' promotion ](#lab-5-decision-tree-with-rapidminer) --- Updated 10/13
+  - [Lab 5: Decision Tree for predicting MBA graduates' promotion ](#lab-5-decision-tree-with-rapidminer)
   - [Lab4: Power BI in Excel](#lab-4-power-bi-in-excel) --- Updated 10/3
   - [Lab3b: Power BI - Part II](#lab-3b-power-bi---part-2) --- Updated 9/21
   - [Lab3a: Power BI - Part I](#lab-3a-power-bi---part-1) --- Updated 9/19
   - [Lab 2: Tableau - Part II](#lab-2-tableau---part-2)
   - [Lab 1: Tableau - Part I](#lab-1-tableau---part-1) --- Updated 9/20
 - BI Concepts
-  - [BI Concept (11/17)](#bi-concept-of-the-week-1117) --- new
-  - [BI Concept (11/10)](#bi-concept-of-the-week-1110) --- new
-  - [BI Concept (10/27)](#bi-concept-of-the-week-1027) --- new
+  - [BI Concept (11/17)](#bi-concept-of-the-week-1117)
+  - [BI Concept (11/10)](#bi-concept-of-the-week-1110)
+  - [BI Concept (10/27)](#bi-concept-of-the-week-1027)
   - [BI Concept (10/20)](#bi-concept-of-the-week-1020)
   - [BI Concept (10/13)](#bi-concept-of-the-week-1013)
   - [BI Concept (10/6)](#bi-concept-of-the-week-106)
   - [BI Concept (9/29)](#bi-concept-of-the-week-929)
   - [BI Concept (9/22)](#bi-concept-of-the-week-922)
   - [BI Concept (9/13)](#bi-concept-of-the-week-913)
+
+# Lab 9: Web Analytics with Google Analytics
+
+## Status
+
+In works, Due 11/30
+
+## Intro
+
+Prescriptive analytics methods help us plan our strategies given a set of objectives, such as overall business performance. In some cases this can entail the forecasting (prediction) of web traffic to plan network infrastructures and server resources of an information system, in other cases, we may want to set our prices optimally to maximzie sales and profits. In this lab, we will look at optimimal resource allocation in manufacturing processes to maximize total profits. <br>
+
+## Objective
+
+In this lab, we will learn how to take a set of business objectives and constraints and represent them in an Excel model. Having the model representation in Excel, we will then learn how to apply linear programming optimization to maxmimize objectives given modeled constraints. The Solver tool will be used for the optimization process.
+
+## Task
+
+The holiday season is approaching and given the limited time and resources available, HIC wants to know how many of each of their two surfboard types (performance shortboard and funboard) they should shape to maximize their profits.
+
+Given the specified inputs and constraints in the attached Excel Sheet and below, you are asked to model and optimize HIC's profits using linear programming optimization.
+
+Use Excel's Solver tool (Simplex Linear Programming) for your analysis.
+
+Please submit your Excel Sheet with your optimization model and the optimization output. Although part of the Excel file, also submit a screenshot of your auto-generated answer report.
+
+## Data
+
+[Excel Template with Constraints](https://goo.gl/DjEosv) <br>
+[Class Worksheet](https://goo.gl/mk7QyZ)
+
+## Constraints
+
+-	HIC sells performance shortboards for $750 and funboards for $550.
+-	Material Constraints:
+  -	A shortboard blank requires 1.65 cu. ft. of Polyurethane (PU) foam
+  -	A funboard blank requires 2 cu. ft. of  PU foam
+  -	A total of 250 cu. ft. is available
+-	Time Constraint:
+  -	Surfboards are roughly manufactured in 4 steps: a) preparation of blank with stringer, b) shaping, c) laminating & coating, and d) sanding, polishing & finishing.
+  - Each employee is specialized for one process. Time requirements for each board as well as total time availability per employee is provided in the table below:
+
+
+  | | Process	Performance Shortboard [hours] |	Stock Funboard [hours] | Total Availability [hours] |
+  |:---:|:---:|:---:|:---:|
+  | Blank & Stringer	| 1	| 0.75 | 150 |
+  | Shaping |	2.2	| 1.3	| 200 |
+  |Lamination	| 1.8	| 1.3	| 140 |
+  |Polishing	| 1	| 0.65 | 110 |
+
+-	Inventory Constraint: In HIC’s inventory, the number of performance shortboards should be at least 40% of the number of funbaords.
+ 
+
+## Guidelines
+
+**Constraint Modeling** <br>
+As done in class on a simplified version of this problem, the constraints need to be converted from verbal descriptions to mathematical equations (columns `F` and `H` in the image below) and represented in Excel (cell range `A5:D8` for the time constraints and `A12:D12` for the resource constraints). <br>
+
+![Constraint Model](images/lab10/lab10_constraints.png)
+
+**Objectives** <br><br>
+
+Similarly, the objectives can be modeled as shown below. `A22:B23` show the inventory constraint as well. <br>
+
+![Objectives](images/lab10/lab10_model.png)
+
+**Decision Variables and Outcome**<br>
+
+The decision variables are the variables that we want to vary such that the total profit is maximized. Cells `B38:C38` are being used for all calcualations in the previously shown objectives. The `SUMPRODUCT()` is used extensively here since we have very nice and linear constraints. <br>
+
+![Decision Variables](images/lab10/lab10_model.png)
+
+**Optimization**<br>
+
+Using the `Solver` tool, we can perform linear programming optimization to find maximum profits. To do so, we specify the objective (cell and type of optimization), the variable cells (`B38:C38`) and then define each of our constraints. I prefer defining each constraint seperately as it will result in a more insightful answer report. The `Simplex LP` method is chosen here for optimization.
+_Note: Performing the linear optimization without the integer constraint (check box under options) gives improved results._ <br>
+
+![Solver Settings](images/lab10/lab10_solver.png)
+
+**Results**<br>
+
+Assuming that `Solver` found an optimal solution for us, we can analyze the answer report to better understand the optimal solution and its governing factors. Shown below is a sample answer report for this lab that solved the constraints without using the integer constraint. As shown, the inventory balance and the laminating process are the limiting (binding) constraints.<br>
+
+![Decision Variables](images/lab10/lab10_answer_woints.png)
+
+_Note: If you perform the analysis with the integer constraint (by deselecting the checkbox under options in the solver window), you may end up with these results:_<br>
+
+![Solver Settings](images/lab10/lab10_answer_ints.png)
+
+# BI Concept of the week (11/10)
+
+## Web Mining with Python
+
+In Lab 8, we've already seen the application of web mining for BI purposes through the use of the Twitter API for data acquisiton. Social media networks are however not the only mediums available to you to scrape data from, in fact, it's only a small portion. This [web scraping with Python](https://goo.gl/pCF51R) gives a great introduction to _BeautifulSoup_, an easy-to-use Python library that helps you retrieve data from any website. (Almost any, I think it doesn't work well on javascript generated content.) <br>
+It only requires a little understanding of `html` documents to use this library, so I've provided you with a a few sample applications that you can play with and see how it can be modified to retrieve data that you are interested in.
+* [This file retrieves surf conditions from surfline.com and weather data from weather.com.](python/webScraping/scrape_weather_surf.py) Similar scripts can be useful in app developement or ETL scripting for data warehouses. For example, in addition to just recording sales transactions of a North Shore food truck, you could also store weather and surf data to  correlate this information in a later analysis.
+* [This file retrieves Yelp reviews from specified pages and stores them into an Excel file.](python/webScraping/yelpReviewScraping.py) Next steps would include the automation of searching for restaurants, grabbing the search results, and then retrieving 100+ reviews for later sentiment analysis.
+
 
 # BI Concept of the week (11/17)
 
@@ -37,7 +135,7 @@ Tableau recently published their [2018 Top 10 BI Trends](https://goo.gl/s79Guk).
 
 ## Status
 
-In works, Due 11/28
+PAU
 
 ## Intro
 
@@ -47,7 +145,7 @@ To conclude our series on Social/Web Analytics, we will look at Google Analytics
 
 In this lab, we will try to answer the aforementioned questions for the case of the current [HICSS conference website](http://hicss.hawaii.edu) using [Google Analytics](https://analytics.google.com). We will see how GA can be added to any website to start tracking user interactions, create dashboards and reports within GA, and how to analyze GA data using visual analytics platform such as Tableau or [Google Data Studio](https://datastudio.google.com). Applications of GA for website anlytics range from technical support (e.g. how to restructure/redesign/improvie the website?) to providing marketing insights (e.g. what to advertise to whom to get them to the conference?), and can thus be very valuable. _Oftentimes people put GA on their site without ever analyizing its data. (GA actually slows down your site due added javascript being loaded.) This lab will hopefully show you the value of GA, especially when paired with other platforms._
 
-## Tast
+## Task
 
 **Part 1:**
 For this lab assignment, please create a simple customer report or dashboard on Google analytics for the HICSS site (hicss.hawaii.edu) and export the file as pdf. Please attach a short narrative describing the objectives, i.e. BI Questions, that you're hoping to answer with this dashboard/report. (3 points)
@@ -95,7 +193,7 @@ It only requires a little understanding of `html` documents to use this library,
 
 ## Status
 
-In Works, Pau
+Pau
 
 ## Intro
 
