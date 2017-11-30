@@ -5,7 +5,7 @@
 - General announcements
   - [Introduction](#introduction)
 - Lab Assignments
-  - [Lab 10: Linear Programming Optimization](#lab-10-linear-programming-for-hic-surf) -- new
+  - [Lab 10: Linear Programming Optimization](#lab-10-linear-programming-optimization-for-hic-surf) -- new
   - [Lab 9: Web Analytics with Google Analytics](#lab-9-web-analytics-with-google-analytics)
   - [Lab 8: Twitter Sentiment Analysis with RapidMiner](#lab-8-twitter-sentiment-analysis-with-rapidminer)
   - [Lab 7: K-Mean Clustering with RapidMiner](#lab-7-k-mean-clustering-with-RapidMiner)
@@ -27,7 +27,7 @@
   - [BI Concept (9/22)](#bi-concept-of-the-week-922)
   - [BI Concept (9/13)](#bi-concept-of-the-week-913)
 
-# Lab 9: Web Analytics with Google Analytics
+# Lab 10: Linear Programming Optimization for HIC Surf
 
 ## Status
 
