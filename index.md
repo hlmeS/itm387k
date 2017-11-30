@@ -85,7 +85,7 @@ As done in class on a simplified version of this problem, the constraints need t
 
 ![Constraint Model](images/lab10/lab10_constraints.png)
 
-**Objectives** <br><br>
+**Objectives** <br>
 
 Similarly, the objectives can be modeled as shown below. `A22:B23` show the inventory constraint as well. <br>
 
