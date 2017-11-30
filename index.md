@@ -95,7 +95,7 @@ Similarly, the objectives can be modeled as shown below. `A22:B23` show the inve
 
 The decision variables are the variables that we want to vary such that the total profit is maximized. Cells `B38:C38` are being used for all calcualations in the previously shown objectives. The `SUMPRODUCT()` is used extensively here since we have very nice and linear constraints. <br>
 
-![Decision Variables](images/lab10/lab10_model.png)
+![Decision Variables](images/lab10/lab10_decision-variables.png)
 
 **Optimization**<br>
 
