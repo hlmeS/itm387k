@@ -62,9 +62,9 @@ You will present your analysis and investment recommendations to your colleagues
 
 **Presentation Tips**
 - Content:
-  - **Why** should I invest in your portfolio?
-  - **What** do you want the audience to take away from the presentation?
-  - Your presentatino should have just **one main idea**
+  - **Why** should I (audience) invest in your portfolio?
+  - **What** do you want me (audience) to take away from the presentation?
+  - Your presentation should have just **one main idea** 
 
 - Format:
   - Make sure that graphs are readable (color, font-size, etc.)
