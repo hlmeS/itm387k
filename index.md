@@ -57,7 +57,7 @@ You will present your analysis and investment recommendations to your colleagues
 **Notes**
 - Work in teams of 3-4 people of your choosing;
 - Have fun with the assigment and explore your own interests;
-- Use the provide sample files and replace `XOM` and `GOOGL` with different stocks of your choosing;
+- Use the provided sample files and replace `XOM` and `GOOGL` with different stocks of your choosing;
 - Use 5-year historic data with a 1 month frequency from [Yahoo Finance](https://finance.yahoo.com);
 
 **Presentation Tips**
