@@ -54,17 +54,17 @@ You will present your analysis and investment recommendations to your colleagues
 - your investment recommendation (i.e. which weights would you choose);
 - a well documented Excel model to share with your colleagues after the presentation.
 
-**Notes**
+**Notes**<br>
 - Work in teams of 3-4 people of your choosing;
 - Have fun with the assigment and explore your own interests;
 - Use the provided sample files and replace `XOM` and `GOOGL` with different stocks of your choosing;
 - Use 5-year historic data with a 1 month frequency from [Yahoo Finance](https://finance.yahoo.com);
 
-**Presentation Tips**
+**Presentation Tips**<br>
 - Content:
   - **Why** should I (audience) invest in your portfolio?
   - **What** do you want me (audience) to take away from the presentation?
-  - Your presentation should have just **one main idea** 
+  - Your presentation should have just **one main idea**
 
 - Format:
   - Make sure that graphs are readable (color, font-size, etc.)
@@ -72,7 +72,7 @@ You will present your analysis and investment recommendations to your colleagues
   - 5-8 min presentation (3-5 slides max)
   - 1-2 presenters
 
-**Bottom Line**
+**Bottom Line**<br>
 **Any robot can do the math of MPT, what value can you bring to the financial planning company as a human business analyst?**
 
 ## Data
