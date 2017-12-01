@@ -8,7 +8,7 @@
   - [Lab 10: Linear Programming Optimization](#lab-10-linear-programming-optimization-for-hic-surf) -- new
   - [Lab 9: Web Analytics with Google Analytics](#lab-9-web-analytics-with-google-analytics)
   - [Lab 8: Twitter Sentiment Analysis with RapidMiner](#lab-8-twitter-sentiment-analysis-with-rapidminer)
-  - [Lab 7: K-Mean Clustering with RapidMiner](#lab-7-k-mean-clustering-with-RapidMiner)
+  - [Lab 7: K-Mean Clustering with RapidMiner](#lab-7-k-mean-clustering-with-rapidminer)
   - [Lab 6: Linear Regression with RapidMiner](#lab-6-linear-regression-with-rapidminer) --- Updated 11/22
   - [Lab 5: Decision Tree for predicting MBA graduates' promotion ](#lab-5-decision-tree-with-rapidminer)
   - [Lab4: Power BI in Excel](#lab-4-power-bi-in-excel) --- Updated 10/3
@@ -26,6 +26,148 @@
   - [BI Concept (9/29)](#bi-concept-of-the-week-929)
   - [BI Concept (9/22)](#bi-concept-of-the-week-922)
   - [BI Concept (9/13)](#bi-concept-of-the-week-913)
+
+
+# Lab 11: Two-Asset Portfolio Management
+
+## Status
+
+In works, Due 12/6
+
+## Intro
+
+In our last lab, we've looked at the utility of prescriptive analytics for profit optimization. We discovered that when combined, simple `Excel models` and the `Solver tool` can be very powerful in optimizing business objectives. In this activity, we want to see how prescriptive business analytics applies to finance applications such as portfolio management. More specifically, we'll be constructing two-asset portfolios using concepts from modern portfolio theory (MPT).
+
+## Objective
+
+In this lab, we want to learn about fundamental concepts of portfolio management through a hands-on two-asset portfolio construction in Excel. The objectives are to model portfolios in Excel, understand fundamental concepts of MPT, find the efficient frontier and minimum variance portfolio of a two-asset portfolio, and give a business presentation with investment recommendations.
+
+## Task
+
+You are working in the business analytics team of a small financial planning company and your task is to construct a diversified investment portfolio with two risky assets. You are expected to apply your knowledge of modern portfolio theory to find the efficient frontier and minimum variance portfolio of any two risky assets (your choice).
+
+You will present your analysis and investment recommendations to your colleagues in the upcoming meeting. Your presentation should include
+
+- your choice of assets;
+- your analysis (minimum variance portfolio and efficient frontier);
+- your investment recommendation (i.e. which weights would you choose);
+- a well documented Excel model to share with your colleagues after the presentation.
+
+**Notes**
+- Work in teams of 3-4 people of your choosing;
+- Have fun with the assigment and explore your own interests;
+- Use the provide sample file and replace `XOM` and `GOOGL` with different stocks of your choosing;
+- Use 5-year historic data with a 1 month frequency from [Yahoo Finance](https://finance.yahoo.com);
+
+**Presentation Tips**
+- Content:
+  - **Why** should I invest in your portfolio?
+  - **What** do you want the audience to take away from the presentation?
+  - Your presentatino should have just **one main idea**
+
+- Format:
+  - Make sure that graphs are readable (color, font-size, etc.)
+  - Use little text on slides, all text font size 30pt or bigger
+  - 5-8 min presentation (3-5 slides max)
+  - 1-2 presenters
+
+**Bottom Line**
+**Any robot can do the math of MPT, what value can you bring to the financial planning company as a human business analyst?**
+
+## Data
+- [Yahoo Finance](https://finance.yahoo.com)
+- [Excel Model Blank](https://goo.gl/Rbxaue)
+- [Excel Model In-Progress](https://goo.gl/iy84WM)
+- [Class Worksheet](https://goo.gl/3V9D4n)
+
+## Guidelines
+
+### Data Retrieval and Import
+
+**Data Retrieval**<br>
+
+To retrieve data for an asset, you can download `5-year historic data` from [Yahoo Finance](https://finance.yahoo.com). Make sure set the time to 5Y and apply a monthly filter before downloading it. _The example below is for the `GOOGL` stock. You want to do this step on a different stock._<br>
+
+![Yahoo Finance](images/lab11/lab11_yahoo1.png)
+
+![Finding Stock](images/lab11/lab11_yahoo2.png)
+
+![Setting Filter](images/lab11/lab11_yahoo3.png)
+
+**Getting Data Into Excel**<br>
+
+To update the Excel model from the `XOM-GOOGL`, you want to replace data using copy and paste from the downloaded file to the provided template, rather than rebuilding the template.<br>
+Open the csv file that you downloaded in the previous step and select the data from the `Adj Close` column (the highlighted column in the picture below). **Make sure to only select 59 datapoints and no header rows when copying it over.** Open the [Excel template](https://goo.gl/Rbxaue), go to the `data` sheet, and replace the data in column `B` or `C` with the new data. Make sure to rename the column headers to match the imported stock. <br>
+
+![Data into Excel](images/lab11/lab11_data1.png)
+
+![Data Tab](images/lab11/lab11_data2.png)
+
+**_You want to repeat the data retrieval and insertion for the second asset as well. Realistically, you may find yourself doing this over and over until you find two stocks that you like. (Parallelism comes in handy here.)_**
+
+Make sure that the `Return` and `Excess Return` columns update properly. The following gives some equations for this sheet in case something went wrong on the import. Once you enter the formulae for cells `D4`, `E4`, `F4`, `G4`, you can drag them down for all 59 data rows. Formulae in cells `D63:D65` can be dragged to `E63:E65` to calculate the metrics for both assets.
+``` javascript
+D4: =LN(B4/B3)
+E4: =LN(C4/C3)
+
+D63: =AVERAGE(D4:D62)
+D64: =STDEV.P(D4:D62)
+D65: =POWER(D64,2)
+
+F4: =D4-D$63
+G4: =E4-E$63
+```
+
+### Modeling in Excel and Optimization
+
+**Check data integrity**<br>
+You want to make sure that the expected returns, volatility, and correlation for both assets updated correctly, as shown below. (You will have different values for different stocks, but you want to check that they match the values in the data sheet.) If not, try checking if their equations are correct. _Some of these formulae are array formulae, meaning that you need to press `COMMAND + SHIFT + ENTER` when you enter or update the equations. You can tell that they are array or matrix equations because they have `{}` in their equations when you click on either of the cells._
+
+``` javascript
+C5:C6 : =TRANSPOSE(Data!D63:E63)          # array equation referencing average
+E5:E6: =TRANSPOSE(Data!D64:E64)           # array equation referencing standard deviation
+
+F5: ='Var-Cov'!D20                        #  referencing correlation in var-cov sheet
+```
+
+![Data Integrity](images/lab11/lab11_asset_integrity.png)
+
+**Generate sample portfolios**<br>
+We can calculate expected portfolio returns and portfolio volatitility by varying the weights for each portfolio (cells `B16:D36`). To calculate the expected return (`F16`) and volatility (`E16`), we use the following equations and drag them down to row `36`. These are the equations from your [class worksheet](https://goo.gl/3V9D4n) that we also discussed on the board. Note that the absolute references, e.g. `$E$5`, are important so that you can drag the cells down over the entire range.
+
+```javascript
+E16: =SQRT(B16^2*$E$5^2+C16^2*$E$6^2+2*$F$5*B16*C16*$E$5*$E$6)
+F16: =B16*$C$5+C16*$C$6
+```
+
+![Volatility Calc](images/lab11/lab11_volatility_calc.png)
+
+![Return Calc](images/lab11/lab11_return_calc.png)
+
+
+**Plot sample portfolio**<br>
+This is a good time to plot return vs. volatility to get a better understanding of possible portfolios. Remember that any point on this rough chart is a possible combination of weights in your portfolio. The more data points you add in the previous steps (e.g. 1% steps instead of 5%), the more accurate this `scatter plot wiht smooth line and marker` will be. From the graph, we can have a pretty good understanding of an approximate range for the efficient frontier in terms of volatility and returns. In order to identify the minimum variance portfolio, i.e. the lower bound on the efficient frontier, we need to minimize the volatility. The `solver` tool in Excel can help us do this.
+
+![Return Calc](images/lab11/lab11_graph1.png)
+
+**Equally distributed and minimum variance portfolio**<br>
+Before finding the MVP, we will do a quick calculation for an equally distributed portfolio (50-50). (The same equations for volatility and return are used here.) <br>
+
+![Return Calc](images/lab11/lab11_even_distr.png)
+
+The solver tool can help us **minimize** volatility, **`E12`**, by varying the weights **`B12`** and **`C12`**. We must impose the constraint that the **weights add to 100%**. We also only consider positve weights here, i.e. we ignore borrowing portfolios. We want to use the `GRG Nonlinear` method here because we're dealing with a nonlinear system. This leaves us with the following solver parameters: <br>
+
+![Return Calc](images/lab11/lab11_solver_params.png)
+
+If everything goes well, we'll receive the sucess message and view our final values for the variables cells: our portfolio weights. <br>
+
+![Return Calc](images/lab11/lab11_solver_results.png)
+
+### Plotting the Efficient Frontier and MVP
+
+Ultimately, we want to show the efficient frontier and minimum variance portfolio on a single graph. We typically don't care about suboptimal options, so we may leave those out of the graph completely, but I kept them in the graph just for clarification. Using different colors and data labels for some of the interesting portfolios such as the minimum variance portfolio and the evenly distributed portfolio is certainly helpful here.  <br>
+
+![Return Calc](images/lab11/lab11_graph2.png)
 
 # Lab 10: Linear Programming Optimization for HIC Surf
 
@@ -854,7 +996,7 @@ Just like in Tableau, creating `new measures` in Power BI is a necessity for an 
   ```
 - Calculating Year-to-Date Sales (or profits, marketing expenses, etc.)
 
-  ``` c
+  ``` javascript
   YTD Sales = TOTALYTD( SUM('Sales'[Sales]), 'Calendar'[Date])
   ```
 
