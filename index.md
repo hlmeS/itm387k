@@ -5,6 +5,7 @@
 - General announcements
   - [Introduction](#introduction)
 - Lab Assignments
+  - [Lab 11: Portfolio Management](#lab-11-two-asset-portfolio-management) -- new
   - [Lab 10: Linear Programming Optimization](#lab-10-linear-programming-optimization-for-hic-surf) -- new
   - [Lab 9: Web Analytics with Google Analytics](#lab-9-web-analytics-with-google-analytics)
   - [Lab 8: Twitter Sentiment Analysis with RapidMiner](#lab-8-twitter-sentiment-analysis-with-rapidminer)
