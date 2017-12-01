@@ -1,4 +1,4 @@
-### URL: hlmes.github.io/itm387k
+with### URL: hlmes.github.io/itm387k
 
 ### Table of Contents
 
@@ -147,7 +147,7 @@ F16: =B16*$C$5+C16*$C$6
 
 
 **Plot sample portfolio**<br>
-This is a good time to plot return vs. volatility to get a better understanding of possible portfolios. Remember that any point on this rough chart is a possible combination of weights in your portfolio. The more data points you add in the previous steps (e.g. 1% steps instead of 5%), the more accurate this `scatter plot wiht smooth line and marker` will be. From the graph, we can have a pretty good understanding of an approximate range for the efficient frontier in terms of volatility and returns. In order to identify the minimum variance portfolio, i.e. the lower bound on the efficient frontier, we need to minimize the volatility. The `solver` tool in Excel can help us do this.
+This is a good time to plot return vs. volatility to get a better understanding of possible portfolios. Remember that any point on this rough chart is a possible combination of weights in your portfolio. The more data points you add in the previous steps (e.g. 1% steps instead of 5%), the more accurate this `scatter plot with smooth line and marker` will be. From the graph, we can have a pretty good understanding of an approximate range for the efficient frontier in terms of volatility and returns. In order to identify the minimum variance portfolio, i.e. the lower bound on the efficient frontier, we need to minimize the volatility. The `solver` tool in Excel can help us do this.
 
 ![Return Calc](images/lab11/lab11_graph1.png)
 
@@ -437,7 +437,7 @@ By default, these will be split into two separate axes. In order to compare thes
 
 ![First Metric](images/tableau_hbar/dualAxisHbars_formatting.png)
 
-This looks a lot better, we can now easily compare the two metrics wihtin each category. Final formatting can be applied at this point, such as coloring and sorting. The `pivot` operator could be applied to obtain a vertical bar chart with direct metric comparison.
+This looks a lot better, we can now easily compare the two metrics within each category. Final formatting can be applied at this point, such as coloring and sorting. The `pivot` operator could be applied to obtain a vertical bar chart with direct metric comparison.
 
 # Lab 7: K-Mean Clustering with Rapidminer
 
@@ -492,7 +492,7 @@ Please ask yourself the following questions when working on this assignment, esp
 
 ### Results Evaluation
 During the process modeling and tweaking of our governing parameters, i.e. number of clusters and attribute selection, we can use RapidMiners Results views to evaluate the model adequacy.
-1. We can look the the model overview to get a general idea of the clustering. <br>
+1. We can look at the model overview to get a general idea of the clustering. <br>
   ![Results view of the model](images/lab7/kmean_model.png)
 2. A further look at the cluster plot or centroid table shows the differences between the clusters. A nicer version of this in Tableau may be a good start for visualizations as well. <br>
   ![Cluster plot](images/lab7/kmean_k-plot.png)
@@ -836,7 +836,7 @@ Once we have queried our data, we are ready to build our data model. Remember th
 
 #### 3. PowerView
 
-PowerView allows us to create our executive dashboards wihtin Excel. If you cannot find PowerView in your Excel Toolbar Ribbon, you will need to customize your Ribbon using [these instructions](https://goo.gl/YXCH52).
+PowerView allows us to create our executive dashboards within Excel. If you cannot find PowerView in your Excel Toolbar Ribbon, you will need to customize your Ribbon using [these instructions](https://goo.gl/YXCH52).
 
 Building the view is mostly like PowerBI Desktop. You can select the fields of interest on the right, add filters, and then style your graphs using the `DESIGN` and `LAYOUT` tabs.
 
