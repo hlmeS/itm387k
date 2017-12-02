@@ -1,4 +1,4 @@
-with### URL: hlmes.github.io/itm387k
+### URL: hlmes.github.io/itm387k
 
 ### Table of Contents
 
