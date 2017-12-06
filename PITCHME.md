@@ -45,6 +45,8 @@
 
 ## Industry Examples
 
++++
+
 #### SAP Hana: Live Construction Site
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xNE5Goby2dc" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
