@@ -95,109 +95,25 @@
 - Can we help organizers plan for upcoming conferences? |
 
 +++
-### Solution, Step 1
 
-- Implement RFID tracking system  |
-- Are there cliques at academic conferences?  |
-- Can we provide an improved attendee experience? |
-- Can we help organizers plan for upcoming conferences? |
+### Approach
+
+- **RFID Tracking System**  |
+- **Real-Time interface with visual analytics** |
+- **Visual analytics tools for organizers (Tableau)** |
+- **Machine Learning &rarr; community detection & pattern recognition (Python, R, Rapidminer)** |
 
 +++
 
-### Outcomes ...
+### Takeaway  ...
 
-... are typically presented in the form of:
+... BI & BA tools are evolving rapidly:
 
-* Dashboards
-* Stories
-* Reports
-* Combination of the above
-
+- Exploit tools that you know;
+- Explore new methods and tools along the way;
+- Always design with intention;
+- Keep it simple.
 
 ---
 
-## Dashboards
-
-+++
-
-### Dashboards are ...
-
-"... a visual display of the most **important information** needed to achieve** one or more objectives**;
-consolidated and arranged on a **single screen** so the information can be **monitored at a glance**."
-
-+++
-
-### Design Principles
-
-* Choose metrics based on why they matter
-* Keep it visual
-* Make it interactive
-* Keep it current or don’t bother
-* Make it simple to access and use
-
-+++
-
-### "Simplicity is the ultimate sophistication”
-#### Da Vinci
-
-
----
-
-## Tableau
-
-![Tableau Video](https://www.youtube.com/embed/lAI5PoBVfQk)
-
-+++
-## Case: Global SuperStore
-
-"The executives of the Global SuperStore–a global store specialized in office supplies, furnitures, and technology products–invited the board of directors and regional managers for a meeting next month to discuss the company's recent performances and discuss the company's future direction."
-
-
-+++
-## BI Task
-
-You are hired as a business analyst to provide the executives with a executive dashboards and reports that
-
-1. inform on global and regional performance
-2. identify most and least profitable products types/categories in the various regions
-
-+++
-## Sample Story
-
-<iframe src="https://public.tableau.com/views/VisualAnalytics_Intro_Tableau_Demo_V1_0/ProfitabilityAnalysisStory?:embed=y&:display_count=yes&publish=yes" width=100% height=600 ></iframe>
-
----
-
-## References
-
-+++
-
-#### Slide text and graphics:
-
-* Evans, J. R. (2014). Business analytics: Methods, models, and decisions (2nd Ed). Pearson.
-* Sharda, R., Delen, D., & Turban, E. (2013). Business Intelligence: A Managerial Perspective on Analytics. Prentice Hall Press.
-
-+++
-
-#### Dashboard design rinciples
-* Tableau whitepaper: https://goo.gl/kvcdwz
-<br><br>
-
-#### Video:
-* Tableau use case: https://goo.gl/XAG76s
-<br><br>
-
-#### Dataset:
-* **Global SuperStore (2014)**: https://goo.gl/xDrDk5
-* Global SuperStore (2016): https://goo.gl/VsJzX2
-
-+++
-
-#### Website with calculated fields
-* https://hlmes.github.io/tableau-intro/
-<br><br>
-#### Gitpitch presentation:
-* https://gitpitch.com/hlmes/tableau-intro
-<br><br>
-#### Source code
-* https://github.com/hlmeS/tableau-intro
+## Thank you!
