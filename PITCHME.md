@@ -65,26 +65,42 @@
 
 [https://www.tantalumcorporation.com/open-platform/](https://www.tantalumcorporation.com/open-platform/)
 
++++
+
+#### SAP: Connected Stadium
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Lx0q5XjR18Q" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
 ---
-## Visual Analytics
+
+## HICSS-51
+
+### How can we apply new technologies to academic conferences?
 
 +++
-### Visual Analytics is ...
-<br>
-"... an iterative and interactive
-approach to analytical reasoning."
 
-".. used to create interactive,
-easy-to-use dashboards,
-that show most import information
-at a single glance."
+### Motivation
+
+- "Better understand how and why people attend sessions..." - Conference Chair |
+- "Tired of running around and manually counting attendees... " - Conference Organizer |
+- "What do I get out of coming to the conference? " - Attendee |
 
 +++
-### Approaches to Visual Analytics
 
-<br>
-1. Exploring data by **creating visualization first** and then interpreting them (_e.g. sales seasonalities_)
-2. **Asking questions first**, and then finding the right visualization to answer the question (_e.g. when and where are my sales the highest?_ )
+### BI Questions
+
+- Are there patterns in the way people attend workshops? |
+- Are there cliques at academic conferences?  |
+- Can we provide an improved attendee experience? |
+- Can we help organizers plan for upcoming conferences? |
+
++++
+### Solution, Step 1
+
+- Implement RFID tracking system  |
+- Are there cliques at academic conferences?  |
+- Can we provide an improved attendee experience? |
+- Can we help organizers plan for upcoming conferences? |
 
 +++
 
