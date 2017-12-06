@@ -1,7 +1,6 @@
-## Visual Analytics with Tableau
-![Logo](assets/tableau.png)
-##### Introductory workshop using the
-##### Global Superstore 2014 dataset.
+## Attendee Tracking for HICSS-51
+##### Overview of Information System and
+##### Analytics Framework
 
 ---
 
