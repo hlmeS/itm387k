@@ -38,9 +38,9 @@
 
 ### What happens when new technologies come in?
 
-- higher computational power: big data, deep learning |
-- cheaper hardware: low-cost sensors  |
-- enhanced network: IoT applications |
+- higher computational power &rarr; **big data & deep learning**|
+- cheaper hardware &rarr; **low-cost sensors**  |
+- enhanced network &rarr; **IoT applications** |
 ---
 
 
