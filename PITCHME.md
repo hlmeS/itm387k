@@ -81,9 +81,9 @@
 
 ### Motivation
 
-- _"Better understand how and why people attend sessions..."_ <br> Conference Chair |
-- _"Tired of running around and manually counting attendees... "_ <br> Conference Organizer |
-- _"What do I get out of coming to the conference? "_ <br>Attendee |
+- _"Better understand how and why people attend sessions..." <br> Conference Chair_ |
+- _"Tired of running around and manually counting attendees... " <br> Conference Organizer_|
+- _"What do I get out of coming to the conference? " <br> Attendee_ |
 
 +++
 
@@ -112,10 +112,10 @@
 
 ... BI & BA tools are evolving rapidly:
 
-- Exploit tools that you know;
-- Explore new methods and tools along the way;
-- Always design with intention and passion;
-- Keep it simple.
+- Exploit tools that you know; |
+- Explore new methods and tools along the way; |
+- Always design with intention and passion; |
+- Keep it simple. |
 
 +++
 
