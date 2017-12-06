@@ -105,7 +105,7 @@
 
 +++
 
- ![Inside](assets/hicss2.jpg) |
+![Inside](assets/hicss2.png) 
 
 +++
 
