@@ -111,7 +111,7 @@
 
 - Exploit tools that you know;
 - Explore new methods and tools along the way;
-- Always design with intention;
+- Always design with intention and passion;
 - Keep it simple.
 
 ---
