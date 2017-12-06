@@ -10,7 +10,10 @@
 
 ### Why?
 
-Business Analytics help managers and staff gain **improved insights** about their business operations and make **better, fact-based decisions**.
+- improved insghts |
+- better decision  |
+- fact-based decicision |
+
 
 +++
 
