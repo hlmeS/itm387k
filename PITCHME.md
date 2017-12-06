@@ -45,10 +45,15 @@
 
 ## Industry Examples
 
-#### SAP Hana
+#### SAP Hana: Live Construction Site
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xNE5Goby2dc" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
-<iframe src="https://youtu.be/xNE5Goby2dc" width=100% height=600 ></iframe>
++++
+
+#### ABB and IBM Watson IoT
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-4CazFUHgDs" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
 +++
 
