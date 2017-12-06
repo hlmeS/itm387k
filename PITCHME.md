@@ -61,7 +61,7 @@
 
 #### Tantalum: IoT Connected Cars
 
-![Data transformation process](assets/tantalum.png)
+![Data transformation process](assets/Tantalum.png)
 
 [https://www.tantalumcorporation.com/open-platform/](https://www.tantalumcorporation.com/open-platform/)
 
@@ -81,9 +81,9 @@
 
 ### Motivation
 
-- "Better understand how and why people attend sessions..." - Conference Chair |
-- "Tired of running around and manually counting attendees... " - Conference Organizer |
-- "What do I get out of coming to the conference? " - Attendee |
+- _"Better understand how and why people attend sessions..."_ <br> Conference Chair |
+- _"Tired of running around and manually counting attendees... "_ <br> Conference Organizer |
+- _"What do I get out of coming to the conference? "_ <br>Attendee |
 
 +++
 
@@ -105,6 +105,9 @@
 
 +++
 
+![Sample Schedule](assets/sample_graph.png)
+
+---
 ### Takeaway  ...
 
 ... BI & BA tools are evolving rapidly:
@@ -114,6 +117,6 @@
 - Always design with intention and passion;
 - Keep it simple.
 
----
++++
 
 ## Thank you!
