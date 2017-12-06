@@ -11,8 +11,8 @@
 ### Why?
 
 - improved insights |
-- better decision  |
-- fact-based decicision |
+- better decisions  |
+- fact-based decicisions |
 
 
 +++
