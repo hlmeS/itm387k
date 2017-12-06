@@ -43,6 +43,10 @@
 - enhanced network &rarr; **IoT applications** |
 ---
 
+## Industry Example - SAP Hana:
+
+![Live Construction](https://youtu.be/xNE5Goby2dc)
+
 
 
 ---
