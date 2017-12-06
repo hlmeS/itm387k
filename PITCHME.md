@@ -38,15 +38,15 @@
 
 ### What happens when new technologies come in?
 
-- higher computational power &rarr; **big data & deep learning**|
-- cheaper hardware &rarr; **low-cost sensors**  |
-- enhanced network &rarr; **IoT applications** |
+- higher computational power -> **big data & deep learning** |
+- cheaper hardware ->  **low-cost sensors**  |
+- enhanced network ->  **IoT applications** |
 ---
 
 ## Industry Example - SAP Hana:
 
-![Live Construction](https://youtu.be/xNE5Goby2dc)
 
+<iframe src="https://youtu.be/xNE5Goby2dc" width=100% height=600 ></iframe>
 
 
 ---
