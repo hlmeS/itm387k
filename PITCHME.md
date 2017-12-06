@@ -105,6 +105,10 @@
 
 +++
 
+ ![Inside](assets/hicss2.jpg) |
+
++++
+
 ![Sample Schedule](assets/sample_graph.png)
 
 ---
