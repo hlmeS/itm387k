@@ -4,7 +4,7 @@
 
 ---
 
-## Recap: <br> BI & BA
+## Recap – BI & BA
 
 +++
 
@@ -38,7 +38,7 @@
 
 ### What happens when new technologies come in?
 
-- higher computational power &rarr; big data & deep learning |
+- computational power &rarr; big data & deep learning |
 - cheaper hardware &rarr; low-cost sensors  |
 - enhanced network &rarr; IoT applications |
 ---
