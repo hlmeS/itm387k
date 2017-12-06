@@ -1,6 +1,5 @@
 ## Attendee Tracking for <br> HICSS-51
-##### Overview of Information System and
-##### Analytics Framework
+
 
 ---
 
@@ -105,7 +104,7 @@
 
 +++
 
-![Inside](assets/hicss2.png) 
+![Inside](assets/hicss2.png)
 
 +++
 
