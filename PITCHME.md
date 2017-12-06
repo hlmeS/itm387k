@@ -59,6 +59,12 @@
 
 +++
 
+#### Tantalum: IoT Connected Cars
+
+![Data transformation process](assets/tantalum.png)
+
+[https://www.tantalumcorporation.com/open-platform/](https://www.tantalumcorporation.com/open-platform/)
+
 ---
 ## Visual Analytics
 
