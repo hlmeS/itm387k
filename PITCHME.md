@@ -4,13 +4,13 @@
 
 ---
 
-### Recap: BI & BA
+## Recap: <br> BI & BA
 
 +++
 
 ### Why?
 
-- improved insghts |
+- improved insights |
 - better decision  |
 - fact-based decicision |
 
@@ -28,23 +28,22 @@
 
 ### How ?
 
-Data transformation processes allow us to turn data into actionable knowledge.
++++
+
+### How ?
 
 ![Data transformation process](assets/data_to_knowledge.png)
 
++++
+
+### What happens when new technologies come in?
+
+- higher computational power: big data, deep learning |
+- cheaper hardware: low-cost sensors  |
+- enhanced network: IoT applications |
 ---
 
-## Scope of BI/BA
 
-+++
-
-##### BA can be categorized based on the nature of the analytics approach
-![Types of BI/BA](assets/BA_types.png)
-
-+++
-
-##### Your objectives will determine the best analytics approach
-![Scope of BI/BA](assets/BA_scope_nobg.png)
 
 ---
 ## Visual Analytics
