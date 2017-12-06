@@ -4,9 +4,7 @@
 
 ---
 
-## Business Intelligence (BI)
-## &
-## Business Analytics (BA)
+### Recap: BI & BA
 
 +++
 
@@ -16,6 +14,14 @@ Business Analytics help managers and staff gain **improved insights** about thei
 
 +++
 
+### What?
+
++++
+
+### What?
+![Types of BI/BA](assets/BA_types.png)
+
++++
 
 ### How ?
 
