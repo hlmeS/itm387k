@@ -31,9 +31,9 @@ Data Retrieval
 The first step is to get the data. In this case, the query has been given to you.
 In this query, we're looking at temperatures, power, and energy in the month of November.
 
-The query function from the class that I provided you with is currently very static in that it expect the timestamp
-as the first column and then 4 data column. The data return will be time array and a data array with 5 columns.
-The first column of that array can be ignored, it's just time in seconds extraced from the timestamp.
+The query function from the class that I provided you with is currently very static in that it expects the timestamp
+as the first column and then 4 data columns. The data returned will be the time array and a data array with 5 columns.
+The first column of that array can be ignored, it's just time in seconds extracted from the timestamp.
 
 Your task:
 Query for the month of September or October and exclude the DC components (solar contributions) from the power and energy data.
