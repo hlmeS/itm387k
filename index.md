@@ -1,39 +1,41 @@
+# ITM387K: Lab Manual
+
 ### URL: hlmes.github.io/itm387k
 
 ### Table of Contents
 
 - General announcements
-  - [Introduction](#introduction)
+  - [Introduction](https://hlmes.github.io/itm387k/#introduction)
 - Lab Assignments
-  - [Lab 11: Portfolio Management](#lab-11-two-asset-portfolio-management) -- new
-  - [Lab 10: Linear Programming Optimization](#lab-10-linear-programming-optimization-for-hic-surf) -- new
-  - [Lab 9: Web Analytics with Google Analytics](#lab-9-web-analytics-with-google-analytics)
-  - [Lab 8: Twitter Sentiment Analysis with RapidMiner](#lab-8-twitter-sentiment-analysis-with-rapidminer)
-  - [Lab 7: K-Mean Clustering with RapidMiner](#lab-7-k-mean-clustering-with-rapidminer)
-  - [Lab 6: Linear Regression with RapidMiner](#lab-6-linear-regression-with-rapidminer) --- Updated 11/22
-  - [Lab 5: Decision Tree for predicting MBA graduates' promotion ](#lab-5-decision-tree-with-rapidminer)
-  - [Lab 4: Power BI in Excel](#lab-4-power-bi-in-excel) --- Updated 10/3
-  - [Lab 3b: Power BI - Part II](#lab-3b-power-bi---part-2) --- Updated 9/21
-  - [Lab 3a: Power BI - Part I](#lab-3a-power-bi---part-1) --- Updated 9/19
-  - [Lab 2: Tableau - Part II](#lab-2-tableau---part-2)
-  - [Lab 1: Tableau - Part I](#lab-1-tableau---part-1) --- Updated 9/20
+  - [Lab 11: Portfolio Management](https://hlmes.github.io/itm387k/#lab-11-two-asset-portfolio-management) -- new
+  - [Lab 10: Linear Programming Optimization](https://hlmes.github.io/itm387k/#lab-10-linear-programming-optimization-for-hic-surf) -- new
+  - [Lab 9: Web Analytics with Google Analytics](https://hlmes.github.io/itm387k/#lab-9-web-analytics-with-google-analytics)
+  - [Lab 8: Twitter Sentiment Analysis with RapidMiner](https://hlmes.github.io/itm387k/#lab-8-twitter-sentiment-analysis-with-rapidminer)
+  - [Lab 7: K-Mean Clustering with RapidMiner](https://hlmes.github.io/itm387k/#lab-7-k-mean-clustering-with-rapidminer)
+  - [Lab 6: Linear Regression with RapidMiner](https://hlmes.github.io/itm387k/#lab-6-linear-regression-with-rapidminer) --- Updated 11/22
+  - [Lab 5: Decision Tree for predicting MBA graduates' promotion ](https://hlmes.github.io/itm387k/#lab-5-decision-tree-with-rapidminer)
+  - [Lab 4: Power BI in Excel](https://hlmes.github.io/itm387k/#lab-4-power-bi-in-excel) --- Updated 10/3
+  - [Lab 3b: Power BI - Part II](https://hlmes.github.io/itm387k/#lab-3b-power-bi---part-2) --- Updated 9/21
+  - [Lab 3a: Power BI - Part I](https://hlmes.github.io/itm387k/#lab-3a-power-bi---part-1) --- Updated 9/19
+  - [Lab 2: Tableau - Part II](https://hlmes.github.io/itm387k/#lab-2-tableau---part-2)
+  - [Lab 1: Tableau - Part I](https://hlmes.github.io/itm387k/#lab-1-tableau---part-1) --- Updated 9/20
 - BI Concepts
-  - [BI Concept (11/17)](#bi-concept-of-the-week-1117)
-  - [BI Concept (11/10)](#bi-concept-of-the-week-1110)
-  - [BI Concept (10/27)](#bi-concept-of-the-week-1027)
-  - [BI Concept (10/20)](#bi-concept-of-the-week-1020)
-  - [BI Concept (10/13)](#bi-concept-of-the-week-1013)
-  - [BI Concept (10/6)](#bi-concept-of-the-week-106)
-  - [BI Concept (9/29)](#bi-concept-of-the-week-929)
-  - [BI Concept (9/22)](#bi-concept-of-the-week-922)
-  - [BI Concept (9/13)](#bi-concept-of-the-week-913)
+  - [BI Concept (11/17)](https://hlmes.github.io/itm387k/#bi-concept-of-the-week-1117)
+  - [BI Concept (11/10)](https://hlmes.github.io/itm387k/#bi-concept-of-the-week-1110)
+  - [BI Concept (10/27)](https://hlmes.github.io/itm387k/#bi-concept-of-the-week-1027)
+  - [BI Concept (10/20)](https://hlmes.github.io/itm387k/#bi-concept-of-the-week-1020)
+  - [BI Concept (10/13)](https://hlmes.github.io/itm387k/#bi-concept-of-the-week-1013)
+  - [BI Concept (10/6)](https://hlmes.github.io/itm387k/#bi-concept-of-the-week-106)
+  - [BI Concept (9/29)](https://hlmes.github.io/itm387k/#bi-concept-of-the-week-929)
+  - [BI Concept (9/22)](https://hlmes.github.io/itm387k/#bi-concept-of-the-week-922)
+  - [BI Concept (9/13)](https://hlmes.github.io/itm387k/#bi-concept-of-the-week-913)
 
 
 # Lab 11: Two-Asset Portfolio Management
 
 ## Status
 
-In works, Due 12/6
+PAU
 
 ## Intro
 
