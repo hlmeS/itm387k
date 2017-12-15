@@ -40,7 +40,7 @@ Have fun exploring.
 
 ### Software preparation
 
-To do this tutorial, you will need to have some software and libraries installed on your computer. If you'd rather use a Unix box on Cloud9, you can skip this step read the [Using Cloud9](#using-cloud9) instructions instead. The following instructions are for Unix-based systems (including Mac). Please refer to the online documentation for doing this in Windows (Sorry, Python is the reason why I traded Windows one night for Arch Linux a few years ago before moving over to Mac.)
+To do this tutorial, you will need to have some software and libraries installed on your computer. If you'd rather use a Unix box on Cloud9, you can skip this step read the [Using Cloud9](#using-cloud9) instructions instead. The following instructions are for Unix-based systems (including Mac). Please refer to the online documentation for doing this in Windows. (Sorry, Python is the reason why I traded Windows one night for Arch Linux a few years ago before moving over to Mac.)
 
 You need to make sure that you have the following software/libraries (and their dependencies) installed on your machine:
 - [Python 2.7](https://www.python.org/download/releases/2.7/)
