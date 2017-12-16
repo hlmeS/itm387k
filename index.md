@@ -20,6 +20,7 @@
   - [Lab 2: Tableau - Part II](https://hlmes.github.io/itm387k/#lab-2-tableau---part-2)
   - [Lab 1: Tableau - Part I](https://hlmes.github.io/itm387k/#lab-1-tableau---part-1) --- Updated 9/20
 - BI Concepts
+  - [BI Concept (12/15)](https://hlmes.github.io/itm387k/#bi-concept-of-the-week-1215)
   - [BI Concept (11/17)](https://hlmes.github.io/itm387k/#bi-concept-of-the-week-1117)
   - [BI Concept (11/10)](https://hlmes.github.io/itm387k/#bi-concept-of-the-week-1110)
   - [BI Concept (10/27)](https://hlmes.github.io/itm387k/#bi-concept-of-the-week-1027)
@@ -30,17 +31,21 @@
   - [BI Concept (9/22)](https://hlmes.github.io/itm387k/#bi-concept-of-the-week-922)
   - [BI Concept (9/13)](https://hlmes.github.io/itm387k/#bi-concept-of-the-week-913)
 
+
+# BI Concept of the week (12/15)
+
 ## Tutorial and Intro to Data Analytics with Python
 
-In this brief tutorial, we will look at the use of the pandas library in Python for data analytics. We'll first use the mysql.connector libray to query and retrieve data from an SQL server, then load that data into a pandas dataframe, and ultimately plot the data. _Note: This tutorial is written in and for Python 2.7. It has not been tested with any other version of Python._
+In this brief tutorial, we will look at the use of the pandas library in Python for data analytics. We'll first use the mysql.connector libray to query and retrieve data from a SQL server, then load that data into a pandas dataframe, and ultimately plot the data. _Note: This tutorial is written in and for Python 2.7. It has not been tested with any other version of Python._
 
-This project is based on an energy-analytics project, which means that we will query energy related data. More specifically, we querying the energy consumption of solar hyrbrid mini split air conditioner used for produce cooling. You will have access to both temperature and energy data at a temporal resolutions of 15 minutes.
+This project is based on an energy-analytics project, which means that we will query energy related data. More specifically, we query the energy consumption of a solar hyrbrid mini split air conditioner used for agricultural produce cooling. You will have access to both temperature and energy data at a temporal resolutions of 15 minutes.
 
 Have fun exploring.
 
+
 ### Software preparation
 
-To do this tutorial, you will need to have some software and libraries installed on your computer. If you'd rather use a Unix box on Cloud9, you can skip this step read the [Using Cloud9](#using-cloud9) instructions instead. The following instructions are for Unix-based systems (including Mac). Please refer to the online documentation for doing this in Windows. (Sorry, Python is the reason why I traded Windows one night for Arch Linux a few years ago before moving over to Mac.)
+To do this tutorial, you will need to have some software and libraries installed on your computer. If you'd rather use a Unix box on Cloud9, you can skip this step and read the [Using Cloud9](#using-cloud9) instructions instead. The following instructions are for Unix-based systems (including Mac). Please refer to the online documentation for doing this in Windows. (Sorry, Python is the reason I traded Windows one night for Arch Linux a few years ago.)
 
 You need to make sure that you have the following software/libraries (and their dependencies) installed on your machine:
 - [Python 2.7](https://www.python.org/download/releases/2.7/)
@@ -50,10 +55,10 @@ You need to make sure that you have the following software/libraries (and their 
 - [matplotlib](http://matplotlib.org/index.html) --- `pip install matplotlib`
 - [mysql.connector]() --- `pip install mysql-connector==2.1.6`
 
-If you're on a Mac, my recommendation is to install Homebrew, then `brew install python2`, and then `pip2 install` instead of `pip install`. Again, there are so many instructions online that are fantastic.
+If you're on a Mac, my recommendation is to install `Homebrew`, then `brew install python2`, and then `pip2 install` instead of `pip install`. Again, there are so many instructions online that are fantastic.
 
 **Importing libraries in Python**<br>
-To test if you have everything, open your Python shell (it should say `Python 2.7.x`), and run the following commands (this is how you import libraris). Hopefully you will not see any error messages.
+To test if you have everything, open your Python shell (it should say `Python 2.7.x`), and run the following commands (this is how you import libraris). Hopefully you will not see any error messages. Alternatively, you can run the `test.py` script.
 ```python
 import numpy
 import pandas
@@ -79,11 +84,11 @@ You then want to clone the only workspace that you can see.
 
 ![Cloud 9 - 1](images/python/cloud9_clone_4.png)
 
-Once you're being redirected to the cloud9 workspace, you should see somthing like shown below. You can create files by right-clicking on the left and selecting `New File` and the open it in the editor page. Once you save a file, you can execute it by typing `python test.py` in the terminal.
+Once you're being redirected to the cloud9 workspace, you should see somthing like shown below. You can create files by right-clicking on the left and selecting `New File` and then open it in the editor page. Once you save a file, you can execute it by typing `python test.py` for example in the terminal (replace `test.py` with the actual filename).
 
 ![Cloud 9 - Interface](images/python/cloud9_interface.png)
 
-You can start a python shell by typing `python` into your terminal. To run a python scrip, type `python test.py` into your terminal.
+You can start a python shell by typing `python` into your terminal. To run a python script, type `python test.py` into your terminal (replace `test.py` with the actual filename).
 
 ## Starter Documents
 
@@ -97,12 +102,14 @@ To work through the tutorial, you should download the provided archive from Goog
 
 ## Tutorial
 
-The Python file steps you through the analysis process. It is separated in to three section:
+The Python file steps you through the analysis process. It is separated into three section:
 - data retrieval using SQL
 - data processing using pandas data frames
 - data visualization using the matplotlib and pandas Library
 
-Throughout the Python script, you are asked to make changes to existing code or some code.
+Throughout the Python script, you are asked to make changes to existing code or add some code.
+
+Enjoy and don't hesitate to ask for more explanations if you have any questions. 
 
 # Lab 11: Two-Asset Portfolio Management
 
